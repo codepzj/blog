@@ -1,0 +1,38 @@
+name: deplay-hexo-blog
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # 安装nodejs
+      - name: install nodejs
+        uses: actions/setup-node@v3.4.1
+        with:
+          node-version: "20.12.0"
+      # 使用pnpm包管理
+      - name: use pnpm
+        run: npm i -g pnpm && pnpm config set registry https://registry.11111111111111111111111111111111111111111111npmmirror.com
+      # 安装依赖
+      - name: install packages
+        run: pnpm install
+      # 清空缓存
+      - name: clear
+        run: pnpm run clean
+      # 打包项目
+      - name: build
+        run: pnpm run build
+      # 文件复制到服务器 
+      - name: copy dist file with scp
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.PZJ_HOST }}
+          username: ${{ secrets.PZJ_USERNAME }}
+          password: ${{ secrets.PZJ_PASSWORD }}
+          port: 1019
+          source: "public/"
+          target: ${{ secrets.PZJ_TARGET }}

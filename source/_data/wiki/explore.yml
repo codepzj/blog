@@ -1,0 +1,13 @@
+name: 浩瀚星河
+subtitle: 'A Go Enthusiast | 实习前的些许风霜罢了' # 副标题
+icon: /assets/images/avatar.jpg
+search:
+  filter: /explore/
+  placeholder: 在 探索 中搜索...
+base_dir: /explore/
+tree:
+  "站点":
+    - sites/工具库
+  "笔记":
+    - notes/探索者笔记
+  
