@@ -1,0 +1,15 @@
+name: 操作系统
+title: 记录操作系统实验
+subtitle: '好玩和有趣的操作系统 | 实习前的些许风霜罢了'
+tags: 实验
+icon: /assets/wiki/operating-system/icon.svg
+cover: /assets/wiki/operating-system/icon.svg
+coverpage: true # 默认是 true
+description: 总结在操作系统实验中的学习过程
+license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+share: true
+base_dir: /wiki/operating-system/
+tree:
+  - 实验一、xv6及其系统调用
+
+  
