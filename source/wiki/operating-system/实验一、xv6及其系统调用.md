@@ -16,7 +16,7 @@ sudo apt-get install git build-essential gdb-multiarch qemu-system-misc gcc-risc
 
 ![拉取镜像](https://image.codepzj.cn/image/202409181505666.png)
 
-这个过程比较漫长，从**Ubuntu**的[软件源](archive.ubuntu.com)获取的各种包的下载信息，大概需要下载 15min 左右
+这个过程比较漫长，从**Ubuntu**的[软件源](http://archive.ubuntu.com/)获取的各种包的下载信息，大概需要下载 15min 左右
 
 ### 查看操作系统是否符合实验所需环境
 
