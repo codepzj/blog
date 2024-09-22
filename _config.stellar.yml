@@ -166,10 +166,15 @@ footer:
 copycode:
   enable: false
 
+# comments:
+#   service: beaudar
+#   beaudar:
+#     repo: struggle-upwards/blog-comments
+
 comments:
-  service: beaudar
-  beaudar:
-    repo: struggle-upwards/blog-comments
+  service: twikoo
+  twikoo:
+    envId: https://blog.codepzj.cn/twikoo # vercel函数
 
 # 文章搜索
 search:
