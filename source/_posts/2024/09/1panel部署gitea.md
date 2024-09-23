@@ -11,7 +11,6 @@ poster:
 date: 2024-09-15 00:55:13
 topic:
 description: 本文讲述了如何在1panel中部署gitea和act runner，构建一个私有的git托管和ci/cd环境。首先，安装gitea并推荐使用postgresql数据库。接着，配置act runner以实现持续集成和部署，确保ci/cd功能正常运行。最后，验证配置的成功，并总结了整个过程的关键步骤和注意事项。
-cover: /assets/banner/gitea.jpg
 banner: /assets/banner/gitea.jpg
 references:
   - "[Gitea Actions 搭建](https://www.seepine.com/git/gitea/actions/)"

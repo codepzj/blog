@@ -10,8 +10,7 @@ poster:
   color: null
 date: 2024-09-20 00:08:49
 topic: tailwindcss
-description: 本文介绍了使用 Tailwind CSS 和 Vue 实现响应式导航栏的过程，重点阐述了响应式布局与自适应布局的区别，以及如何通过 Tailwind CSS 的类名如 md:和 md:hidden 来实现不同屏幕尺寸下的布局调整。此外，文中详细展示了核心代码 Navbar.vue，并说明了动画效果的实现。最后，讲解了如何将项目部署到 GitHub Pages，包括配置 vite 和使用 git subtree 推送静态文件。完整项目和预览链接也提供给读者。
-cover: /assets/banner/tailwindcss.jpg
+description: 本文讲述了使用 Tailwind CSS 和 Vue 实现响应式导航栏的过程，重点阐述了响应式布局与自适应布局的区别，以及如何通过 Tailwind CSS 的类名如 md:和 md:hidden 来实现不同屏幕尺寸下的布局调整。此外，文中详细展示了核心代码 Navbar.vue，并说明了动画效果的实现。最后，讲解了如何将项目部署到 GitHub Pages，包括配置 vite 和使用 git subtree 推送静态文件。完整项目和预览链接也提供给读者。
 banner: /assets/banner/tailwindcss.jpg
 references:
 ---

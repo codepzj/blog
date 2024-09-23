@@ -10,8 +10,7 @@ poster:
   caption: 免费cdn，抗DDOS，缓存静态资源
   color: null
 date: 2024-08-19 00:07:34
-description: 这篇文章介绍了如何使用Cloudflare的免费CDN服务来提升网站性能。首先解释了CDN的基本概念和功能，然后展示了如何通过Cloudflare更换DNS解析服务器，配置DNS记录，并启用CDN加速。文章还包含了如何使用网站测速工具来比较CDN前后的网站速度表现。
-cover: /assets/banner/cloudfare.webp
+description: 本文讲述了如何使用Cloudflare的免费CDN服务来提升网站性能。首先解释了CDN的基本概念和功能，然后展示了如何通过Cloudflare更换DNS解析服务器，配置DNS记录，并启用CDN加速。文章还包含了如何使用网站测速工具来比较CDN前后的网站速度表现。
 banner: /assets/banner/cloudfare.webp
 references:
 ---

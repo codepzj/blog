@@ -10,8 +10,7 @@ poster:
   color: null
 date: 2024-09-01 14:11:55
 topic:
-description: 通过配置Git以识别文件名大小写变化，确保文件重命名操作能够被正确追踪。
-cover: /assets/banner/git.jpg
+description: 本文讲述了通过配置Git以识别文件名大小写变化，确保文件重命名操作能够被正确追踪。
 banner: /assets/banner/git.jpg
 references:
 ---
