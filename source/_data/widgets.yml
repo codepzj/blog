@@ -31,7 +31,7 @@ categories:
 timeline:
   layout: timeline
   title: 近期动态
-  api: https://memos.codepzj.cn/api/v1/memo?creatorId=1&limit=5
+  api: https://memos.codepzj.cn/api/v1/memo?creatorId=1&limit=10
   type: memos
   hide: user,footer
 

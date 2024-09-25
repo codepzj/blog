@@ -1,4 +1,13 @@
 {
+	"代码块": {
+		"prefix": "code",
+		"body": [
+			"```${1:language}",
+			"$2",
+			"```"
+		],
+		"description": "简写代码块"
+	},
 	"Emoji Tag": {
 		"prefix": "emoji",
 		"body": [
@@ -209,8 +218,8 @@
 	"Folding Container": {
 		"prefix": "folding",
 		"body": [
-			"{% folding ${1:title} [codeblock:${2:bool}] [open:${3:bool}] [color:${4:color}] %}",
-			"${5:content}",
+			"{% folding ${1:title} open:false color:black %}",
+			"${2:content}",
 			"{% endfolding %}"
 		],
 		"description": "Insert a folding container"
