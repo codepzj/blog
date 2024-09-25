@@ -1,0 +1,19 @@
+name: golang学习指南
+title: golang学习指南
+subtitle: 'go语言圣经 | 实习前的些许风霜罢了'
+tags: 文档
+icon: /assets/wiki/go-learn/icon.svg
+cover: /assets/wiki/go-learn/icon.svg
+coverpage: true # 默认是 true
+description: 总结学习golang的一些常用知识点
+license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+share: true
+base_dir: /wiki/go-learn/
+tree:
+    "快速开始":
+      - 入门指南
+    "语法基础":
+      - 基本语法/包
+      - 基本语法/关键字
+      - 基本语法/运算符
+      - 基本语法/字面量

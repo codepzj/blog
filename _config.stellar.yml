@@ -28,8 +28,8 @@ site_tree:
   # -- 内容类页面 -- #
   # 博客文章内页配置
   home:
-    leftbar: welcome, hitokoto, recent
-    rightbar: lucky, location, categories, tagcloud, timeline
+    leftbar: welcome, hitokoto
+    rightbar: lucky, location, categories, tagcloud, new_comment, timeline
   post:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: related, recent # for pages using 'layout:post'
@@ -50,8 +50,8 @@ site_tree:
     rightbar: tagcloud, categories
   # 其它自定义页面配置 layout: page
   page:
-    leftbar: recent
-    rightbar: timeline, support
+    leftbar: welcome, hitokoto
+    rightbar: new_comment, timeline, support
 
 open_graph:
   enable: true
