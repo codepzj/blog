@@ -1,7 +1,7 @@
 ---
 title: element-plus的布局属性
 tags: [element-plus, css]
-categories: [前端, UI组件库]
+categories: [技术分享]
 permalink: posts/3.html
 poster:
   topic: null

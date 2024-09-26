@@ -1,7 +1,7 @@
 ---
 title: 白嫖cloudfare的cdn让网站更加流畅
 tags: [cdn, cloudfare]
-categories: [建站优化, 性能优化]
+categories: [技术分享]
 permalink: posts/1.html
 topic: station
 poster:

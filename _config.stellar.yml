@@ -64,6 +64,13 @@ article:
   related_posts:
     enable: true
     title: 您可能感兴趣的文章
+  category_color:
+    "产品思考": "#4CB9E7"
+    "技术分享": "#4CB9E7"
+    "生活思考": "#FF004D"
+    "经验分享": "#43766C"
+    "设计开发": "#11009E"
+
   license: "本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。" # 许可协议
 
 # 全局样式

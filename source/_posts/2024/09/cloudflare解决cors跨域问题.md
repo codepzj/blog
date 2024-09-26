@@ -1,7 +1,7 @@
 ---
 title: cloudflare解决cors跨域问题
 tags: [cloudfare, cors]
-categories: [建站优化, 性能优化]
+categories: [技术分享]
 permalink: posts/10.html
 topic: station
 poster:

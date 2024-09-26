@@ -1,7 +1,7 @@
 ---
 title: 部署oracle数据库并配置
 tags: [oracle, docker]
-categories: [后端, 数据库]
+categories: [技术分享]
 permalink: posts/6.html
 poster:
   topic: null

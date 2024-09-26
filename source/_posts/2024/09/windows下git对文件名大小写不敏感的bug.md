@@ -1,7 +1,7 @@
 ---
 title: windows下git对文件名大小写不敏感的bug
 tags: [git]
-categories: [Bug]
+categories: [技术分享]
 permalink: posts/5.html
 poster:
   topic: null

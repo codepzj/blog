@@ -1,7 +1,7 @@
 ---
 title: 使用stellar标签和代码片段在vscode中高效编写博客
 tags: [stellar]
-categories: [知识积累, stellar标签]
+categories: [技术分享]
 permalink: posts/9.html
 poster:
   topic: null

@@ -1,7 +1,7 @@
 ---
 title: tailwindcss学习笔记
 tags: [taiwindcss, css]
-categories: [前端, CSS框架]
+categories: [技术分享]
 permalink: posts/4.html
 poster:
   topic: null

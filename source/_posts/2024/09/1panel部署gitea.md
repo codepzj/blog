@@ -1,7 +1,7 @@
 ---
 title: 1panel部署gitea和act runner
 tags: [gitea]
-categories: [运维, CI/CD]
+categories: [技术分享]
 permalink: posts/7.html
 poster:
   topic: null

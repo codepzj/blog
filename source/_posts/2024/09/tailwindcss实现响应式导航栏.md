@@ -1,7 +1,7 @@
 ---
 title: tailwindcss实现响应式导航栏
 tags: [taiwindcss, git]
-categories: [前端, CSS框架]
+categories: [技术分享]
 permalink: posts/8.html
 poster:
   topic: null

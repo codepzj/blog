@@ -1,7 +1,7 @@
 ---
 title: hexo-theme-stellar常用标签组件
 tags: [stellar]
-categories: [知识积累, stellar标签]
+categories: [技术分享]
 permalink: posts/2.html
 poster:
   topic: null
