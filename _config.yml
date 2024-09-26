@@ -120,9 +120,22 @@ feed:
   limit: 20
 
 sitemap:
-  path: 
-    - sitemap.xml
-  rel: false
-  tags: true
-  categories: true
+  path: sitemap.xml
 
+# 开启压缩
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/index.js'

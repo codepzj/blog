@@ -19,7 +19,7 @@
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^4.0.0",
-    "hexo-generator-sitemap": "^3.0.1",
+    "hexo-generator-seo-friendly-sitemap": "^0.2.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-lazyload-image": "^1.1.2",
     "hexo-neat": "^1.0.9",
