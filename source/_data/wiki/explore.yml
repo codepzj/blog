@@ -7,7 +7,7 @@ search:
 base_dir: /explore/
 tree:
   "站点":
-    - sites/工具库
+    - sites/收藏的站点
   "笔记":
     - notes/探索者笔记
   

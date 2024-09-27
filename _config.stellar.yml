@@ -16,7 +16,7 @@ menubar:
       theme: "#FA6400"
       icon: solar:planet-bold-duotone
       title: 探索
-      url: /explore/sites/工具库.html
+      url: /explore/sites/收藏的站点.html
     - id: social
       theme: "#F44336"
       icon: solar:chat-square-like-bold-duotone
@@ -141,7 +141,7 @@ footer:
       - "[牛客刷题](/wiki/niuke/牛客零基础入门前端.html)"
       - "[硅谷甄选](/wiki/ggzx/项目起步.html)"
     "探索":
-      - "[站点](/explore/sites/工具库.html)"
+      - "[站点](/explore/sites/收藏的站点.html)"
       - "[笔记](/explore/notes/探索者笔记.html)"
     "友链":
       - "[朋友圈](/about/)"

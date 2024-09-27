@@ -18,3 +18,9 @@ banner: /assets/banner/friends.jpg
 2. 我们需要有一定的有效互动：
 
 - 先友后链：与 [**浩瀚星河**](https://blog.codepzj.cn) 有至少 {% mark 半年 %} 的有效互动
+
+```yaml
+- title: 浩瀚星河
+  url: https://blog.codepzj.cn
+  avatar: https://image.codepzj.cn/image/202409111608193.png
+```
