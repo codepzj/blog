@@ -220,6 +220,7 @@ inject:
   script:
     - <script src="https://cdn.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/input-with-fire.js"></script>
     - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
-    - <script src="/static/js/txmap.js"></script>
-    - <script src="/static/js/snow.js"></script>
+    - <script src="/js/txmap.js"></script>
+    - <script src="/js/snow.js"></script>
+    - <script src="/js/load.js"></script>
 

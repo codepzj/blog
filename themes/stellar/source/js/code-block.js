@@ -28,7 +28,6 @@ codeElements.forEach(async (code, index) => {
     figure.appendChild(codeCopyDiv);
 
     codeCopyOver = document.createElement('button');
-    console.log(codeCopyOver);
     codeCopyOver.classList.add('CodeClose');
     codeCopyOver.innerHTML = openText;
     const description = figure.querySelector('figcaption') || figure.children[1];

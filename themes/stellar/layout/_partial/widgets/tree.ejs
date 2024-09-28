@@ -19,7 +19,7 @@ function layoutDocTree(pages) {
     if (p.path === page.path) {
       isActive += ' active'
     }
-    if (proj.pages.length > 1) {
+    if (proj.pages.length > 0) {
       let href = url_for(p.path);
       if (p.is_homepage) {
         href += '#start'
