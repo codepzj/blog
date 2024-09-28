@@ -146,6 +146,59 @@ function layoutDiv() {
     `
   }
 
+  if (theme.article.donate) {
+    const donateImage = () => {
+      if (theme.article.donate.wechat) {
+        return `
+        <div class="donate-image" id="donate-wechat" style="display:none; position:absolute; z-index:1000; transform: translateY(-100%); left: 50%; transform: translateX(-50%) translateY(-100%);">
+          <img src="${theme.article.donate.wechat}" alt="Donate with WeChat" style="width: 150px; height: auto;" />
+        </div>
+        `;
+      } else {
+        return '';
+      }
+    };
+
+    el += `
+    <section id="donate">
+      <div class="header"><span>${__('捐赠小站')}</span></div>
+      <div class="body">
+        <p>${__('请作者喝杯咖啡吧')}
+          <span class="donate-icon" onclick="showQRCode()" style="display: inline-block;">
+            <i class="fa-solid fa-gift fa-flip" style="font-size: 20px;"></i>
+          </span>
+        </p>
+        ${donateImage()}
+      </div>
+    </section>
+    `;
+
+    el += `
+    <script>
+      const showQRCode = () => {
+        const qrCode = document.getElementById('donate-wechat');
+        qrCode.style.display = 'block';
+
+        // 添加一个事件监听器来隐藏二维码
+        document.addEventListener('click', hideQRCode);
+      };
+
+      const hideQRCode = (event) => {
+        const qrCode = document.getElementById('donate-wechat');
+        const donateIcon = document.querySelector('.donate-icon');
+
+        // 检查点击的是否是二维码或捐赠图标
+        if (!qrCode.contains(event.target) && !donateIcon.contains(event.target)) {
+          qrCode.style.display = 'none';
+
+          // 移除事件监听器
+          document.removeEventListener('click', hideQRCode);
+        }
+      };
+    </script>
+    `;
+  }
+
   el += '</div>';
   return el;
 }

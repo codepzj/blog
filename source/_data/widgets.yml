@@ -43,11 +43,6 @@ timeline:
   type: memos
   hide: user,footer
 
-support:
-  layout: markdown
-  title: 赞助小站
-  content: |
-    ![微信](/assets/images/wepay.jpg)
 # 文章目录树
 toc:
   layout: toc

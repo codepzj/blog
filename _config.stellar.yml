@@ -51,7 +51,7 @@ site_tree:
   # 其它自定义页面配置 layout: page
   page:
     leftbar: welcome, hitokoto
-    rightbar: new_comment, timeline, support
+    rightbar: new_comment, timeline
 
 open_graph:
   enable: true
@@ -70,9 +70,9 @@ article:
     "生活思考": "#FF004D"
     "经验分享": "#43766C"
     "设计开发": "#11009E"
-
   license: "本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。" # 许可协议
-
+  donate:
+    wechat: '/assets/images/wepay.jpg'
 # 全局样式
 style:
   prefers_theme: light
@@ -121,6 +121,9 @@ footer:
     comment:
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="#000000" stroke-linejoin="round"><path stroke-linecap="round" stroke-width="1.5" d="M12 21a9 9 0 1 0-8-4.873L3 21l4.873-1c1.236.639 2.64 1 4.127 1"/><path stroke-width="2.25" d="M7.5 12h.01v.01H7.5zm4.5 0h.01v.01H12zm4.5 0h.01v.01h-.01z"/></g></svg>'
       url: https://blog.codepzj.cn/friends/
+    wormhole:
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" style="color:black" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="2"/><path stroke-linecap="round" d="M12 10c5 0 4.6 12-3 12"/><path stroke-linecap="round" d="M12.312 14c-5 0-4.6-12 3-12"/><path stroke-dasharray="2 2" stroke-linecap="round" d="M10.631 10.696c3.536-3.535 11.738 5.233 6.364 10.607"/><path stroke-dasharray="2 2" stroke-linecap="round" d="M13.68 13.304C10.145 16.84 1.942 8.07 7.316 2.697"/><path stroke-dasharray="2 2" stroke-linecap="round" d="M10.852 13.524C7.316 9.99 16.084 1.786 21.458 7.16"/><path stroke-dasharray="2 2" stroke-linecap="round" d="M13.46 10.476c3.535 3.535-5.233 11.738-10.607 6.364"/><path stroke-linecap="round" d="M10 12.312c0-5 12-4.6 12 3"/><path stroke-linecap="round" d="M14 12c0 5-12 4.6-12-3"/></g></svg>'
+      url: https://foreverblog.cn/go.html
     rss:
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></g></svg>'
       url: /atom.xml
@@ -149,12 +152,15 @@ footer:
     <img src="/assets/images/keyboard.jpg" alt="描述文字" style="float: right; width: 60px; margin-left: 20px;">
     <center>
       <div>
+        <div>本站点总访问 <span id="busuanzi_value_site_pv" style="font-weight: bold;">2016</span> 次 | 本页访问 <span id="busuanzi_value_page_pv" style="font-weight: bold;">89</span> 次</div>
         <div>
           © 2023 - 2024
           <a style="font-weight: bold;  auto;" target="_blank" rel="noopener" href="https://github.com/struggle-upwards">浩瀚星河</a>
           开心地使用 <a style="font-weight: bold;  auto;" target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a>
           主题，星际地球第<span id="runtime_span"></span>
         </div>
+        <br>
+        <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         <script type="text/javascript">
           function show_runtime() {
               window.setTimeout("show_runtime()", 1000);
@@ -169,15 +175,11 @@ footer:
           show_runtime();
         </script>
       </div>
+
     </center>
 
 copycode:
   enable: false
-
-# comments:
-#   service: beaudar
-#   beaudar:
-#     repo: struggle-upwards/blog-comments
 
 comments:
   service: twikoo
