@@ -329,7 +329,7 @@ td.code:before {
 
 /*stellar主题补偿*/
 .md-text pre>.hljs {
-  padding-top: 1rem !important;
+  padding-top: 1.7rem !important;
 }
 
 .md-text .highlight .gutter {
@@ -339,6 +339,7 @@ td.code:before {
 
 .md-text pre {
   padding: 0 !important;
+  margin-top: 0 !important;
 }
 
 #start>div>article>figure.highlight:hover>figcaption>span {
