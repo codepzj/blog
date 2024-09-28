@@ -334,7 +334,7 @@ td.code:before {
 
 .md-text .highlight .gutter {
   display: block !important;
-  padding-top: 1rem !important;
+  padding-top: 1.7rem !important;
 }
 
 .md-text pre {
