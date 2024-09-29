@@ -50,7 +50,7 @@ toc:
   min_depth: 2 # 建议不要低于 2 即从 H2 标签开始解析（H1标签用于文章大标题）
   max_depth: 6 # 6 代表最多解析到 H6 标签
   fallback: recent # Use a backup widget when toc does not exist.
-  collapse: true # true / false / auto (始终折叠/不折叠/自动折叠)
+  collapse: false # true / false / auto (始终折叠/不折叠/自动折叠)
 
 # rss插件，最近更新的文章
 recent:
