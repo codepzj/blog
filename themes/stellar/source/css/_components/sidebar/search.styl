@@ -107,3 +107,15 @@
   .search-no-result
     display: block
     margin-bottom: 8px
+
+.search-wrapper >.search-form:after
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 4px;
+  background: linear-gradient(to right, #04f3ff, #08ffc6, #ddf730, #ffbd19, #ff1fe0, #c418ff, #04f3ff);
+  background-size: 200%;
+  animation: glow 10s linear infinite;
