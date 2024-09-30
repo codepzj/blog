@@ -1,14 +1,14 @@
 - title: gitea存储库
   url: https://repository.codepzj.cn/
   cover: https://image.codepzj.cn/image/202409272345744.png
-  icon:
+  icon: https://repository.codepzj.cn/assets/img/favicon.png
 
 - title: it-tools实用工具库
   url: https://tools.codepzj.cn/
   cover: https://image.codepzj.cn/image/202409272346698.png
-  icon:
+  icon: https://tools.codepzj.cn/android-chrome-192x192.png
 
 - title: alist云盘
   url: https://share.codepzj.cn/
   cover: https://image.codepzj.cn/image/202409272348040.png
-  icon:
+  icon: https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg
