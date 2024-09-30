@@ -77,7 +77,7 @@ article:
 style:
   prefers_theme: light
   leftbar:
-    background-image: url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
+    background: var(--leftbar-bg)
     blur-px: 100px # 模糊半径
     blur-bg: var(--alpha60) # 模糊颜色
   text-align: left # justify/left/center/right
@@ -92,18 +92,6 @@ style:
     body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace'
-  color:
-    # 动态颜色（会根据明暗主题重设明度值，只用关心色相和饱和度即可）
-    background: "hsl(212 16% 98%)" # 浅色背景颜色
-    block: "hsl(212 8% 95%)" # 块背景颜色
-    code: "hsl(14 100% 48%)" # 行内代码颜色
-    text: "hsl(0 0% 20%)" # 文本颜色
-    # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
-    theme: "hsl(192 98% 55%)" # 主题色
-    accent: "hsl(14 100% 57%)" # 强调色
-    link: "hsl(207 90% 54%)" # 超链接颜色
-    button: "hsl(192 98% 55%)" # 按钮颜色
-    hover: "hsl(14 100% 57%)" # 按钮高亮颜色
   codeblock:
     highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css
   border-radius:
@@ -141,11 +129,17 @@ footer:
       - "[专栏](/topic/)"
       - "[归档](/archives/)"
     "项目":
+      - "[go学习指南](/wiki/go-learn/入门指南.html)"
+      - "[操作系统](/wiki/operating-system/实验一、xv6及其系统调用.html)"
       - "[牛客刷题](/wiki/niuke/牛客零基础入门前端.html)"
       - "[硅谷甄选](/wiki/ggzx/项目起步.html)"
-    "探索":
-      - "[站点](/explore/sites/收藏的站点.html)"
-      - "[笔记](/explore/notes/探索者笔记.html)"
+    "我的站点":
+      - "[ChatGPT](https://ai.codepzj.cn/)"
+      - "[Gitea](https://repository.codepzj.cn/)"
+      - "[GitHub](https://github.com/struggle-upwards)"
+      - "[Alist云盘](https://share.codepzj.cn/)"
+      - "[memos备忘录](https://memos.codepzj.cn/)"
+      - "[IT-Tools工具库](https://tools.codepzj.cn/)"
     "友链":
       - "[朋友圈](/about/)"
   content: | # 支持 Markdown 格式
