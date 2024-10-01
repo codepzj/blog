@@ -31,8 +31,8 @@ site_tree:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: welcome, recent # for categories/tags/archives
     rightbar: timeline
-    nav_tabs:  # 近期发布 分类 标签 专栏 归档 and ...
-      '每日新闻': /news/
+    nav_tabs: # 近期发布 分类 标签 专栏 归档 and ...
+      "每日新闻": /news/
   # 博客专栏列表页配置
   index_topic:
     base_dir: topic # 只影响自动生成的页面路径
@@ -46,8 +46,8 @@ site_tree:
     nav_tabs:
   # 博客文章内页配置
   home:
-    leftbar: welcome, hitokoto
-    rightbar: lucky, location, categories, tagcloud, new_comment, timeline
+    leftbar: welcome, TenYearAgreement
+    rightbar: location, timer, categories, new_comment, timeline
   post:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: related, recent # for pages using 'layout:post'
@@ -64,12 +64,12 @@ site_tree:
   error_page:
     menu_id: post
     "404": "/404.html"
-    leftbar: hitokoto, recent
+    leftbar: recent
     rightbar: tagcloud, categories
   # 其它自定义页面配置 layout: page
   page:
-    leftbar: welcome, hitokoto
-    rightbar: new_comment, timeline
+    leftbar: welcome, TenYearAgreement
+    rightbar: timer, new_comment, timeline
 
 open_graph:
   enable: true
@@ -90,7 +90,7 @@ article:
     "设计开发": "#11009E"
   license: "本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。" # 许可协议
   donate:
-    wechat: '/assets/images/wepay.jpg'
+    wechat: "/assets/images/wepay.jpg"
 # 全局样式
 style:
   prefers_theme: light
@@ -161,17 +161,17 @@ footer:
     "友链":
       - "[朋友圈](/about/)"
   content: | # 支持 Markdown 格式
-    <img src="/assets/images/keyboard.jpg" alt="描述文字" style="float: right; width: 60px; margin-left: 20px;">
+    <img src="/assets/images/keyboard.jpg" alt="描述文字" style="float:right; width:60px; margin-left:20px;">
     <center>
       <div>
-        <div>本站点总访问 <span id="busuanzi_value_site_pv" style="font-weight: bold;">2016</span> 次 | 本页访问 <span id="busuanzi_value_page_pv" style="font-weight: bold;">89</span> 次</div>
+        <div>本站点总访问 <span id="busuanzi_value_site_pv" style="font-weight:bold;">2016</span> 次 | 本页访问 <span id="busuanzi_value_page_pv" style="font-weight: bold;">89</span> 次</div>
         <div>
           © 2023 - 2024
           <a style="font-weight: bold;  auto;" target="_blank" rel="noopener" href="https://github.com/struggle-upwards">浩瀚星河</a>
           开心地使用 <a style="font-weight: bold;  auto;" target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a>
           主题，星际地球第<span id="runtime_span"></span>
         </div>
-        <br>
+        <a href="https://icp.gov.moe/?keyword=20246646" target="_blank" style="font-weight:bold;">萌ICP备20246646号</a>
         <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         <script type="text/javascript">
           function show_runtime() {
@@ -187,7 +187,6 @@ footer:
           show_runtime();
         </script>
       </div>
-
     </center>
 
 copycode:
@@ -229,10 +228,10 @@ loading:
 inject:
   head:
     - <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+  
   script:
     - <script src="https://cdn.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/input-with-fire.js"></script>
     - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
     - <script src="/js/txmap.js"></script>
     - <script src="/js/snow.js"></script>
     - <script src="/js/load.js"></script>
-

@@ -139,8 +139,3 @@ neat_js:
   exclude:
     - '**/*.min.js'
     - '**/index.js'
-
-hexo-daily-news:
-  enable: true
-  apiUrl: 'https://v2.alapi.cn/api/zaobao'
-  token: 'your-api-token'

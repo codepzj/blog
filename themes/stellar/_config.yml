@@ -347,7 +347,7 @@ footer:
 tag_plugins:
   # {% box %} / {% note %}
   note:
-    default_color: '' # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
+    default_color: 'dark' # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
     border: true # true / false
   # {% checkbox %}
   checkbox:
@@ -386,7 +386,7 @@ tag_plugins:
     max-height: 80vh
   # {% mark %}
   mark:
-    default_color: yellow # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
+    default_color: green # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
   # {% hashtag %}
   hashtag:
     default_color: # red, orange, yellow, green, cyan, blue, purple
@@ -601,10 +601,10 @@ style:
     code: 'hsl(220 20% 10%)' # 'hsl(14 100% 48%)' # 行内代码颜色
     text: 'hsl(0 0% 20%)' # 文本颜色
     # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
-    theme: 'hsl(120, 50%, 75)' # 主题色
-    accent: 'hsl(120, 50%, 70)' # 强调色
+    theme: 'hsl(120, 50%, 60)' # 主题色
+    accent: 'hsl(120, 50%, 55)' # 强调色
     link: 'hsl(120, 50%, 58)' # 超链接颜色
-    hover: 'hsl(120, 50%, 58)' # 按钮高亮颜色
+    hover: 'hsl(120, 50%, 55)' # 按钮高亮颜色
   animated_avatar:
     animate: auto # auto, always
     background: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp

@@ -28,7 +28,6 @@ function layoutDiv() {
   if (content) {
     el += markdown(content)
   }
-  el += '<div class="totalcount" style="text-align:center">收集了 ' + site.posts.length + ' 颗星星 ✧ </span><span class="post-count">共 ' + totalcount(site) + ' 粒星尘，好像写完一本 鲁迅 的《呐喊》了啊</div>'
   el += '</div></footer>'
   return el
 }
