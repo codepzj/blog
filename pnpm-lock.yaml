@@ -53,9 +53,6 @@ importers:
       hexo-renderer-ejs:
         specifier: ^2.0.0
         version: 2.0.0
-      hexo-renderer-markdown-it-plus:
-        specifier: ^1.0.6
-        version: 1.0.6
       hexo-renderer-pandoc:
         specifier: ^0.4.0
         version: 0.4.0
@@ -82,9 +79,6 @@ packages:
 
   '@adobe/css-tools@4.3.3':
     resolution: {integrity: sha512-rE0Pygv0sEZ4vBWHlAgJLGDU7Pm8xoO6p3wsEceb7GYAjScrOHpEo8KK/eVkAcnSM+slAEtXjA2JpdjLp4fJQQ==}
-
-  '@iktakahiro/markdown-it-katex@4.0.1':
-    resolution: {integrity: sha512-kGFooO7fIOgY34PSG8ZNVsUlKhhNoqhzW2kq94TNGa8COzh73PO4KsEoPOsQVG1mEAe8tg7GqG0FoVao0aMHaw==}
 
   a-sync-waterfall@1.0.1:
     resolution: {integrity: sha512-RYTOHHdWipFUliRFMCS4X2Yn2X8M87V/OpSqWzKKOGhzqyUxzyVmhHDH9sAvG+ZuQf/TAOFsLCpMw09I1ufUnA==}
@@ -341,10 +335,6 @@ packages:
 
   clone@1.0.4:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
-    engines: {node: '>=0.8'}
-
-  clone@2.1.2:
-    resolution: {integrity: sha512-3Pe/CF1Nn94hyhIYpjtiLhdCoEoz0DqQ+988E9gmeEdQZlojxnOb74wctFyuwWQHzqyf9X7C7MG8juUpqBJT8w==}
     engines: {node: '>=0.8'}
 
   collection-visit@1.0.0:
@@ -874,9 +864,6 @@ packages:
     resolution: {integrity: sha512-qCjE1IdwgDgv65qyb0KMVCwCdSVAkH0vwAe9XihjvaKWkmb9dtt8DgErOdqCXn0HReSyWiEVP2BrLRj3gyHwOQ==}
     engines: {node: '>=12'}
 
-  hexo-renderer-markdown-it-plus@1.0.6:
-    resolution: {integrity: sha512-nuidp4IvyHC9G3hnRO4bY7BfBBZBhnOEfQjfk6AJI+qsy+BlaUwDvemuARFTD3APPIO78YamAv5mweo5XMRwfA==}
-
   hexo-renderer-pandoc@0.4.0:
     resolution: {integrity: sha512-e913A2EZbhwbIfg+QvYUalEPHtK5qs9Rqj3ZrsQ3cYTbbiETMWhUQ7bzSlgUeh639eL0UDuBmv2vrEqj5RBchg==}
 
@@ -1135,10 +1122,6 @@ packages:
   jws@3.0.0:
     resolution: {integrity: sha512-Me6ywrnys7VjF8S0ipMSOrQGe5UFeIOg6oLLey7Dqpbtl6ZBRwLeOZ5VAHFmvcxlyPFtey2XAaYKmzG6bjt7lA==}
 
-  katex@0.12.0:
-    resolution: {integrity: sha512-y+8btoc/CK70XqcHqjxiGWBOeIL8upbS0peTPXTvgrh21n1RiWWcIpSWM+4uXq+IAgNh9YYQWdc7LVDPDAEEAg==}
-    hasBin: true
-
   kind-of@3.2.2:
     resolution: {integrity: sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ==}
     engines: {node: '>=0.10.0'}
@@ -1153,9 +1136,6 @@ packages:
 
   kuromoji@0.1.2:
     resolution: {integrity: sha512-V0dUf+C2LpcPEXhoHLMAop/bOht16Dyr+mDiIE39yX3vqau7p80De/koFqpiTcL1zzdZlc3xuHZ8u5gjYRfFaQ==}
-
-  linkify-it@4.0.1:
-    resolution: {integrity: sha512-C7bfi1UZmoj8+PQx22XyeXCuBlokoyWQL5pWSP+EI6nzRylyThouddufc2c1NDIcP9k5agmN9fLpA7VNJfIiqw==}
 
   lodash@2.4.2:
     resolution: {integrity: sha512-Kak1hi6/hYHGVPmdyiZijoQyz5x2iGVzs6w9GYB/HiXEtylY7tIoYEROMjvM1d9nXJqPOrG2MNPMn01bJ+S0Rw==}
@@ -1188,42 +1168,8 @@ packages:
     resolution: {integrity: sha512-4y7uGv8bd2WdM9vpQsiQNo41Ln1NvhvDRuVt0k2JZQ+ezN2uaQes7lZeZ+QQUHOLQAtDaBJ+7wCbi+ab/KFs+w==}
     engines: {node: '>=0.10.0'}
 
-  markdown-it-abbr@1.0.4:
-    resolution: {integrity: sha512-ZeA4Z4SaBbYysZap5iZcxKmlPL6bYA8grqhzJIHB1ikn7njnzaP8uwbtuXc4YXD5LicI4/2Xmc0VwmSiFV04gg==}
-
-  markdown-it-deflist@2.1.0:
-    resolution: {integrity: sha512-3OuqoRUlSxJiuQYu0cWTLHNhhq2xtoSFqsZK8plANg91+RJQU1ziQ6lA2LzmFAEes18uPBsHZpcX6We5l76Nzg==}
-
-  markdown-it-emoji@2.0.2:
-    resolution: {integrity: sha512-zLftSaNrKuYl0kR5zm4gxXjHaOI3FAOEaloKmRA5hijmJZvSjmxcokOLlzycb/HXlUFWzXqpIEoyEMCE4i9MvQ==}
-
-  markdown-it-footnote@3.0.3:
-    resolution: {integrity: sha512-YZMSuCGVZAjzKMn+xqIco9d1cLGxbELHZ9do/TSYVzraooV8ypsppKNmUJ0fVH5ljkCInQAtFpm8Rb3eXSrt5w==}
-
-  markdown-it-ins@3.0.1:
-    resolution: {integrity: sha512-32SSfZqSzqyAmmQ4SHvhxbFqSzPDqsZgMHDwxqPzp+v+t8RsmqsBZRG+RfRQskJko9PfKC2/oxyOs4Yg/CfiRw==}
-
-  markdown-it-mark@3.0.1:
-    resolution: {integrity: sha512-HyxjAu6BRsdt6Xcv6TKVQnkz/E70TdGXEFHRYBGLncRE9lBFwDNLVtFojKxjJWgJ+5XxUwLaHXy+2sGBbDn+4A==}
-
-  markdown-it-sub@1.0.0:
-    resolution: {integrity: sha512-z2Rm/LzEE1wzwTSDrI+FlPEveAAbgdAdPhdWarq/ZGJrGW/uCQbKAnhoCsE4hAbc3SEym26+W2z/VQB0cQiA9Q==}
-
-  markdown-it-sup@1.0.0:
-    resolution: {integrity: sha512-E32m0nV9iyhRR7CrhnzL5msqic7rL1juWre6TQNxsnApg7Uf+F97JOKxUijg5YwXz86lZ0mqfOnutoryyNdntQ==}
-
-  markdown-it-toc@1.1.0:
-    resolution: {integrity: sha512-75GJ7xGUE/G1goCUkXiAuOk1rGMRVYrCX5sQ4rnJLZiGbUJGdTfUfyWibLA0RpRzKgfpdIncz9Z4WwN84x0OJg==}
-
-  markdown-it@13.0.2:
-    resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
-    hasBin: true
-
   math-random@1.0.4:
     resolution: {integrity: sha512-rUxjysqif/BZQH2yhd5Aaq7vXMSx9NdEsQcyA07uEzIvxgI7zIr33gGsh+RU0/XjmQpCW7RsVof1vlkvQVCK5A==}
-
-  mdurl@1.0.1:
-    resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
 
   meow@2.0.0:
     resolution: {integrity: sha512-X7rkdgy5Wxxp2MhCiAOkC3lqfkrJkt3iXvW4BY0rYQIn3GMvYvBTsAPEmHHTjTeVzBelrRcQa2F80rYfigz2+A==}
@@ -1796,9 +1742,6 @@ packages:
   typedarray@0.0.7:
     resolution: {integrity: sha512-ueeb9YybpjhivjbHP2LdFDAjbS948fGEPj+ACAMs4xCMmh72OCOMQWBQKlaN4ZNQ04yfLSDLSx1tGRIoWimObQ==}
 
-  uc.micro@1.0.6:
-    resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
-
   uglify-js@3.10.4:
     resolution: {integrity: sha512-kBFT3U4Dcj4/pJ52vfjCSfyLyvG9VYYuGYPmrPvAxRw/i7xHiT4VvCev+uiEMcEEiu6UNB6KgWmGtSUYIWScbw==}
     engines: {node: '>=0.8.0'}
@@ -1820,10 +1763,6 @@ packages:
   universalify@0.2.0:
     resolution: {integrity: sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==}
     engines: {node: '>= 4.0.0'}
-
-  unorm@1.6.0:
-    resolution: {integrity: sha512-b2/KCUlYZUeA7JFUuRJZPUtr4gZvBh7tavtv4fvk4+KV9pfGiR6CQAQAWl49ZpR3ts2dk4FYkP7EIgDJoiOLDA==}
-    engines: {node: '>= 0.4.0'}
 
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
@@ -1852,10 +1791,6 @@ packages:
   use@3.1.1:
     resolution: {integrity: sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==}
     engines: {node: '>=0.10.0'}
-
-  uslug@1.0.4:
-    resolution: {integrity: sha512-Jrbpp/NS3TvIGNjfJT1sn3/BCeykoxR8GbNYW5lF6fUscLkbXFwj1b7m4DvIkHm8k3Qr6Co68lbTmoZTMGk/ow==}
-    engines: {node: '>= 0.4.0'}
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
@@ -1906,10 +1841,6 @@ packages:
 snapshots:
 
   '@adobe/css-tools@4.3.3': {}
-
-  '@iktakahiro/markdown-it-katex@4.0.1':
-    dependencies:
-      katex: 0.12.0
 
   a-sync-waterfall@1.0.1: {}
 
@@ -2201,8 +2132,6 @@ snapshots:
       colors: 1.0.3
 
   clone@1.0.4: {}
-
-  clone@2.1.2: {}
 
   collection-visit@1.0.0:
     dependencies:
@@ -2777,23 +2706,6 @@ snapshots:
     dependencies:
       ejs: 3.1.10
 
-  hexo-renderer-markdown-it-plus@1.0.6:
-    dependencies:
-      '@iktakahiro/markdown-it-katex': 4.0.1
-      clone: 2.1.2
-      highlight.js: 11.10.0
-      markdown-it: 13.0.2
-      markdown-it-abbr: 1.0.4
-      markdown-it-deflist: 2.1.0
-      markdown-it-emoji: 2.0.2
-      markdown-it-footnote: 3.0.3
-      markdown-it-ins: 3.0.1
-      markdown-it-mark: 3.0.1
-      markdown-it-sub: 1.0.0
-      markdown-it-sup: 1.0.0
-      markdown-it-toc: 1.1.0
-      uslug: 1.0.4
-
   hexo-renderer-pandoc@0.4.0: {}
 
   hexo-renderer-stylus@3.0.1:
@@ -3085,10 +2997,6 @@ snapshots:
       base64url: 1.0.6
       jwa: 1.0.2
 
-  katex@0.12.0:
-    dependencies:
-      commander: 2.20.3
-
   kind-of@3.2.2:
     dependencies:
       is-buffer: 1.1.6
@@ -3104,10 +3012,6 @@ snapshots:
       async: 2.6.4
       doublearray: 0.0.2
       zlibjs: 0.3.1
-
-  linkify-it@4.0.1:
-    dependencies:
-      uc.micro: 1.0.6
 
   lodash@2.4.2: {}
 
@@ -3134,35 +3038,7 @@ snapshots:
     dependencies:
       object-visit: 1.0.1
 
-  markdown-it-abbr@1.0.4: {}
-
-  markdown-it-deflist@2.1.0: {}
-
-  markdown-it-emoji@2.0.2: {}
-
-  markdown-it-footnote@3.0.3: {}
-
-  markdown-it-ins@3.0.1: {}
-
-  markdown-it-mark@3.0.1: {}
-
-  markdown-it-sub@1.0.0: {}
-
-  markdown-it-sup@1.0.0: {}
-
-  markdown-it-toc@1.1.0: {}
-
-  markdown-it@13.0.2:
-    dependencies:
-      argparse: 2.0.1
-      entities: 3.0.1
-      linkify-it: 4.0.1
-      mdurl: 1.0.1
-      uc.micro: 1.0.6
-
   math-random@1.0.4: {}
-
-  mdurl@1.0.1: {}
 
   meow@2.0.0:
     dependencies:
@@ -3805,8 +3681,6 @@ snapshots:
 
   typedarray@0.0.7: {}
 
-  uc.micro@1.0.6: {}
-
   uglify-js@3.10.4: {}
 
   uglify-js@3.19.2: {}
@@ -3821,8 +3695,6 @@ snapshots:
       set-value: 2.0.1
 
   universalify@0.2.0: {}
-
-  unorm@1.6.0: {}
 
   unpipe@1.0.0: {}
 
@@ -3847,10 +3719,6 @@ snapshots:
       requires-port: 1.0.0
 
   use@3.1.1: {}
-
-  uslug@1.0.4:
-    dependencies:
-      unorm: 1.6.0
 
   util-deprecate@1.0.2: {}
 
