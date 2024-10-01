@@ -507,8 +507,8 @@ plugins:
   # AI 摘要
   # https://github.com/qxchuckle/Post-Summary-AI
   tianli_gpt: 
-    enable: #true
-    js: https://jsd.onmicrosoft.cn/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js
+    enable: true
+    js: /js/chatgpt.js
     field: post # all, post, wiki
     key: 5Q5mpqRK5DkwT1X9Gi5e # tianli_gpt key
     total_length: 1000 # 设置提交的字数限制，默认为1000字，上限为5000，超过5000字符将被截断
@@ -518,10 +518,10 @@ plugins:
     hide_shuttle: true # 是否隐藏矩阵穿梭
     summary_toggle: false
     interface:
-      name: AI摘要
-      introduce: '我是文章辅助AI: QX-AI，点击下方的按钮，让我生成本文简介、推荐相关文章等。'
-      version: TianliGPT
-      button: ["介绍自己", "推荐文章", "生成摘要", "矩阵穿梭"]
+      name: 文章摘要
+      introduce: '我是文章辅助AI，点击下方的按钮，让我生成本文简介'
+      version: OpenAI
+      button: ["介绍自己", "生成摘要"]
 
 
   # Katex - The fastest math typesetting library for the web
@@ -601,9 +601,9 @@ style:
     code: 'hsl(220 20% 10%)' # 'hsl(14 100% 48%)' # 行内代码颜色
     text: 'hsl(0 0% 20%)' # 文本颜色
     # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
-    theme: 'hsl(120, 50%, 60)' # 主题色
+    theme: 'hsl(120, 50%, 70)' # 主题色
     accent: 'hsl(120, 50%, 55)' # 强调色
-    link: 'hsl(120, 50%, 58)' # 超链接颜色
+    link: 'hsl(120, 50%, 70)' # 超链接颜色
     hover: 'hsl(120, 50%, 55)' # 按钮高亮颜色
   animated_avatar:
     animate: auto # auto, always
