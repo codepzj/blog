@@ -126,7 +126,8 @@ function ChucklePostAI(config) {
     if (articleContainer) {
       articleContainer.insertBefore(aiContainer, articleContainer.firstChild);
     }
-    generateSummary(); // 初始化时生成文章摘要
+    disableButtons(aiContainer); // 禁用按钮
+    generateSummary(aiContainer); // 初始化时生成文章摘要
   }
 
   // 绑定按钮事件
@@ -134,26 +135,56 @@ function ChucklePostAI(config) {
     const generateIntroductionButton = aiContainer.querySelector(
       ".ai-btn-item:first-child"
     );
-    generateIntroductionButton.addEventListener("click", () => {
-      displaySummary(
-        "我是文章辅助AI，使用的OpenAI的GPT-3.5-turbo-16k模型。点击下方的按钮，让我生成本文简介。"
-      );
-    });
-
     const generateSummaryButton = aiContainer.querySelector(
       ".ai-btn-item:last-child"
     );
-    generateSummaryButton.addEventListener("click", generateSummary);
+
+    generateIntroductionButton.addEventListener("click", () => {
+      disableButtons(aiContainer); // 禁用按钮
+      displaySummary(
+        "我是文章辅助AI，使用的OpenAI的GPT-3.5-turbo-16k模型。点击下方的按钮，让我生成本文简介。",
+        aiContainer
+      );
+    });
+
+    generateSummaryButton.addEventListener("click", () => {
+      disableButtons(aiContainer); // 禁用按钮
+      generateSummary(aiContainer); // 将 aiContainer 传递给 generateSummary
+    });
+  }
+
+  // 禁用所有按钮
+  function disableButtons(aiContainer) {
+    const buttons = aiContainer.querySelectorAll(".ai-btn-item");
+    buttons.forEach((button) => {
+      button.disabled = true;
+      button.style.pointerEvents = "none"; // 禁用点击事件
+      button.style.opacity = "0.5"; // 调整按钮的透明度
+    });
+  }
+
+  // 启用所有按钮
+  function enableButtons(aiContainer) {
+    const buttons = aiContainer.querySelectorAll(".ai-btn-item");
+    buttons.forEach((button) => {
+      button.disabled = false;
+      button.style.pointerEvents = "auto"; // 允许点击事件
+      button.style.opacity = "1"; // 恢复按钮的透明度
+    });
   }
 
   // 生成文章摘要
-  async function generateSummary() {
+  async function generateSummary(aiContainer) {
     const content = getArticleContent();
     const apiKey = "sk-LIX4NtRaiyOj3x8Z6dCa39Ae4fDc467691D47e2230735793"; // 请替换为你的实际 API KEY
     const requestBody = {
       model: "gpt-3.5-turbo-16k",
       messages: [
-        { role: "system", content: "请为下面的内容生成摘要，以本文讲述了开头，不要出现任何与文章无关的内容。" },
+        {
+          role: "system",
+          content:
+            "请为下面的内容生成摘要，以本文讲述了开头，不要出现任何与文章无关的内容。",
+        },
         { role: "user", content: content },
       ],
       temperature: 0,
@@ -174,7 +205,7 @@ function ChucklePostAI(config) {
       }
 
       const data = await response.json();
-      displaySummary(data.choices[0].message.content);
+      displaySummary(data.choices[0].message.content, aiContainer);
       console.log("摘要生成成功:", data.choices[0].message.content);
     } catch (error) {
       console.error("请求失败:", error);
@@ -188,22 +219,24 @@ function ChucklePostAI(config) {
   }
 
   // 显示生成的摘要（添加打字机效果）
-  function displaySummary(summary) {
+  function displaySummary(summary, aiContainer) {
     const aiSpeechContent = document.querySelector(".ai-explanation");
     if (aiSpeechContent) {
       aiSpeechContent.innerText = ""; // 清空之前的内容
-      typeWriterEffect(aiSpeechContent, summary, 15); // 逐字显示摘要
+      typeWriterEffect(aiSpeechContent, summary, 15, aiContainer); // 逐字显示摘要
     }
   }
 
   // 打字机效果
-  function typeWriterEffect(element, text, delay) {
+  function typeWriterEffect(element, text, delay, aiContainer) {
     let index = 0;
     function type() {
       if (index < text.length) {
         element.innerText += text.charAt(index);
         index++;
         setTimeout(type, delay);
+      } else {
+        enableButtons(aiContainer); // 打字效果结束后启用按钮
       }
     }
     type();
