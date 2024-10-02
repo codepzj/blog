@@ -1,0 +1,11 @@
+name: 浩瀚星河
+subtitle: '来过就留下你的脚印吧~' # 副标题
+icon: /assets/images/avatar.jpg
+search:
+  filter: /social/
+  placeholder: 在 探索 中搜索...
+base_dir: /social/
+tree:
+  - friends/index
+  - about/index
+  

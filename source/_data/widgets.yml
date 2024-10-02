@@ -159,13 +159,13 @@ new_comment:
   title: 最新评论
   api: https://blog.codepzj.cn/twikoo # 此处为 Twikoo 函数，末尾不要加 /
   type: twikoo
-  limit: 5 # 限制获取数量，默认为 10
+  limit: 3 # 限制获取数量，默认为 10
   hide:  # 是否隐藏回复，不填默认不隐藏
 
 timeline:
   layout: timeline
   title: 近期动态
-  api: https://memos.codepzj.cn/api/v1/memo?creatorId=1&limit=10
+  api: https://memos.codepzj.cn/api/v1/memo?creatorId=1&limit=5
   type: memos
   hide: user,footer
 

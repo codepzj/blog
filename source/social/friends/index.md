@@ -1,12 +1,9 @@
 ---
+wiki: social
 menu_id: social
-title: 友链
+title: 小伙伴们 & 朋友文章
 banner: /assets/banner/friends.jpg
 ---
-
-{% quot 我的GitHub icon:hashtag %}
-
-{% image https://ghchart.rshah.org/struggle-upwards 2024年我在GitHub的贡献情况 width:125% %}
 
 {% quot 我的小伙伴们 icon:hashtag %}
 
@@ -28,4 +25,3 @@ banner: /assets/banner/friends.jpg
   url: https://blog.codepzj.cn
   avatar: https://image.codepzj.cn/image/202409111608193.png
 ```
-

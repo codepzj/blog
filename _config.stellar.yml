@@ -21,7 +21,7 @@ menubar:
       theme: "#F44336"
       icon: solar:chat-square-like-bold-duotone
       title: 社交
-      url: /about/
+      url: /social/friends/
 
 # 站点主结构树
 site_tree:
@@ -30,7 +30,7 @@ site_tree:
     base_dir: blog # 只影响自动生成的页面路径
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: welcome, recent # for categories/tags/archives
-    rightbar: timeline
+    rightbar: ghrepos
     nav_tabs: # 近期发布 分类 标签 专栏 归档 and ...
       "每日新闻": /news/
   # 博客专栏列表页配置
@@ -42,16 +42,16 @@ site_tree:
     base_dir: wiki # 只影响自动生成的页面路径
     menu_id: wiki # 未在 front-matter 中指定 menu_id 时，layout 为 wiki 的页面默认使用这里配置的 menu_id
     leftbar: ghissues, related, recent # for wiki
-    rightbar: timeline
+    rightbar: ghrepos
     nav_tabs:
   # 博客文章内页配置
   home:
     leftbar: welcome, TenYearAgreement
-    rightbar: location, timer, categories, new_comment, timeline
+    rightbar: timer, categories
   post:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: related, recent # for pages using 'layout:post'
-    rightbar: toc, categories
+    rightbar: ghrepo, toc
   # 博客专栏文章内页配置
   topic:
     menu_id: post
@@ -59,7 +59,7 @@ site_tree:
   wiki:
     menu_id: wiki # 未在 front-matter 中指定 menu_id 时，layout 为 wiki 的页面默认使用这里配置的 menu_id
     leftbar: tree
-    rightbar: toc
+    rightbar: ghrepo, toc
   # 错误页配置
   error_page:
     menu_id: post
@@ -69,7 +69,7 @@ site_tree:
   # 其它自定义页面配置 layout: page
   page:
     leftbar: welcome, TenYearAgreement
-    rightbar: timer, new_comment, timeline
+    rightbar: location, new_comment, timeline
 
 open_graph:
   enable: true
@@ -159,7 +159,7 @@ footer:
       - "[memos备忘录](https://memos.codepzj.cn/)"
       - "[IT-Tools工具库](https://tools.codepzj.cn/)"
     "友链":
-      - "[朋友圈](/about/)"
+      - "[朋友圈](/social/friends/)"
   content: | # 支持 Markdown 格式
     <img src="/assets/images/keyboard.jpg" alt="描述文字" style="float:right; width:60px; margin-left:20px;">
     <center>
