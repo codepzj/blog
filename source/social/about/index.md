@@ -36,4 +36,4 @@ banner: /assets/banner/about.jpg
 
 {% quot 我的GitHub icon:hashtag %}
 
-{% image https://ghchart.rshah.org/struggle-upwards 2024年我在GitHub的贡献情况 width:125% %}
+{% image https://ghchart.rshah.org/codepzj 2024年我在GitHub的贡献情况 width:125% %}

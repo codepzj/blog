@@ -156,7 +156,7 @@
 	"Navbar": {
 		"prefix": "navbar",
 		"body": [
-			"{% navbar active:${1:/wiki/} ${2:[文章](/)} ${3:[项目](/wiki/)} ${4:[留言](#comments)} ${5:[GitHub](https://github.com/struggle-upwards)} %}"
+			"{% navbar active:${1:/wiki/} ${2:[文章](/)} ${3:[项目](/wiki/)} ${4:[留言](#comments)} ${5:[GitHub](https://github.com/codepzj)} %}"
 		],
 		"description": "Insert a navigation bar"
 	},
@@ -196,15 +196,15 @@
 	"Render Markdown": {
 		"prefix": "md",
 		"body": [
-			"{% md ${1:https://cdn.jsdmirror.com/gh/struggle-upwards/AIContentSummaryCuteen/README.md} %}"
+			"{% md ${1:https://cdn.jsdmirror.com/gh/codepzj/AIContentSummaryCuteen/README.md} %}"
 		],
 		"description": "Render external markdown file"
 	},
 	"GHCard": {
 		"prefix": "ghcard",
 		"body": [
-			"{% ghcard ${1:struggle-upwards} %}",
-			"{% ghcard ${2:struggle-upwards/blog} %}"
+			"{% ghcard ${1:codepzj} %}",
+			"{% ghcard ${2:codepzj/blog} %}"
 		],
 		"description": "Insert GitHub card"
 	},

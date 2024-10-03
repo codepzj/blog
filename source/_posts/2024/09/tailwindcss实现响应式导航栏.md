@@ -89,7 +89,7 @@ references:
 
 ## 项目部署
 
-我们想要部署 **vite** 项目到 **GitHub Pages** 上，而且我的主域名**struggle-upwards.github.io**已经使用了，应该怎么做呢？
+我们想要部署 **vite** 项目到 **GitHub Pages** 上，而且我的主域名**codepzj.github.io**已经使用了，应该怎么做呢？
 
 **修改 vite-config-js：**
 
@@ -108,7 +108,7 @@ export default defineConfig({
 git init
 git add .
 git commit -m "tailwindcss响应式导航栏"
-git remote add origin git@github.com:struggle-upwards/tailwindcss-responsive-design.git
+git remote add origin git@github.com:codepzj/tailwindcss-responsive-design.git
 git branch -M main
 git push origin main
 git checkout -b gh-pages
@@ -129,6 +129,6 @@ git subtree push --prefix <subdirectory> <repository> <branch>
 
 **然后项目部署成功**😃😃😃
 
-{% link https://github.com/struggle-upwards/tailwindcss-responsive-design 项目仓库 icon:https://github.com/favicon.ico %}
+{% link https://github.com/codepzj/tailwindcss-responsive-design 项目仓库 icon:https://github.com/favicon.ico %}
 
-{% link https://struggle-upwards.github.io/tailwindcss-responsive-design/ 项目预览地址 icon:https://github.com/favicon.ico %}
+{% link https://codepzj.github.io/tailwindcss-responsive-design/ 项目预览地址 icon:https://github.com/favicon.ico %}

@@ -1,4 +1,4 @@
-name: deplay-hexo-blog
+name: deploy-hexo-blog
 on:
   push:
     branches: [main]

@@ -487,12 +487,12 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放<br>
 ### 语法/用法
 
 ```text
-{% navbar active:/wiki/ [文章](/) [项目](/wiki/) [留言](#comments) [GitHub](https://github.com/struggle-upwards) %}
+{% navbar active:/wiki/ [文章](/) [项目](/wiki/) [留言](#comments) [GitHub](https://github.com/codepzj) %}
 ```
 
 ### 效果
 
-{% navbar active:/wiki/ [文章](/) [项目](/wiki/) [留言](#comments) [GitHub](https://github.com/struggle-upwards) %}
+{% navbar active:/wiki/ [文章](/) [项目](/wiki/) [留言](#comments) [GitHub](https://github.com/codepzj) %}
 
 ## frame 设备框架
 
@@ -563,26 +563,26 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放<br>
 ### 语法/用法
 
 ```text
-{% md https://cdn.jsdmirror.com/gh/struggle-upwards/AIContentSummaryCuteen/README.md %}
+{% md https://cdn.jsdmirror.com/gh/codepzj/AIContentSummaryCuteen/README.md %}
 ```
 
 ### 效果
 
-{% md https://cdn.jsdmirror.com/gh/struggle-upwards/AIContentSummaryCuteen/README.md %}
+{% md https://cdn.jsdmirror.com/gh/codepzj/AIContentSummaryCuteen/README.md %}
 
 ## ghcard 卡片
 
 ### 语法/用法
 
 ```text
-{% ghcard struggle-upwards %}
-{% ghcard struggle-upwards/blog %}
+{% ghcard codepzj %}
+{% ghcard codepzj/blog %}
 ```
 
 ### 效果
 
-{% ghcard struggle-upwards theme:dark %}
-{% ghcard struggle-upwards/blog theme:dark %}
+{% ghcard codepzj theme:dark %}
+{% ghcard codepzj/blog theme:dark %}
 
 ## toc 文档目录树
 

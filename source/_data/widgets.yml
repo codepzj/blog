@@ -206,7 +206,7 @@ tagcloud:
 # github用户卡片
 ghuser:
   layout: ghuser
-  username: struggle-upwards # your github login username
+  username: codepzj # your github login username
   avatar: true # show avatar or not
   menu: true # show menu or not
 
