@@ -5,7 +5,9 @@ title: 关于本站 & 留言板
 banner: /assets/banner/about.jpg
 ---
 
-本站是[**浩瀚星河**](https://blogcodepzj.cn)的个人站，博主目前还在上学，爱好轻音乐，喜欢打乒乓球，常活跃于开源社区，热衷于设计和打磨美妙的东西。喜欢折腾一些博客，脚本，动画之类的玩意儿，希望大家能够喜欢我的博客。
+本站是[**浩瀚星河**](https://blogcodepzj.cn)的 Blog，已在**github**开源，博主目前还在上学，爱好轻音乐，喜欢打乒乓球，常活跃于开源社区，热衷于设计和打磨美妙的东西。喜欢折腾一些博客，脚本，动画之类的玩意儿，希望大家能够喜欢我的博客。
+
+{% link https://github.com/codepzj/blog Blog icon:https://github.com/favicon.ico %}
 
 {% quot 我的相册 icon:hashtag %}
 

@@ -131,4 +131,4 @@ git subtree push --prefix <subdirectory> <repository> <branch>
 
 {% link https://github.com/codepzj/tailwindcss-responsive-design 项目仓库 icon:https://github.com/favicon.ico %}
 
-{% link https://codepzj.github.io/tailwindcss-responsive-design/ 项目预览地址 icon:https://github.com/favicon.ico %}
+{% link https://tailwindcss-responsive-design.vercel.app/ 项目预览地址 icon:https://github.com/favicon.ico %}
