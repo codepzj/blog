@@ -69,7 +69,7 @@ site_tree:
   # 其它自定义页面配置 layout: page
   page:
     leftbar: welcome, TenYearAgreement
-    rightbar: location, new_comment, timeline
+    rightbar: new_comment, timeline
 
 open_graph:
   enable: true
@@ -126,7 +126,7 @@ footer:
       url: https://github.com/struggle-upwards
     comment:
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="#000000" stroke-linejoin="round"><path stroke-linecap="round" stroke-width="1.5" d="M12 21a9 9 0 1 0-8-4.873L3 21l4.873-1c1.236.639 2.64 1 4.127 1"/><path stroke-width="2.25" d="M7.5 12h.01v.01H7.5zm4.5 0h.01v.01H12zm4.5 0h.01v.01h-.01z"/></g></svg>'
-      url: https://blog.codepzj.cn/friends/
+      url: https://blog.codepzj.cn/social/friends/
     wormhole:
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" style="color:black" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="2"/><path stroke-linecap="round" d="M12 10c5 0 4.6 12-3 12"/><path stroke-linecap="round" d="M12.312 14c-5 0-4.6-12 3-12"/><path stroke-dasharray="2 2" stroke-linecap="round" d="M10.631 10.696c3.536-3.535 11.738 5.233 6.364 10.607"/><path stroke-dasharray="2 2" stroke-linecap="round" d="M13.68 13.304C10.145 16.84 1.942 8.07 7.316 2.697"/><path stroke-dasharray="2 2" stroke-linecap="round" d="M10.852 13.524C7.316 9.99 16.084 1.786 21.458 7.16"/><path stroke-dasharray="2 2" stroke-linecap="round" d="M13.46 10.476c3.535 3.535-5.233 11.738-10.607 6.364"/><path stroke-linecap="round" d="M10 12.312c0-5 12-4.6 12 3"/><path stroke-linecap="round" d="M14 12c0 5-12 4.6-12-3"/></g></svg>'
       url: https://foreverblog.cn/go.html
