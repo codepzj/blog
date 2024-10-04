@@ -23,9 +23,6 @@ importers:
       hexo-generator-category:
         specifier: ^2.0.0
         version: 2.0.0
-      hexo-generator-feed:
-        specifier: ^3.0.0
-        version: 3.0.0(chokidar@3.6.0)
       hexo-generator-index:
         specifier: ^4.0.0
         version: 4.0.0
@@ -71,6 +68,10 @@ importers:
       tslib:
         specifier: ^2.6.3
         version: 2.7.0
+    devDependencies:
+      hexo-feed:
+        specifier: ^1.1.2
+        version: 1.1.2(chalk@4.1.2)(hexo@7.3.0(chokidar@3.6.0))
 
 packages:
 
@@ -535,9 +536,6 @@ packages:
     resolution: {integrity: sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
 
-  dom-serializer@1.4.1:
-    resolution: {integrity: sha512-VHwB3KfrcOOkelEG2ZOfxqLZdfkil8PtJi4P8N2MMXucZq2yLp75ClViUlOVwyoHEDjYU433Aq+5zWP61+RGag==}
-
   dom-serializer@2.0.0:
     resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
 
@@ -549,19 +547,12 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  domhandler@4.3.1:
-    resolution: {integrity: sha512-GrwoxYN+uWlzO8uhUXRl0P+kHE4GtVPfYzVLcUxPL7KNdHKj66vvlhiweIHqYYXWlw+T8iLMp42Lm67ghw4WMQ==}
-    engines: {node: '>= 4'}
-
   domhandler@5.0.3:
     resolution: {integrity: sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==}
     engines: {node: '>= 4'}
 
   dompurify@3.1.7:
     resolution: {integrity: sha512-VaTstWtsneJY8xzy7DekmYWEOZcmzIe3Qb3zPd4STve1OBTa+e+WmS1ITQec1fZYXI3HCsOZZiSMpG6oxoWMWQ==}
-
-  domutils@2.8.0:
-    resolution: {integrity: sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==}
 
   domutils@3.1.0:
     resolution: {integrity: sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==}
@@ -597,13 +588,6 @@ packages:
 
   encoding-sniffer@0.2.0:
     resolution: {integrity: sha512-ju7Wq1kg04I3HtiYIOrUrdfdDvkyO9s5XM8QAj/bN61Yo/Vb4vgJxy5vi4Yxk01gWHbrofpPtpxM8bKger9jhg==}
-
-  entities@2.2.0:
-    resolution: {integrity: sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==}
-
-  entities@3.0.1:
-    resolution: {integrity: sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==}
-    engines: {node: '>=0.12'}
 
   entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
@@ -854,6 +838,12 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  hexo-feed@1.1.2:
+    resolution: {integrity: sha512-7uK+9r3btleHpVbuuP0I13ETSRiVsBtQghPNyyBl9HJ8D23jXcWq5lLe4KUlhOql35mlIYErNv1iZIbJMNilEQ==}
+    peerDependencies:
+      chalk: ^4.1.0
+      hexo: ^4.2.0 || ^5.2.0 || ^6.1.0 || ^7.0.0
+
   hexo-filter-nofollow@2.0.2:
     resolution: {integrity: sha512-roIkEIkGOR22EPMoy8iKrufDoAH25LOT5ZeVXVLavEpM757Y96kfUhyathryMLXr326EURffgkZAKsVf3EDl0A==}
     engines: {node: '>= 8.6.0'}
@@ -877,10 +867,6 @@ packages:
   hexo-generator-category@2.0.0:
     resolution: {integrity: sha512-9OduRBf3WeRDa4BR0kAfRjOVHur7v3fm0NKAwbjUiqULigAdNZVZPO3cHKW2MlBbl/lI5PuWdhQ9zZ99CCCAgQ==}
     engines: {node: '>=14'}
-
-  hexo-generator-feed@3.0.0:
-    resolution: {integrity: sha512-Jo35VSRSNeMitS2JmjCq3OHAXXYU4+JIODujHtubdG/NRj2++b3Tgyz9pwTmROx6Yxr2php/hC8og5AGZHh8UQ==}
-    engines: {node: '>=10.13.0'}
 
   hexo-generator-index@4.0.0:
     resolution: {integrity: sha512-KeM7mOCKWINGFAk1E+CkjMMgqFIv8oaRbGxR7ipkQAp44o4aopkVftma4sdIplOq9WQEWfVYDUK5gEv9J3nzUg==}
@@ -936,10 +922,6 @@ packages:
     resolution: {integrity: sha512-u4s0ty9Aew6jV+a9oMrXBwhrRpUQ0U8PWM/88a5aHgDru58VY81mVrxOFxs788NAsWQ8OvsJtF5m7mnXoRnSIA==}
     engines: {node: '>=12.13.0'}
 
-  hexo-util@2.7.0:
-    resolution: {integrity: sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==}
-    engines: {node: '>=12.4.0'}
-
   hexo-util@3.3.0:
     resolution: {integrity: sha512-YvGngXijE2muEh5L/VI4Fmjqb+/yAkmY+VuyhWVoRwQu1X7bmWodsfYRXX7CUYhi5LqsvH8FAe/yBW1+f6ZX4Q==}
     engines: {node: '>=14'}
@@ -969,9 +951,6 @@ packages:
     resolution: {integrity: sha512-aoGxanpFPLg7MkIl/DDFYtb0iWz7jMFGqFhvEDZga6/4QTjneiD8I/NXL1x5aaoCp7FSIT6h/OhykDdPsbtMig==}
     engines: {node: '>=6'}
     hasBin: true
-
-  htmlparser2@7.2.0:
-    resolution: {integrity: sha512-H7MImA4MS6cw7nbyURtLPO1Tms7C5H602LRETv95z1MxO/7CP7rDVROehUYeYBUYEON94NXXDEPmZuq+hX4sog==}
 
   htmlparser2@9.1.0:
     resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==}
@@ -1792,11 +1771,11 @@ packages:
     resolution: {integrity: sha512-pQX4oiemzjBEELPqgK4WE+q0yhAqjp/yzusGtlSJsOuiDys0RQxggepYmo0BuegIDppYS3b3cpdegRwkpyN3hw==}
     hasBin: true
 
-  tldts-core@6.1.48:
-    resolution: {integrity: sha512-3gD9iKn/n2UuFH1uilBviK9gvTNT6iYwdqrj1Vr5mh8FuelvpRNaYVH4pNYqUgOGU4aAdL9X35eLuuj0gRsx+A==}
+  tldts-core@6.1.50:
+    resolution: {integrity: sha512-na2EcZqmdA2iV9zHV7OHQDxxdciEpxrjbkp+aHmZgnZKHzoElLajP59np5/4+sare9fQBfixgvXKx8ev1d7ytw==}
 
-  tldts@6.1.48:
-    resolution: {integrity: sha512-SPbnh1zaSzi/OsmHb1vrPNnYuwJbdWjwo5TbBYYMlTtH3/1DSb41t8bcSxkwDmmbG2q6VLPVvQc7Yf23T+1EEw==}
+  tldts@6.1.50:
+    resolution: {integrity: sha512-q9GOap6q3KCsLMdOjXhWU5jVZ8/1dIib898JBRLsN+tBhENpBDcAVQbE0epADOjw11FhQQy9AcbqKGBQPUfTQA==}
     hasBin: true
 
   to-object-path@0.3.0:
@@ -2459,12 +2438,6 @@ snapshots:
 
   destroy@1.2.0: {}
 
-  dom-serializer@1.4.1:
-    dependencies:
-      domelementtype: 2.3.0
-      domhandler: 4.3.1
-      entities: 2.2.0
-
   dom-serializer@2.0.0:
     dependencies:
       domelementtype: 2.3.0
@@ -2477,21 +2450,11 @@ snapshots:
     dependencies:
       webidl-conversions: 7.0.0
 
-  domhandler@4.3.1:
-    dependencies:
-      domelementtype: 2.3.0
-
   domhandler@5.0.3:
     dependencies:
       domelementtype: 2.3.0
 
   dompurify@3.1.7: {}
-
-  domutils@2.8.0:
-    dependencies:
-      dom-serializer: 1.4.1
-      domelementtype: 2.3.0
-      domhandler: 4.3.1
 
   domutils@3.1.0:
     dependencies:
@@ -2526,10 +2489,6 @@ snapshots:
     dependencies:
       iconv-lite: 0.6.3
       whatwg-encoding: 3.1.1
-
-  entities@2.2.0: {}
-
-  entities@3.0.1: {}
 
   entities@4.5.0: {}
 
@@ -2810,6 +2769,11 @@ snapshots:
       resolve: 1.22.8
       tildify: 2.0.0
 
+  hexo-feed@1.1.2(chalk@4.1.2)(hexo@7.3.0(chokidar@3.6.0)):
+    dependencies:
+      chalk: 4.1.2
+      hexo: 7.3.0(chokidar@3.6.0)
+
   hexo-filter-nofollow@2.0.2: {}
 
   hexo-front-matter@4.2.1:
@@ -2839,13 +2803,6 @@ snapshots:
   hexo-generator-category@2.0.0:
     dependencies:
       hexo-pagination: 3.0.0
-
-  hexo-generator-feed@3.0.0(chokidar@3.6.0):
-    dependencies:
-      hexo-util: 2.7.0
-      nunjucks: 3.2.4(chokidar@3.6.0)
-    transitivePeerDependencies:
-      - chokidar
 
   hexo-generator-index@4.0.0:
     dependencies:
@@ -2940,17 +2897,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  hexo-util@2.7.0:
-    dependencies:
-      bluebird: 3.7.2
-      camel-case: 4.1.2
-      cross-spawn: 7.0.3
-      deepmerge: 4.3.1
-      highlight.js: 11.10.0
-      htmlparser2: 7.2.0
-      prismjs: 1.29.0
-      strip-indent: 3.0.0
-
   hexo-util@3.3.0:
     dependencies:
       camel-case: 4.1.2
@@ -3009,13 +2955,6 @@ snapshots:
       param-case: 2.1.1
       relateurl: 0.2.7
       uglify-js: 3.10.4
-
-  htmlparser2@7.2.0:
-    dependencies:
-      domelementtype: 2.3.0
-      domhandler: 4.3.1
-      domutils: 2.8.0
-      entities: 3.0.1
 
   htmlparser2@9.1.0:
     dependencies:
@@ -3907,11 +3846,11 @@ snapshots:
 
   titlecase@1.1.3: {}
 
-  tldts-core@6.1.48: {}
+  tldts-core@6.1.50: {}
 
-  tldts@6.1.48:
+  tldts@6.1.50:
     dependencies:
-      tldts-core: 6.1.48
+      tldts-core: 6.1.50
 
   to-object-path@0.3.0:
     dependencies:
@@ -3949,7 +3888,7 @@ snapshots:
 
   tough-cookie@5.0.0:
     dependencies:
-      tldts: 6.1.48
+      tldts: 6.1.50
 
   tr46@3.0.0:
     dependencies:

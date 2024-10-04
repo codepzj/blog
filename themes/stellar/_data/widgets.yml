@@ -18,7 +18,7 @@ ghissues:
 # Recent update
 recent:
   layout: recent
-  rss: # /atom.xml # npm i hexo-generator-feed
+  rss: # /atom.xml # npm i hexo-feed
   limit: 10 # Count of posts
 
 # 页面树（与当前页面强关联的上下篇文章列表）

@@ -115,9 +115,17 @@ deploy:
 wiki_dir: wiki
 
 feed:
-  type: atom
-  path: atom.xml
   limit: 20
+  order_by: "-date"
+  rss:
+    enable: true
+    output: "rss.xml"
+  atom:
+    enable: true
+    output: "atom.xml"
+  jsonFeed:
+    enable: true
+    output: "feed.json"
 
 sitemap:
   path: sitemap.xml
@@ -130,12 +138,12 @@ neat_html:
 neat_css:
   enable: true
   exclude:
-    - '**/*.min.css'
+    - "**/*.min.css"
 neat_js:
   enable: true
   mangle: true
   output:
   compress:
   exclude:
-    - '**/*.min.js'
-    - '**/index.js'
+    - "**/*.min.js"
+    - "**/index.js"
