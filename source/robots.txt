@@ -1,2 +1,2 @@
 User-Agent: *
-Allow: /sitemap.xml
+DisAllow: /js/search/local-search.js

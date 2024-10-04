@@ -38,15 +38,8 @@ banner: /assets/banner/about.jpg
 
 {% quot 我的GitHub icon:hashtag %}
 
-{% image https://ghchart.rshah.org/codepzj 2024年我在GitHub的贡献情况 width:125% %}
+{% image https://raw.githubusercontent.com/codepzj/codepzj/output/github-contribution-grid-snake.svg 我的GitHub贡献情况 %}
 
-{% grid %}
+  
 
-<!-- cell -->
 
-{% image https://github-readme-stats.vercel.app/api?username=codepzj&show_icons=true&layout=compact&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=151515 我的github综合评分 %}
-
-<!-- cell -->
-
-{% image https://github-readme-stats.vercel.app/api/top-langs/?username=codepzj&show_icons=true&layout=compact&exclude_repo=codepzj.github.io&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=151515 我的github常用语言 width:77% %}
-{% endgrid %}
