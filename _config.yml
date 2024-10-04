@@ -115,17 +115,13 @@ deploy:
 wiki_dir: wiki
 
 feed:
+  type: atom
+  path: atom.xml
   limit: 20
-  order_by: "-date"
-  rss:
-    enable: true
-    output: "rss.xml"
-  atom:
-    enable: true
-    output: "atom.xml"
-  jsonFeed:
-    enable: true
-    output: "feed.json"
+  hub:
+  content:
+  content_limit:
+  content_limit_delim: ' '
 
 sitemap:
   path: sitemap.xml

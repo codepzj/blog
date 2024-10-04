@@ -181,7 +181,7 @@ toc:
 # rss插件，最近更新的文章
 recent:
   layout: recent
-  rss: /atom.xml # npm i hexo-feed
+  rss: /atom.xml # npm i hexo-generator-feed
   limit: 5 # Count of posts
 
 # 显示具有相同 tags 的其它项目列表
