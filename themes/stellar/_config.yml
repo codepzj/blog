@@ -601,10 +601,10 @@ style:
     code: 'hsl(220 20% 10%)' # 'hsl(14 100% 48%)' # 行内代码颜色
     text: 'hsl(0 0% 20%)' # 文本颜色
     # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
-    theme: 'hsl(120, 50%, 70)' # 主题色
-    accent: 'hsl(120, 50%, 55)' # 强调色
-    link: 'hsl(120, 50%, 70)' # 超链接颜色
-    hover: 'hsl(120, 50%, 55)' # 按钮高亮颜色
+    theme: 'hsl(192 98% 55%)' # 主题色
+    accent: 'hsl(14 100% 57%)' # 强调色
+    link: 'hsl(207 90% 54%)' # 超链接颜色
+    hover: 'hsl(14 100% 57%)' # 按钮高亮颜色
   animated_avatar:
     animate: auto # auto, always
     background: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp
@@ -618,7 +618,8 @@ style:
     start: 'linear-gradient(to right, hsl(215, 95%, 64%), hsl(195, 95%, 60%), hsl(165, 95%, 56%), hsl(165, 95%, 56%), hsl(195 95% 60%), hsl(215, 95%, 64%))'
   leftbar:
     # 可以设置：纯色/渐变色/图片作为背景
-    background: var(--leftbar-bg)
+    # background: var(--leftbar-bg)
+    background-image: url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
     blur-px: 100px
     blur-bg: var(--alpha60)
   paginator:
