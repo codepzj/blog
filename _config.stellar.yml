@@ -191,7 +191,8 @@ copycode:
 comments:
   service: twikoo
   twikoo:
-    envId: https://blog.codepzj.cn/twikoo # vercel函数
+    envId: https://twikoo.codepzj.cn # vercel函数
+    js: https://gcore.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js # 建议锁定版本
 
 # 文章搜索
 search:
