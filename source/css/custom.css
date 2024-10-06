@@ -208,40 +208,6 @@ button:not(:disabled) {
   cursor: url('https://upyun.thatcdn.cn/public/cur/yiwei/S2.cur'), auto !important
 }
 
-
-/*右侧时间线堵塞*/
-.widget-wrapper.timeline .tag-plugin.timeline .timenode .body {
-  margin-left: 1rem;
-}
-
-.md-text.content a.headerlink {
-  background: none;
-}
-
-.widget-wrapper.toc .toc a.active:before {
-  content: '🌸' !important;
-  width: 4px;
-  background: none;
-  left: -0.85rem;
-}
-
-.widget-wrapper.toc .toc a {
-  margin-left: 0.8rem;
-}
-
-.widget-wrapper.toc .toc a.toc-link.active {
-  margin-left: 0.9rem;
-}
-
-.widget-wrapper.toc .widget-body:before {
-  margin-left: 0.5rem;
-}
-
-.tag-plugin.tabs .nav-tabs {
-  overflow: auto visible !important;
-}
-
-
 /* md-text img.dark-mode-invert */
 .md-text img.dark-mode-invert {
   margin: 0;

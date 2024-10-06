@@ -16,27 +16,6 @@ html[data-theme="light"] .hljs {
 
 }
 
-pre::before {
-  content: attr(code-msg);
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  overflow: visible;
-  width: 12px;
-  height: 12px;
-  border-radius: 16px;
-  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
-  -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
-  background-color: #fc625d;
-  white-space: nowrap;
-  text-indent: 75px;
-  font-size: 16px;
-  line-height: 12px;
-  font-weight: 700;
-  color: #dc9015;
-  transition: 1s;
-}
-
 .hljs-ln {
   display: inline-block;
   overflow-x: auto;
@@ -192,7 +171,6 @@ td.hljs-ln-line.hljs-ln-numbers {
   border: none;
   border-radius: 10px;
 
-
   tbody {
     padding: 5px;
     width: 100%;
@@ -203,85 +181,6 @@ td.hljs-ln-line.hljs-ln-numbers {
     vertical-align: top;
     width: 100%;
   }
-}
-
-/* 以下为功能按钮 */
-.highlight {
-  position: relative;
-  z-index: 1;
-}
-
-.highlight .code .more-btn {
-  position: absolute;
-  top: 0;
-  padding: 4px 0.5rem;
-  opacity: 0;
-  font-weight: 700;
-  color: var(--theme);
-  cursor: pointer;
-}
-
-.highlight:hover .code .more-btn {
-  opacity: 0.75;
-  transition: opacity 0.6s;
-}
-
-/* 复制代码按钮 */
-.highlight .code .copy-btn {
-  color: #aa69ec;
-  right: 0;
-  transition: 0.6s;
-}
-
-.highlight:hover .code .copy-btn {
-  right: 0;
-  transition: 0.2s;
-}
-
-.highlight .code .copy-btn.success {
-  color: #3DC550 !important;
-  opacity: 0.1;
-}
-
-/* 全屏代码按钮 */
-.highlight .code .full-btn {
-  color: #d34141;
-  right: 10px;
-  transition: 0.4s;
-}
-
-.highlight:hover .code .full-btn {
-  right: 25px;
-  transition: right 0.4s;
-}
-
-/* 下载代码按钮 */
-.highlight .code .down-btn {
-  color: #4368a8;
-  right: 26px;
-  transition: right 0.15s;
-}
-
-.highlight .code .down-btn.success {
-  color: #3DC550 !important;
-}
-
-.highlight:hover .code .down-btn {
-  right: 50px;
-  transition: right 0.5s;
-}
-
-/* 按钮悬浮样式 */
-.highlight .code .more-btn:hover {
-  /*color: var(--text-code);*/
-  opacity: 1;
-  transition: right 0.15s;
-}
-
-
-/* 描述 */
-.md-text .highlight figcaption span {
-  font-size: small;
 }
 
 /* 折叠 */
@@ -309,32 +208,17 @@ code.hljs {
   background: var(--block);
 }
 
-.highlight button:hover,
-.highlight table:hover+button {
-  color: var(--swiper-theme-color);
-  opacity: 0.75;
-}
-
-/*代码标识前置*/
-td.code:before {
-  right: 0 !important;
-  transition: 0.65s;
-  z-index: 999;
-}
-
-.highlight:hover td.code:before {
-  right: 75px !important;
-  transition: right 0.6s;
-}
-
 /*stellar主题补偿*/
 .md-text pre>.hljs {
-  padding-top: 1.7rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 0.2rem !important;
 }
 
 .md-text .highlight .gutter {
   display: block !important;
-  padding-top: 1.7rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 0.2rem !important;
+
 }
 
 .md-text pre {

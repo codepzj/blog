@@ -38,18 +38,20 @@ p>code:not([class]),li>code:not([class])
       border-bottom-right-radius: $border-button
       background: var(--block-hover)
   >table
+    overflow: auto
+    display: block
     td,th
       padding: 0
       border: none
       line-height: 1.5
     margin: 0 !important
-    background: var(--block) !important
+    background: transparent
     border: none
     scrollbar-codeblock(convert(hexo-config('style.codeblock.scrollbar')))
     tr
-      background: var(--block) !important
+      background: transparent
       &:hover
-        background: var(--block) !important
+        background: transparent
 
 
   .gutter
@@ -59,17 +61,16 @@ p>code:not([class]),li>code:not([class])
     padding: 0 1em
     border-width: 0
     margin-left: 0
+    // position: sticky // 如果希望行标固定请打开此行；但是如果想在较窄屏幕上拥有较好的阅读体验，建议让行标跟随滚动。
+    // background: var(--block) // 如果希望行标固定请打开此行；但是如果想在较窄屏幕上拥有较好的阅读体验，建议让行标跟随滚动。
     left: 0
     z-index: 1
-    pre
-      padding-top: 1em
     pre .line
       color: var(--text-p4)
   .code
-    width: 100%
     pre
       display: block
-      padding: 1.6em 1rem 0.5em 1rem
+      padding: .5em 1rem
   .gutter+.code pre
     padding-left: 0.25em
 
@@ -102,10 +103,10 @@ table:not([class])
   >.caption
     color: var(--text-p3)
   >.hljs
+    padding: 1rem
     border-radius: $border-card
     line-height: 1.5
     box-sizing: border-box
-    padding-bottom: 5px
 
 .md-text .highlight
   .code
@@ -118,26 +119,25 @@ table:not([class])
       opacity: .25
       font-weight: 700
       color: var(--theme)
-      content: "txt"
 
   &.yaml .code:before
-    content: "yaml"
+    content: "YAML"
   &.json .code:before
-    content: "json"
+    content: "JSON"
 
   &.diff .code:before
     content: "diff"
 
   &.html .code:before
-    content: "html"
+    content: "HTML"
   &.js .code:before,&.javascript .code:before
-    content: "js"
+    content: "JS"
   &.css .code:before
-    content: "css"
+    content: "CSS"
   &.less .code:before
-    content: "less"
+    content: "Less"
   &.stylus .code:before
-    content: "stylus"
+    content: "Stylus"
 
   &.bash .code:before
     content: "bash"
@@ -149,34 +149,34 @@ table:not([class])
     content: "ini"
 
   &.c .code:before
-    content: "c"
+    content: "C"
   &.cpp .code:before
-    content: "cpp"
+    content: "C++"
   &.objc .code:before,&.objectivec .code:before
     content: "Objective-C"
   &.swift .code:before
-    content: "swift"
+    content: "Swift"
 
   &.java .code:before
-    content: "java"
+    content: "Java"
   &.python .code:before
-    content: "py"
+    content: "Python"
   &.php .code:before
-    content: "php"
+    content: "PHP"
   &.rust .code:before,&.rs .code:before
-    content: "rust"
+    content: "Rust"
   &.sql .code:before
-    content: "sql"
+    content: "SQL"
   &.ruby .code:before
-    content: "ruby"
+    content: "Ruby"
   &.makefile .code:before
-    content: "makefile"
+    content: "Makefile"
   &.go .code:before
-    content: "go"
+    content: "Go"
   &.typescript .code:before,&.ts .code:before
-    content: "ts"
+    content: "TS"
   &.matlab .code:before
-    content: "matlab"
+    content: "MATLAB"
 
 
 

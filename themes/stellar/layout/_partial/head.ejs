@@ -37,7 +37,7 @@ function generate_description() {
 function generate_keywords() {
   if (page.keywords && page.keywords.length > 0) {
     return '<meta name="keywords" content="' + page.keywords + '">';
-  } else if (page.tags && page.tags.length > 0) {
+  } else if (page.tags && Array.isArray(page.tags) && page.tags.length > 0) {
     return '<meta name="keywords" content="' + page.tags.map(tag => tag.name).join(',') + '">';
   } else if (config.keywords && config.keywords.length > 0) {
     return '<meta name="keywords" content="' + config.keywords + '">';
@@ -100,12 +100,11 @@ function custom_inject() {
   <meta name="force-rendering" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="HandheldFriendly" content="True" >
-  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <meta name="google-site-verification" content="A7e_s_KL4qrsCD3llOOfd0BTCmVLNuC3aqhVWFQF0WU" />
-  <meta name="msvalidate.01" content="30CD55A935E75B69A1565E31EA21513B" />
+  
   <title><%- generate_title() %></title>
 
   <% if (theme.open_graph && theme.open_graph.enable) { %>

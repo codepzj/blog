@@ -53,7 +53,7 @@ menubar:
     #   theme: '#F44336'
     #   icon: solar:chat-square-like-bold-duotone
     #   title: 社交
-    #   url: /about/
+    #   url: /friends/
 
 
 ######## Main ########
@@ -184,7 +184,7 @@ article:
   # 文章许可协议
   license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
   # 分享
-  share: [wechat, weibo, email, link]
+  share: # [wechat, weibo, email, link]
   # 相关文章，需要安装插件 (for layout: post)
   # npm i hexo-related-popular-posts
   related_posts:
@@ -250,7 +250,7 @@ comments:
   # Twikoo
   # https://twikoo.js.org/
   twikoo:
-    js: https://gcore.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js # 建议锁定版本
+    js: https://gcore.jsdelivr.net/npm/twikoo@1.6.8/dist/twikoo.all.min.js # 建议锁定版本
     envId: https://xxx # vercel函数
 
   # Waline
@@ -347,7 +347,7 @@ footer:
 tag_plugins:
   # {% box %} / {% note %}
   note:
-    default_color: 'dark' # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
+    default_color: '' # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
     border: true # true / false
   # {% checkbox %}
   checkbox:
@@ -377,7 +377,7 @@ tag_plugins:
     default_color: theme # theme, accent, red, orange, yellow, green, cyan, blue, purple
   # {% image %}
   image:
-    fancybox: true # true, false
+    fancybox: false # true, false
   # {% copy xxx %}
   copy:
     toast: 复制成功
@@ -386,7 +386,7 @@ tag_plugins:
     max-height: 80vh
   # {% mark %}
   mark:
-    default_color: green # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
+    default_color: yellow # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
   # {% hashtag %}
   hashtag:
     default_color: # red, orange, yellow, green, cyan, blue, purple
@@ -451,8 +451,7 @@ data_services:
     js: /js/services/weibo.js
   memos:
     js: /js/services/memos.js
-  twikoo:
-    js: /js/services/twikoo_new.js
+
 
 # 扩展插件接入方法：(插件名下面用 #plugin# 代替)
 # 1. 在这里增加 #plugin# 配置，至少赢含有 enable 字段，默认为空（不启用）
@@ -507,8 +506,8 @@ plugins:
   # AI 摘要
   # https://github.com/qxchuckle/Post-Summary-AI
   tianli_gpt: 
-    enable: true
-    js: /js/chatgpt.js
+    enable: #true
+    js: https://jsd.onmicrosoft.cn/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js
     field: post # all, post, wiki
     key: 5Q5mpqRK5DkwT1X9Gi5e # tianli_gpt key
     total_length: 1000 # 设置提交的字数限制，默认为1000字，上限为5000，超过5000字符将被截断
@@ -518,10 +517,10 @@ plugins:
     hide_shuttle: true # 是否隐藏矩阵穿梭
     summary_toggle: false
     interface:
-      name: 文章摘要
-      introduce: '我是文章辅助AI，点击下方的按钮，让我生成本文简介'
-      version: OpenAI
-      button: ["介绍自己", "生成摘要"]
+      name: AI摘要
+      introduce: '我是文章辅助AI: QX-AI，点击下方的按钮，让我生成本文简介、推荐相关文章等。'
+      version: TianliGPT
+      button: ["介绍自己", "推荐文章", "生成摘要", "矩阵穿梭"]
 
 
   # Katex - The fastest math typesetting library for the web
@@ -529,7 +528,7 @@ plugins:
   # https://github.com/KaTeX/KaTeX
   # 使用 hexo-renderer-markdown-it-plus 作为公式渲染器：npm uninstall hexo-renderer-marked --save npm install hexo-renderer-markdown-it-plus --save
   katex:
-    enable: false # hexo-renderer-markdown-it-plus 默认开启 katex，此选项仅用于引入样式
+    enable: #true # hexo-renderer-markdown-it-plus 默认开启 katex，此选项仅用于引入样式
     inject: |
       <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
   
@@ -537,7 +536,7 @@ plugins:
   # 需在Markdown文件开头加入mathjax: true
   # 推荐使用Pandoc: npm uninstall hexo-renderer-marked --save & npm install hexo-renderer-pandoc --save
   mathjax:
-    enable: false # 可以在特定文章的 front-matter 中设置 mathjax: true 来开启，也可以在这里设置全局开启
+    enable: # true # 可以在特定文章的 front-matter 中设置 mathjax: true 来开启，也可以在这里设置全局开启
     js: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
   # Mermaid - markdwon to flow chart, seq chart, class chart ...
@@ -550,7 +549,7 @@ plugins:
   #   B -->|option 2| C(Section C)
   # ```
   mermaid:
-    enable: true # 可以在特定文章的 front-matter 中设置 mermaid: true 来开启，也可以在这里设置全局开启
+    enable: # true # 可以在特定文章的 front-matter 中设置 mermaid: true 来开启，也可以在这里设置全局开启
     style_optimization: false # use custom style in stellar
     # js: https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js
     js: https://cdn.jsdelivr.net/npm/mermaid@v9/dist/mermaid.min.js
@@ -559,7 +558,7 @@ plugins:
   
   # 代码块复制按钮
   copycode:
-    enable: false
+    enable: true
     default_text: 'Copy'
     success_text: 'Copied'
     toast: 复制成功
@@ -574,8 +573,8 @@ plugins:
 
 
 style:
-  prefers_theme: light # auto / light / dark
-  smooth_scroll: true # true / false 开启时如果目录过长可能无法准确定位
+  prefers_theme: auto # auto / light / dark
+  smooth_scroll: false # true / false 开启时如果目录过长可能无法准确定位
   font-size:
     root: 16px # 改这个会影响全局所有文字的字号
     body: 17px # 影响正文区域的字号，如果改成 px 则不受 root 影响
@@ -646,12 +645,3 @@ api_host:
   ghapi: https://api.github.com
   ghraw: https://raw.githubusercontent.com
   gist: https://gist.github.com
-
-inject:
-  head:
-    - <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    - <link rel="stylesheet" href="/css/custom.css">
-    - <link rel="stylesheet" href="/css/code-block.css">
-  script:
-    - <script src="/js/custom.js"></script>
-    - <script src="/js/code-block.js"></script>

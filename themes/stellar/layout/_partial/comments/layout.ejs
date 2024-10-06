@@ -39,7 +39,6 @@ page.cmt = cmt;
   <div class="related-wrap md-text<%- scrollreveal(' ') %>" id="comments">
     <section class='header cmt-title cap theme'>
       <%- markdown(page.comment_title || theme.comments.comment_title) %>
-      <img src="/assets/images/keyboard.jpg" alt="描述" style="margin-left: 10px; height: 50px;">
     </section>
     <section class='body cmt-body <%- cmt.service %>'>
       <%- partial(cmt.service + '/layout') %>

@@ -34,8 +34,8 @@ toc:
   collapse: false # true / false / auto
   # 编辑本文按钮
   edit_this_page: # 从开头开始匹配替换
-    "_posts/": # https://github.com/xaoxuu/xaoxuu.com/blob/main/source/_posts/
-    "wiki/stellar/": https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/
+    '_posts/': # https://github.com/xaoxuu/xaoxuu.com/blob/main/source/_posts/
+    'wiki/stellar/': https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/
 
 # GitHub 用户信息
 ghuser:
@@ -48,11 +48,11 @@ author:
   layout: author
   avatar: true
 
-# 标签索引组件
+# 标签云组件
 tagcloud:
   layout: tagcloud
-  title: 标签索引
-  # 标签索引配置
+  title: 标签云
+  # 标签云配置
   min_font: 12
   max_font: 24
   amount: 100
