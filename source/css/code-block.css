@@ -226,17 +226,6 @@ code.hljs {
   margin-top: 0 !important;
 }
 
-#start>div>article>figure.highlight:hover>figcaption>span {
-  background: #020202e3;
-  color: #EDB65B;
-  font-weight: bolder;
-  transition: 0.6s;
-}
-
-#start>div>article>figure.highlight>figcaption>span {
-  margin-left: 3em;
-}
-
 /* 防止有些浏览器代码块不兼容 */
 .md-text .highlight>table {
   overflow: auto;

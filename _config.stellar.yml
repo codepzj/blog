@@ -32,7 +32,7 @@ site_tree:
     leftbar: welcome, recent # for categories/tags/archives
     rightbar: ghrepos
     nav_tabs: # 近期发布 分类 标签 专栏 归档 and ...
-      "每日新闻": /news/
+      "新闻": /news/
   # 博客专栏列表页配置
   index_topic:
     base_dir: topic # 只影响自动生成的页面路径
@@ -82,7 +82,7 @@ article:
     enable: true
     title: 您可能感兴趣的文章
   category_color:
-    "产品思考": "#4CB9E7"
+    "产品思考": "#4E806F"
     "技术分享": "#4CB9E7"
     "生活思考": "#FF004D"
     "经验分享": "#43766C"
@@ -131,31 +131,24 @@ footer:
       url: https://share.codepzj.cn/%E4%BA%91%E5%AD%98%E5%82%A8/image
     comments:
       icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/942ebbf1a4b91.svg"/>'
-      url: /social/about/index.html#comments
+      url: /social/about/#comments
     theme:
       icon: default:theme
       onclick: 'switchTheme()'
   sitemap:
     "博客":
       - "[近期](/)"
-      - "[分类](/categories/)"
-      - "[标签](/tags/)"
-      - "[专栏](/topic/)"
-      - "[归档](/archives/)"
+      - "[新闻](/news)"
     "项目":
       - "[go学习指南](/wiki/go-learn/入门指南.html)"
-      - "[操作系统](/wiki/operating-system/实验一、xv6及其系统调用.html)"
-      - "[牛客刷题](/wiki/niuke/牛客零基础入门前端.html)"
       - "[硅谷甄选](/wiki/ggzx/项目起步.html)"
-    "我的站点":
+    "站点":
       - "[ChatGPT](https://ai.codepzj.cn/)"
       - "[Gitea](https://repository.codepzj.cn/)"
-      - "[GitHub](https://github.com/codepzj)"
-      - "[Alist云盘](https://share.codepzj.cn/)"
-      - "[memos备忘录](https://memos.codepzj.cn/)"
-      - "[IT-Tools工具库](https://tools.codepzj.cn/)"
-    "友链":
+      - "[Docsify](https://docs.codepzj.cn/)"
+    "社交":
       - "[朋友圈](/social/friends/)"
+      - "[关于我](/social/about/)"
   content: | # 支持 Markdown 格式
     <img src="/assets/images/keyboard.jpg" alt="描述文字" style="float:right; width:60px; margin-left:20px;">
     <center>

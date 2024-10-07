@@ -1,5 +1,5 @@
 ---
-title: 每日新闻
+title: 新闻
 date: 2024-09-30 22:46:31
 banner: /assets/banner/news.png
 ---
