@@ -39,12 +39,6 @@ jobs:
           hexo clean
           hexo g
 
-      - name: Upload atom.xml as artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: atom-xml
-          path: public/atom.xml
-
       - name: Deploy atom.xml to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
