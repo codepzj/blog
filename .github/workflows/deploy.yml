@@ -48,5 +48,5 @@ jobs:
           cp public/atom.xml .  # Copy atom.xml to the root
           git add atom.xml
           git commit -m "Update atom.xml"
-          git push
+          git push origin output
 
