@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -16,17 +17,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'  # 或您需要的 Node.js 版本
-          cache: 'pnpm'
-
-      - name: Install pnpm
-        run: npm install -g pnpm
+          node-version: '20.12.2'
+          cache: 'npm'  # 使用 npm 缓存
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install  # 使用 npm 安装依赖
 
       - name: Build project
-        run: pnpm run build
+        run: npm run build  # 使用 npm 构建项目
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
