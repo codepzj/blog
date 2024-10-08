@@ -1,4 +1,4 @@
-name: Auto Deployment
+name: Generate atom.xml
 on:
   workflow_dispatch:
   push:
@@ -28,7 +28,7 @@ jobs:
         id: cache-modules
         with:
           path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+          key: ${{ runner.OS }}-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install Dependencies
         if: steps.cache-modules.outputs.cache-hit != 'true'
@@ -40,9 +40,14 @@ jobs:
           hexo clean
           hexo g
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.TOKEN }}
-          publish_branch: gh-page
-          publish_dir: ./public
+      - name: Push atom.xml to output branch
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git checkout -b output
+          cp public/atom.xml .  # Copy atom.xml to the root
+          git add atom.xml
+          git commit -m "Update atom.xml"
+          git push origin output
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
