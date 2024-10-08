@@ -41,6 +41,8 @@ jobs:
           hexo g
 
       - name: Push atom.xml to output branch
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
         run: |
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com
