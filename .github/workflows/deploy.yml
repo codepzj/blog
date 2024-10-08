@@ -49,7 +49,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # 部署 public 目录下的文件（包括 atom.xml）
-          destination_dir: /     # 目标目录为根目录
+          publish_dir: ./public  # 部署 public 目录下的文件
           keep_files: true       # 保留已有文件，只更新 atom.xml
           publish_branch: output # 推送到 output 分支
