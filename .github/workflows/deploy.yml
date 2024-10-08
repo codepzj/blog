@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -16,11 +17,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20.12.2'  # 或您需要的 Node.js 版本
+          node-version: '20'
           cache: 'pnpm'
 
       - name: Install pnpm
         run: npm install -g pnpm
+
+      - name: Verify pnpm installation
+        run: pnpm --version  # 验证 pnpm 是否安装成功
 
       - name: Install dependencies
         run: pnpm install
@@ -32,5 +36,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # 或您的构建输出目录
+          publish_dir: ./public
           publish_branch: gh-pages
