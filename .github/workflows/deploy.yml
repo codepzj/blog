@@ -17,11 +17,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20.12.2'
-          cache: 'npm'  # 使用 npm 缓存
+          node-version: '20'  # 使用较为稳定的版本
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install  # 使用 npm 安装依赖
+        run: npm ci  # 使用 npm ci 安装依赖
 
       - name: Build project
         run: npm run build  # 使用 npm 构建项目
