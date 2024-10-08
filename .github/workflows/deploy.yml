@@ -47,8 +47,9 @@ jobs:
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com
           git checkout -b output
+          rm -rf *
           cp public/atom.xml .  # Copy atom.xml to the root
-          git add atom.xml
+          git add .
           git commit -m "Update atom.xml"
           git push origin output
 
