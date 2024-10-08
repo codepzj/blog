@@ -46,8 +46,8 @@ jobs:
         run: |
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com
-          git checkout -b output
-          rm -rf *
+          git checkout --orphan output  # 创建孤立分支
+          git rm -rf .  # 删除所有文件
           cp public/atom.xml .  # Copy atom.xml to the root
           git add .
           git commit -m "Update atom.xml"
