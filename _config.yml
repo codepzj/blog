@@ -4,9 +4,11 @@
 
 # Site
 title: 浩瀚星河
+icon: /assets/images/avatar.jpg
 subtitle: "A Go Enthusiast | 实习前的些许风霜罢了"
 avatar: /assets/images/avatar.jpg
 author: codepzj
+email: email@codepzj.cn
 description: "实习前的些许风霜罢了"
 keywords: "hexo-theme-stellar,刷题,项目"
 favicon: /favicon.ico
@@ -135,3 +137,7 @@ neat_js:
   exclude:
     - "**/*.min.js"
     - "**/index.js"
+
+
+
+

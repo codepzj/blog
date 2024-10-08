@@ -77,7 +77,7 @@ open_graph:
 article:
   type: tech # tech/story: story类文字和段落间增距大。
   auto_cover: false # 根据tags在线搜索封面
-  auto_excerpt: 0 # 生成摘要的字
+  auto_excerpt: false # 生成摘要的字
   related_posts:
     enable: true
     title: 您可能感兴趣的文章
