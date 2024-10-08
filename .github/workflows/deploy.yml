@@ -39,10 +39,10 @@ jobs:
         run: |
           hexo clean
           hexo g
-          
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.TOKEN }}
-          publish_branch: gh-pages
+          publish_branch: gh-page
           publish_dir: ./public
