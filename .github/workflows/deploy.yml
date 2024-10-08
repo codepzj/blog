@@ -48,6 +48,5 @@ jobs:
           cp public/atom.xml .  # Copy atom.xml to the root
           git add atom.xml
           git commit -m "Update atom.xml"
-          git push origin output
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          git push https://x-access-token:${{ secrets.TOKEN }}@github.com/codepzj/blog.git output --force
+
