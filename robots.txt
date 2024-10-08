@@ -1,0 +1,2 @@
+User-Agent: *
+DisAllow: /js/search/local-search.js
