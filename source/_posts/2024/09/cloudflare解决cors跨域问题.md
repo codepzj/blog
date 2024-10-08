@@ -10,17 +10,17 @@ poster:
   caption: null
   color: null
 date: 2024-09-25 13:52:34
-description: 本文讲述了如何通过在 Cloudflare 控制台添加跨域规则来解决 CDN 导致的跨域问题，确保网站的某些样式和脚本能够正常加载。
+description:
 banner: /assets/banner/cloudfare.webp
 references:
   - "[cloudflare解决cors跨域问题](https://roy.wang/cloudflare-cors-error/)"
 ---
 
-本站使用的cloudfare的cdn，今天在博客访问memos时出现了跨域，原因是使用 CloudFlare 会导致一部分跨域问题，使某些样式无法正常加载，不过最终还是找到了解决方案，记录一下。
+本站使用的 cloudfare 的 cdn，今天在博客访问 memos 时出现了跨域，原因是使用 CloudFlare 会导致一部分跨域问题，使某些样式无法正常加载，不过最终还是找到了解决方案，记录一下。
 
 ## 解决方案
 
-前往cloudfare控制台，**规则 > 转换规则 > 修改响应头 > 创建规则**
+前往 cloudfare 控制台，**规则 > 转换规则 > 修改响应头 > 创建规则**
 
 往里面新增一条跨域的规则
 
@@ -37,4 +37,4 @@ Access-Control-Allow-Origin: *
 
 {% image https://image.codepzj.cn/image/202409251404199.png origin和methods加到了响应头处 %}
 
-配置成功，完美解决cloudfare的跨域问题
+配置成功，完美解决 cloudfare 的跨域问题

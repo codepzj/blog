@@ -218,7 +218,7 @@
 	"Folding Container": {
 		"prefix": "folding",
 		"body": [
-			"{% folding ${1:title} open:false color:black %}",
+			"{% folding ${1:title} open:false %}",
 			"${2:content}",
 			"{% endfolding %}"
 		],

@@ -10,7 +10,7 @@ poster:
   color: null
 date: 2024-08-27 00:33:33
 topic:
-description: 本文讲述了hexo-theme-stellar主题中的各种标签用法，包括表情、图标、标记、引用、诗词等，展示了如何利用这些标签优化博客内容的显示效果。无论是添加表情符号还是插入音频、视频、图像，本文都提供了详细的语法和实际效果示例，帮助你更好地掌握并应用这些功能。
+description:
 banner: /assets/banner/stellar.jpg
 references:
 ---

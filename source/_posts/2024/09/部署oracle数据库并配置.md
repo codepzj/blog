@@ -10,7 +10,7 @@ poster:
   color: null
 date: 2024-09-02 15:54:23
 topic:
-description: 本文讲述了如何配置 Oracle 数据库，包括本地和服务器环境的设置。详细介绍了 Docker 的配置步骤、权限设置、容器启动以及连接数据库的方法，涵盖命令行、Web 端和 Navicat 等多种连接方式，为用户提供了全面的指导。
+description:
 banner: /assets/banner/oracle.jpg
 references:
 ---

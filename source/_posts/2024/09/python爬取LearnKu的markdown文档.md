@@ -10,12 +10,12 @@ poster:
   color: null
 date: 2024-09-27 23:23:50
 topic:
-description: 本文讲述了如何使用Python脚本从LearnKu社区爬取Markdown格式的文档并保存到本地。通过requests库获取网页内容，lxml库解析HTML，提取文档标题和链接，最后将Markdown内容写入文件。
+description:
 banner: /assets/banner/spider.png
 references:
 ---
 
-分享一个python脚本，可用于爬取LearnKu社区的优质文档，存储到本地，供己学习
+分享一个 python 脚本，可用于爬取 LearnKu 社区的优质文档，存储到本地，供己学习
 
 ```python
 import os

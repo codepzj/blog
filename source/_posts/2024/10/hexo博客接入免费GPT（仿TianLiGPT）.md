@@ -1,6 +1,6 @@
 ---
 title: hexo博客接入免费GPT（仿TianLiGPT）
-tags: [chatgpt,hexo]
+tags: [chatgpt, hexo]
 categories: [技术分享]
 permalink: posts/12.html
 poster:
@@ -10,7 +10,7 @@ poster:
   color: null
 date: 2024-10-01 20:41:09
 topic:
-description: 本文讲述了如何在hexo博客中免费接入GPT服务，以生成文章摘要，避免了使用成本较高的TianLiGPT服务。作者通过修改主题配置文件和创建新的JavaScript文件，实现了一个自定义的GPT接口，允许用户在不支付额外费用的情况下，自动生成文章摘要。
+description:
 banner: /assets/banner/openai.png
 references:
 ---

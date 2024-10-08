@@ -10,7 +10,7 @@ poster:
   color: null
 date: 2024-08-31 10:57:55
 topic:
-description: 本文讲述了使用Element Plus的el-row和el-col组件创建灵活网格布局的方法，包括基本布局、分栏间隔、列偏移、对齐方式及响应式设计。通过:span和:offset属性控制列宽与位置，利用gutter设置间隔，结合justify属性调整对齐方式，并通过响应式属性:xs, :sm, :md, :lg, :xl适应不同屏幕尺寸，同时提供了基于断点的隐藏类以辅助实现更精细的响应式控制。
+description:
 banner: /assets/banner/element-plus.png
 references:
 ---

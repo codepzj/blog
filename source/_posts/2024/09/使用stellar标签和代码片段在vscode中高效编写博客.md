@@ -10,7 +10,7 @@ poster:
   color: null
 date: 2024-09-24 00:16:46
 topic:
-description: 本文讲述了如何在VSCode中高效使用Stellar标签编写博客。通过配置markdown代码片段，用户可以快速插入常用标签，减少查阅官方文档的时间。文章详细介绍了设置过程，包括创建配置文件和添加多种标签的代码片段，涵盖了从Emoji到视频标签等多种类型。这种方法不仅提高了写作效率，还使得博客创作更加流畅，帮助作者更专注于内容本身
+description:
 banner: /assets/banner/stellar.jpg
 references:
 ---
