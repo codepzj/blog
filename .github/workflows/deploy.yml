@@ -4,14 +4,13 @@ on:
   push:
     branches:
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
-        with:
-          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -40,16 +39,17 @@ jobs:
           hexo clean
           hexo g
 
-      - name: Push atom.xml to output branch
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.name github-actions
-          git config --global user.email github-actions@github.com
-          git checkout --orphan output  # 创建孤立分支
-          git rm -rf .  # 删除所有文件
-          cp public/atom.xml .  # Copy atom.xml to the root
-          git add .
-          git commit -m "Update atom.xml"
-          git push origin output
+      - name: Upload atom.xml as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: atom-xml
+          path: public/atom.xml
 
+      - name: Deploy atom.xml to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # 部署 public 目录下的文件（包括 atom.xml）
+          destination_dir: /     # 目标目录为根目录
+          keep_files: true       # 保留已有文件，只更新 atom.xml
+          publish_branch: output # 推送到 output 分支
