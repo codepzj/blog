@@ -71,6 +71,15 @@
 		],
 		"description": "Insert reel tag"
 	},
+	"Box Tag": {
+		"prefix": "box",
+		"body": [
+			"{% box %}",
+			"",
+			"{% endbox %}"
+		],
+		"description": "Insert note tag"
+	},
 	"Note Tag": {
 		"prefix": "note",
 		"body": [
