@@ -6,7 +6,6 @@ icon: /assets/wiki/ggzx/icon.svg
 cover: /assets/wiki/ggzx/icon.svg
 coverpage: true # 默认是 true
 description: 总结在该项目中遇到的bug及解决过程
-license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
 share: true
 base_dir: /wiki/ggzx/
 tree:
