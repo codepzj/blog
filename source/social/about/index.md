@@ -38,7 +38,7 @@ banner: /assets/banner/about.jpg
 
 {% quot 我的GitHub icon:hashtag %}
 
-{% image https://raw.githubusercontent.com/codepzj/codepzj/output/github-contribution-grid-snake.svg 我的GitHub贡献情况 %}
+{% image https://cdn.jsdelivr.net/gh/codepzj/codepzj@output/github-contribution-grid-snake.svg 我的GitHub贡献情况 %}
 
   
 
