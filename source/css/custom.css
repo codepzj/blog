@@ -342,3 +342,9 @@ button:not(:disabled) {
 .aside-count .content .item .progress .progress-percentage {
   color: var(--info);
 }
+
+h2,
+.h2 {
+  font-size: var(--fsh2);
+  margin: 0;
+}
