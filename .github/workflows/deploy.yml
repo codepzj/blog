@@ -1,48 +1,38 @@
-name: Generate atom.xml
+name: deploy-hexo-blog
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout branch
-        uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      # 安装nodejs
+      - name: install nodejs
+        uses: actions/setup-node@v3.4.1
         with:
-          node-version: 20.x
-
-      - name: Install Hexo
-        run: |
-          export TZ='Asia/Shanghai'
-          npm install hexo-cli -g npm-check-updates
-
-      - name: Cache Modules
-        uses: actions/cache@v1
-        id: cache-modules
+          node-version: "20.12.0"
+      # 使用pnpm包管理
+      - name: use pnpm
+        run: npm i -g pnpm && pnpm config set registry https://registry.npmmirror.com
+      # 安装依赖
+      - name: install packages
+        run: pnpm install
+      # 清空缓存
+      - name: clear
+        run: pnpm run clean
+      # 打包项目
+      - name: build
+        run: pnpm run build
+      # 文件复制到服务器 
+      - name: copy dist file with scp
+        uses: appleboy/scp-action@master
         with:
-          path: node_modules
-          key: ${{ runner.OS }}-${{ hashFiles('**/package-lock.json') }}
-
-      - name: Install Dependencies
-        if: steps.cache-modules.outputs.cache-hit != 'true'
-        run: |
-          npm ci
-
-      - name: Generate
-        run: |
-          hexo clean
-          hexo g
-
-      - name: Deploy atom.xml to output branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # 部署 public 目录下的文件
-          keep_files: true       # 保留已有文件，只更新 atom.xml
-          publish_branch: output # 推送到 output 分支
+          host: ${{ secrets.PZJ_HOST }}
+          username: ${{ secrets.PZJ_USERNAME }}
+          password: ${{ secrets.PZJ_PASSWORD }}
+          port: ${{ secrets.PZJ_PORT }}
+          source: "public/"
+          target: ${{ secrets.PZJ_TARGET }}
