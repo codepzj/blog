@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: true  # 确保子模块被检出
+      # 更新子模块
+      - name: Update submodules
+        run: git submodule update --init --recursive
       # 安装nodejs
       - name: install nodejs
         uses: actions/setup-node@v3.4.1
