@@ -9,7 +9,7 @@ poster:
   headline: 白嫖cloudfare的cdn让网站更加流畅
   caption: 免费cdn，抗DDOS，缓存静态资源
   color: null
-date: 2024-08-19 00:07:34
+date: 2024-08-16 00:07:34
 description:
 banner: /assets/banner/cloudfare.webp
 references:
