@@ -1,9 +1,3 @@
-// 禁止右键
-document.oncontextmenu = function (event) {
-  event.preventDefault();
-  hud.toast("请您尊重本站隐私", 2500);
-};
-
 // 监听按键
 document.onkeydown = function (event) {
   const { keyCode, ctrlKey, shiftKey } = event;
