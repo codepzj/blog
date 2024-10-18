@@ -151,7 +151,7 @@ footer:
     <img src="/assets/images/keyboard.jpg" alt="描述文字" style="float:right; width:60px; margin-left:20px;">
     <center>
       <div>
-        <div>本站点总访问 <span id="busuanzi_value_site_pv" style="font-weight:bold;">2016</span> 次 | 本页访问 <span id="busuanzi_value_page_pv" style="font-weight: bold;">89</span> 次 | 页面载入时间: <span class="load-time" style="font-weight: bold;">1.00</span> 秒</div>
+        <div>本站点总访问 <span id="busuanzi_value_site_pv" style="font-weight:bold;"><img src="/assets/images/loading.svg" alt="loading"></span> 次 | 本页访问 <span id="busuanzi_value_page_pv" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span> 次 | 页面载入时间 <span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span> 秒</div>
         <div>
           © 2024
           <a style="font-weight: bold;  auto;" target="_blank" rel="noopener" href="https://github.com/codepzj">浩瀚星河</a>
