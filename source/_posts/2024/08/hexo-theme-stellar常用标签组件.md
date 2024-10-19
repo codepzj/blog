@@ -136,13 +136,13 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 ### 用法
 
 ```text
-{% image https://image.codepzj.cn/image/202409111614703.gif 小猫摇KFC download:true width:200px %}
+{% image https://image.codepzj.cn/image/202410192146575.gif 小猫摇KFC download:true width:200px %}
 {% image https://image.codepzj.cn/image/202410192148722.gif 调试css的狼狈样子 download:true width:200px padding:16px %}
 ```
 
 ### 效果
 
-{% image https://image.codepzj.cn/image/202409111614703.gif 小猫摇KFC download:true width:200px %}
+{% image https://image.codepzj.cn/image/202410192146575.gif download:true width:200px %}
 {% image https://image.codepzj.cn/image/202410192148722.gif 调试css的狼狈样子 download:true width:200px padding:16px %}
 
 ## quot 引用
