@@ -23,5 +23,5 @@ banner: /assets/banner/friends.jpg
 ```yaml
 - title: 浩瀚星河
   url: https://blog.codepzj.cn
-  avatar: https://image.codepzj.cn/image/202409111608193.png
+  avatar: https://image.codepzj.cn/image/202409111608193.jpg
 ```
