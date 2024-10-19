@@ -51,14 +51,14 @@ hexo-theme-stellar
 
 ```text
 {% icon solar:planet-bold-duotone %} # 直接使用icons.yml默认图标
-{% icon https://image.codepzj.cn/image/202409111614158.webp %} # 使用外联图标
+{% icon https://image.codepzj.cn/image/202410192142540.png %} # 使用外联图标
 {% icon ph:seal-question-fill color:green %} # 使用样式
 ```
 
 ### 效果
 
 {% icon solar:planet-bold-duotone %}
-{% icon https://image.codepzj.cn/image/202409111614158.webp %}
+{% icon https://image.codepzj.cn/image/202410192142540.png %}
 {% icon ph:seal-question-fill color:green %}
 
 ## mark 标记标签
@@ -137,13 +137,13 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 ```text
 {% image https://image.codepzj.cn/image/202409111614703.gif 小猫摇KFC download:true width:200px %}
-{% image https://image.codepzj.cn/image/202409111615392.gif 调试css的狼狈样子 download:true width:200px padding:16px %}
+{% image https://image.codepzj.cn/image/202410192148722.gif 调试css的狼狈样子 download:true width:200px padding:16px %}
 ```
 
 ### 效果
 
 {% image https://image.codepzj.cn/image/202409111614703.gif 小猫摇KFC download:true width:200px %}
-{% image https://image.codepzj.cn/image/202409111615392.gif 调试css的狼狈样子 download:true width:200px padding:16px %}
+{% image https://image.codepzj.cn/image/202410192148722.gif 调试css的狼狈样子 download:true width:200px padding:16px %}
 
 ## quot 引用
 
@@ -702,7 +702,7 @@ func main(){
 ```text
 {% grid %}
 <!-- cell -->
-{% image https://image.codepzj.cn/image/202409111621660.webp %}
+{% image https://image.codepzj.cn/image/202410192149538.jpeg %}
 <!-- cell -->
 The Galactic Center is the rotational center of the Milky Way galaxy. Its central massive object is a supermassive black hole of about 4 million solar masses, which is called Sagittarius A*. Its mass is equal to four million suns. The center is located 25,800 light years away from Earth.
 
@@ -720,7 +720,7 @@ The Galactic Center is the rotational center of the Milky Way galaxy. Its centra
 
 <!-- cell -->
 
-{% image https://image.codepzj.cn/image/202409111621660.webp %}
+{% image https://image.codepzj.cn/image/202410192149538.jpeg %}
 
 <!-- cell -->
 

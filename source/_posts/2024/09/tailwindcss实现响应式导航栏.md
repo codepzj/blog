@@ -85,7 +85,7 @@ references:
 
 ## 具体效果
 
-{% image https://image.codepzj.cn/image/202409200110673.gif tailwindcss实现响应式导航栏 download:true %}
+{% image https://image.codepzj.cn/image/202410192139061.gif tailwindcss实现响应式导航栏 download:true %}
 
 ## 项目部署
 

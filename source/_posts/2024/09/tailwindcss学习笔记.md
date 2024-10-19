@@ -224,7 +224,7 @@ color:yellow %}
 ```html
 <div class="w-3/5 h-1/2">
   <img
-    src="https://image.codepzj.cn/image/202409111622332.webp"
+    src="https://image.codepzj.cn/image/202410191713308.png"
     alt=""
     class="w-full h-full object-contain"
   />

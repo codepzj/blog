@@ -34,7 +34,7 @@ gitea 是一个支持 git 托管、代码审查、团队协作、软件包注册
 
 首先打开 1panel 的界面，安装 gitea，数据库建议使用 postgresql
 
-![gitea配置](https://image.codepzj.cn/image/202409161316684.png)
+![gitea配置](https://image.codepzj.cn/image/202410191304803.png)
 
 {% note 注意
 ssh端口建议使用22端口，然后把原本服务器的端口给放出来，修改到其他端口上，否则后续在使用gitea的ssh方式操作代码会出现bug，一直报22端口未连接的错误，这是因为ssh协议默认使用的22端口，如果不使用22端口，使用了其他端口（如222端口），那么在使用ssh的方式在本地clone项目的时候，必须得指定端口
@@ -62,7 +62,7 @@ Host gitea
 
 因为 gitea 没有集成这种 CI、CD 的工具，所以说要单独安装一个 act runner 实现持续集成、持续部署的功能。
 
-![act runner配置](https://image.codepzj.cn/image/202409161353612.png)
+![act runner配置](https://image.codepzj.cn/image/202410191955469.png)
 
 token 需要在 gitea 平台处随机生成，[官方文档](https://docs.gitea.com/zh-cn/1.20/usage/actions/act-runner)
 
@@ -78,10 +78,12 @@ Runner 级别决定了从哪里获取注册令牌。
 ```yaml
 ......
 volumes:
-    - ./data/config.yaml:/config.yaml
-    - ./data/data:/data
-    - ./data/cache:/root/.cache
-    - /var/run/docker.sock:/var/run/docker.sock
+  - ./data/config.yaml:/config.yaml
+  - ./data/data:/data
+  - ./data/cache:/root/.cache
+  - /var/run/docker.sock:/var/run/docker.sock
+environment:
+  - CONFIG_FILE=/config.yaml # 取消注释
 ```
 
 `config.yaml`在默认配置文件中被注释掉了，这个一定要加，不然 CI、CD 的时候没有 ubuntu-latest 镜像，使用如下方法生成`config.yaml`
@@ -96,9 +98,23 @@ volumes:
 docker-compose down && docker-compose up
 ```
 
-![act runner配置成功](https://image.codepzj.cn/image/202409161420607.png)
+查看日志
 
-如果出现以下画面则代表 act runner 配置成功了
+```bash
+.runner is missing or not a regular file
+level=info msg="Registering runner, arch=amd64, os=linux, version=v0.2.11."
+level=warning msg="Labels from command will be ignored, use labels defined in config file."
+level=debug msg="Successfully pinged the Gitea instance server"
+level=info msg="Runner registered successfully."
+SUCCESS
+time="2024-10-19T13:19:48Z" level=info msg="Starting runner daemon"
+time="2024-10-19T13:19:48Z" level=info msg="runner: linux, with version: v0.2.11, with labels: [ubuntu-latest ubuntu-22.04 ubuntu-20.04], declare successfully"
+time="2024-10-19T13:19:48Z" level=info msg="task 1 repo is codepzj/test https://github.com https://repository.codepzj.cn"
+```
+
+![act runner配置成功](https://image.codepzj.cn/image/202410192123724.png)
+
+如果出现以下日志和画面则代表 act runner 配置成功了
 
 新建仓库，测试是否能够拥有 Github Action 的功能
 
@@ -128,7 +144,7 @@ jobs:
 
 提交并查看结果，进入 action 页面
 
-![部署成功](https://image.codepzj.cn/image/202409161427060.png)
+![部署成功](https://image.codepzj.cn/image/202410192124253.png)
 
 出现以下页面则说明配置成功，恭喜你 🎉🎉🎉
 
