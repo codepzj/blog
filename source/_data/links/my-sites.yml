@@ -12,3 +12,13 @@
   url: https://share.codepzj.cn/
   cover: https://image.codepzj.cn/image/202410191435392.png
   icon: https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg
+
+- title: NextChat
+  url: https://ai.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410200312965.png
+  icon: https://ai.codepzj.cn/favicon.ico
+
+- title: memos说说
+  url: https://memos.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410200257322.png
+  icon: https://memos.codepzj.cn/full-logo.webp
