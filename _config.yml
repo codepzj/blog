@@ -113,9 +113,7 @@ theme: stellar
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/codepzj/blog.git
-  branch: gh-pages
+  type: ''
 
 wiki_dir: wiki
 
