@@ -22,3 +22,18 @@
   url: https://memos.codepzj.cn/
   cover: https://image.codepzj.cn/image/202410200257322.png
   icon: https://memos.codepzj.cn/full-logo.webp
+
+- title: yourls短链接
+  url: https://link.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410201933322.png
+  icon: https://link.codepzj.cn/frontend/assets/img/favicon.ico
+
+- title: uptime状态监控
+  url: https://status.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410202212806.png
+  icon: https://status.codepzj.cn/favicon.ico
+
+- title: umami网站统计
+  url: https://umami.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410202214325.png
+  icon: https://umami.codepzj.cn/favicon.ico
