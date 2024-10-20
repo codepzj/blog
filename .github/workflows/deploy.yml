@@ -60,6 +60,7 @@ jobs:
       - name: seo auto submit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
         run: |
           # 确保在正确的目录中
           cd public  # 假设构建输出在 public 目录中
