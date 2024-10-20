@@ -56,3 +56,10 @@ jobs:
           port: ${{ secrets.PZJ_PORT }}
           source: "public/"
           target: ${{ secrets.PZJ_TARGET }}
+      # 使用gh-pages的action提交seo收录
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./public
