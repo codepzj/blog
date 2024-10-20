@@ -139,14 +139,18 @@ neat_js:
     - "**/index.js"
 
 # seo 推送插件
-hexo-seo-submit:
-  CI:
-    cron: 0 4 * * *
-    branch: main
-    enable: true
+hexo_seo_autopush:
+  cron: 0 4 * * *
+  deployBranch: main
   baidu:
     enable: true
-  google:
-    enable: true
+    date: created
+    count: 
   bing:
     enable: true
+    date: created
+    count: 
+  google:
+    enable: true
+    date: created
+    count: 
