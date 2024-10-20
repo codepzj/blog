@@ -138,6 +138,15 @@ neat_js:
     - "**/*.min.js"
     - "**/index.js"
 
-
-
-
+# seo 推送插件
+hexo-seo-submit:
+  CI:
+    cron: 0 4 * * *
+    branch: main
+    enable: true
+  baidu:
+    enable: true
+  google:
+    enable: true
+  bing:
+    enable: true

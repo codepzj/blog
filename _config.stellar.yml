@@ -217,9 +217,9 @@ inject:
   head:
     - <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/code-block.css">
+    - <link rel="stylesheet" href="/css/custom.css">
 
   script:
     - <script src="https://cdn.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/input-with-fire.js"></script>
     - <script src="/js/code-block.js"></script>
-    - <script src="/js/forbidden.js"></script>
     - <script src="/js/load.js"></script>
