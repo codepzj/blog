@@ -57,9 +57,18 @@ jobs:
           source: "public/"
           target: ${{ secrets.PZJ_TARGET }}
       # 使用gh-pages的action提交seo收录
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./public
+      - name: seo auto submit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 确保在正确的目录中
+          cd public  # 假设构建输出在 public 目录中
+          
+          # 初始化一个新的 Git 仓库
+          git init
+          git add -A
+          git commit -m "seo auto submit"
+
+          # 设置远程仓库并推送到 gh-pages 分支
+          git remote add origin https://github.com/codepzj/blog.git
+          git push --force origin master:gh-pages
