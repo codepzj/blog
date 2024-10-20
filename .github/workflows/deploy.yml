@@ -71,4 +71,5 @@ jobs:
 
           # 设置远程仓库并推送到 gh-pages 分支
           git remote add origin https://github.com/codepzj/blog.git
-          git push --force origin master:gh-pages
+          git branch -M gh-pages
+          git push -f origin gh-pages
