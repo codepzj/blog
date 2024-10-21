@@ -175,7 +175,7 @@ hexo_submit_urls_to_search_engine:
   bing_host: https://blog.codepzj.cn ## 在bing站长平台中注册的域名
   bing_token: f8fd7eea822b45ca844d0182b8e20f73  ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
   google_host: https://blog.codepzj.cn ## 在google站长平台中注册的域名
-  google_proxy: 0 # 向谷歌提交网址所使用的系统 http 代理，填 0 不使用，以Clash为例
+  google_proxy: 127.0.0.1:7897 # 向谷歌提交网址所使用的系统 http 代理，填 0 不使用，以Clash为例
   google_key_file: codepzj-0e4855b9a77c.json #Google服务项目的json文件名全称，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!
   replace: 0  # 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）
   find_what: 
