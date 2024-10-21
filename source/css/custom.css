@@ -154,29 +154,6 @@ table a:not([class]) {
   visibility: visible;
 }
 
-/* telegram timeline */
-.tag-plugin.timeline.ds-telegram .body p:first-child {
-  margin-top: 2px;
-}
-
-.tag-plugin.timeline.ds-telegram .body p:last-child {
-  margin-bottom: 2px;
-}
-
-.tag-plugin.timeline.ds-telegram .body img {
-  margin: 0.5rem 0;
-  max-height: 128px;
-  cursor: zoom-in;
-}
-
-.tag-plugin.timeline.ds-telegram .body .tag-plugin.image {
-  display: flex;
-}
-
-.tag-plugin.timeline.ds-telegram .body .tag-plugin.image .image-bg+.image-bg {
-  margin-left: 4px;
-}
-
 /* 默认的浅色模式颜色 */
 :root[data-theme="light"] {
   --tag-text-color: #835EEC;
@@ -347,4 +324,8 @@ h2,
 .h2 {
   font-size: var(--fsh2);
   margin: 0;
+}
+
+.tag-plugin.timeline .body .highlight, .tag-plugin.timeline .body .tag-plugin, .tag-plugin.timeline .body ol, .tag-plugin.timeline .body p, .tag-plugin.timeline .body ul {
+  margin: -0.2rem 0;
 }
