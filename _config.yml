@@ -113,7 +113,10 @@ theme: stellar
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  - type: git
+    repo: git@github.com:codepzj/codepzj.github.io.git
+    branch: gh-pages
+    ignore_hidden: false  # 忽略隐藏文件及文件夹(目录)
 
 wiki_dir: wiki
 
@@ -137,3 +140,16 @@ neat_js:
   exclude:
     - "**/*.min.js"
     - "**/index.js"
+
+# seo 推送插件
+hexo_seo_autopush:
+  baidu:
+    enable: true
+    count: 100
+  bing:
+    enable: true
+    count: 10
+  google:
+    enable: true
+    count: 10
+    google_file: google_service_account.json # 谷歌服务账户

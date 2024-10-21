@@ -34,18 +34,28 @@ jobs:
         uses: actions/setup-node@v3.4.1
         with:
           node-version: "20.12.0"
-      # 使用pnpm包管理
-      - name: use pnpm
-        run: npm i -g pnpm && pnpm config set registry https://registry.npmmirror.com
+
+      # 安装 hexo-cli
+      - name: Cache Modules
+        uses: actions/cache@v1
+        id: cache-modules
+        with:
+          path: ~/.pnpm-store  # pnpm 的缓存目录
+          key: ${{ runner.OS }}-${{ hashFiles('**/pnpm-lock.yaml') }}  # 使用 pnpm-lock.yaml 作为键
+
       # 安装依赖
-      - name: install packages
-        run: pnpm install
-      # 清空缓存
-      - name: clear
-        run: pnpm run clean
-      # 打包项目
-      - name: build
-        run: pnpm run build
+      - name: Install Dependencies
+        if: steps.cache-modules.outputs.cache-hit != 'true'
+        run: |
+          pnpm install --frozen-lockfile  # 使用 pnpm 安装依赖
+
+      # 生成静态文件
+      - name: Generate
+        run: |
+          hexo clean
+          hexo generate 
+          hexo deploy
+
       # 文件复制到服务器 
       - name: copy dist file with scp
         uses: appleboy/scp-action@master
