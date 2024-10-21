@@ -46,6 +46,9 @@ jobs:
       # 打包项目
       - name: build
         run: pnpm run build
+      # seo推送
+      - name: seo
+        run: pnpm run seo
       # 文件复制到服务器 
       - name: copy dist file with scp
         uses: appleboy/scp-action@master

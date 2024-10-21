@@ -114,9 +114,9 @@ theme: stellar
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  - type: git
-    repo: git@github.com:codepzj/codepzj.github.io.git
-    branch: gh-pages
+  - type: cjh_google_url_submitter
+  - type: cjh_bing_url_submitter
+  - type: cjh_baidu_url_submitter
 
 wiki_dir: wiki
 
@@ -164,7 +164,7 @@ nofollow:
 # auto-push-urls-to-search-engine
 hexo_submit_urls_to_search_engine:
   submit_condition: count #链接被提交的条件，可选值：count | period 现仅支持count
-  count: 100 # 提交最新的链接个数
+  count: 10 # 提交最新的链接个数
   period: 1000 # 提交修改时间在 1000 秒内的链接
   google: 1 # 是否向Google提交（0：否；1：是）
   bing: 1 # 是否向bing提交（0：否；1：是）

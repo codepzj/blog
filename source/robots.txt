@@ -1,2 +1,11 @@
-User-Agent: *
-DisAllow: /js/search/local-search.js
+User-agent: Googlebot
+Allow: /
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /js/
+Disallow: /css/
+Disallow: /404.html
+
+Sitemap: https://blog.codepzj.cn/sitemap.xml
+Sitemap: https://blog.codepzj.cn/baidusitemap.xml
