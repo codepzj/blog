@@ -38,8 +38,8 @@ jobs:
       # 使用pnpm包管理
       - name: use pnpm
         run: npm i -g pnpm && pnpm config set registry https://registry.npmmirror.com
-        
-      # 安装 hexo-cli
+
+      # 查看缓存是否命中
       - name: Cache Modules
         uses: actions/cache@v1
         id: cache-modules
@@ -52,6 +52,11 @@ jobs:
         if: steps.cache-modules.outputs.cache-hit != 'true'
         run: |
           pnpm install --frozen-lockfile  # 使用 pnpm 安装依赖
+
+      # 安装Hexo
+      - name: Install Hexo
+        run: |
+          pnpm install hexo-cli -g
 
       # 生成静态文件
       - name: Generate
