@@ -14,6 +14,9 @@ importers:
       hexo-deployer-git:
         specifier: ^4.0.0
         version: 4.0.0(chokidar@3.6.0)
+      hexo-filter-nofollow:
+        specifier: ^2.0.2
+        version: 2.0.2
       hexo-fs:
         specifier: ^4.1.3
         version: 4.1.3
@@ -62,6 +65,9 @@ importers:
       hexo-server:
         specifier: ^3.0.0
         version: 3.0.0
+      hexo-submit-urls-to-search-engine:
+        specifier: ^2.1.0
+        version: 2.1.0
       hexo-util:
         specifier: ^3.3.0
         version: 3.3.0
@@ -838,6 +844,10 @@ packages:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
     deprecated: Glob versions prior to v9 are no longer supported
 
+  google-auth-library@6.1.6:
+    resolution: {integrity: sha512-Q+ZjUEvLQj/lrVHF/IQwRo6p3s8Nc44Zk/DALsN+ac3T4HY/g/3rrufkgtl+nZ1TW7DNAw5cTChdVp4apUXVgQ==}
+    engines: {node: '>=10'}
+
   google-auth-library@7.14.1:
     resolution: {integrity: sha512-5Rk7iLNDFhFeBYc3s8l1CqzbEBcdhwR193RlD4vSNFajIcINKI8W8P0JLmBpwymHqqWbX34pJDQu39cSy/6RsA==}
     engines: {node: '>=10'}
@@ -848,6 +858,10 @@ packages:
     deprecated: Package is no longer maintained
     hasBin: true
 
+  googleapis-common@4.4.3:
+    resolution: {integrity: sha512-W46WKCk3QtlCCfmZyQIH5zxmDOyeV5Qj+qs7nr2ox08eRkEJMWp6iwv542R/PsokXaGUSrmif4vCC4+rGzRSsQ==}
+    engines: {node: '>=10.10.0'}
+
   googleapis-common@5.1.0:
     resolution: {integrity: sha512-RXrif+Gzhq1QAzfjxulbGvAY3FPj8zq/CYcvgjzDbaBNCD6bUl+86I7mUs4DKWHGruuK26ijjR/eDpWIDgNROA==}
     engines: {node: '>=10.10.0'}
@@ -855,6 +869,10 @@ packages:
   googleapis@1.1.5:
     resolution: {integrity: sha512-eoy/QAkhohkjziIpqybTsUtPxMDmtVjK4uJSCerU7RcrVu9qae7tJIvRsyMgHJ7fF90FV/j8Wv2ESsGzZqUwxA==}
     engines: {node: '>=0.10'}
+
+  googleapis@52.1.0:
+    resolution: {integrity: sha512-8eHVXidZv/C/xos/rEIlWZCwuR638yaqjlBMMk2y9iT8hOe7ebkgW0pENUv8KeSFowTQFKCfQ/nLdBRM8z2hUg==}
+    engines: {node: '>=10'}
 
   googleapis@67.1.1:
     resolution: {integrity: sha512-WLYk8R4dpW/oIxXhj0PQGhu+eOUpQbtWYTCxx/jeENr4arE9UmV5qmz0h1Gs1SPF/O/8PjCQIsPwOuHAlj78GA==}
@@ -940,6 +958,10 @@ packages:
     resolution: {integrity: sha512-28t1Q+4taB/UaBAP52W3mD/wcCwa2y2zBieUfBJFBZudbmVgiKJB5YedYILeyI5QByaUKAOwoupmdTbocdQ+CQ==}
     engines: {node: '>=14'}
 
+  hexo-filter-nofollow@2.0.2:
+    resolution: {integrity: sha512-roIkEIkGOR22EPMoy8iKrufDoAH25LOT5ZeVXVLavEpM757Y96kfUhyathryMLXr326EURffgkZAKsVf3EDl0A==}
+    engines: {node: '>= 8.6.0'}
+
   hexo-front-matter@4.2.1:
     resolution: {integrity: sha512-sJJI0GNmejYiwBvgnGRKn5V3sbODB4dNPr8jyw2Qp0PRHr4Uuyv8iyxw6WfK3+T7yvzYvJOh+tZ7jnwr2BYARA==}
     engines: {node: '>=14'}
@@ -1021,6 +1043,9 @@ packages:
   hexo-server@3.0.0:
     resolution: {integrity: sha512-u4s0ty9Aew6jV+a9oMrXBwhrRpUQ0U8PWM/88a5aHgDru58VY81mVrxOFxs788NAsWQ8OvsJtF5m7mnXoRnSIA==}
     engines: {node: '>=12.13.0'}
+
+  hexo-submit-urls-to-search-engine@2.1.0:
+    resolution: {integrity: sha512-5IBmjU6BRR4HpLhv3cdykeucve3EJ7Qyx2FqPVuqq2Z11/4nHtv91gCDM6Kdvy7U58+xe27/co/Sn/4X5N+pqA==}
 
   hexo-util@2.7.0:
     resolution: {integrity: sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==}
@@ -2131,6 +2156,10 @@ packages:
   xmlchars@2.2.0:
     resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
 
+  xmlhttprequest@1.8.0:
+    resolution: {integrity: sha512-58Im/U0mlVBLM38NdZjHyhuMtCqa61469k2YP/AaPbvCoV9aQGUpbJBj1QRm2ytRiVQBD/fsw7L2bJGDVQswBA==}
+    engines: {node: '>=0.4.0'}
+
   yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
 
@@ -2952,6 +2981,21 @@ snapshots:
       once: 1.4.0
       path-is-absolute: 1.0.1
 
+  google-auth-library@6.1.6:
+    dependencies:
+      arrify: 2.0.1
+      base64-js: 1.5.1
+      ecdsa-sig-formatter: 1.0.11
+      fast-text-encoding: 1.0.6
+      gaxios: 4.3.3
+      gcp-metadata: 4.3.1
+      gtoken: 5.3.2
+      jws: 4.0.0
+      lru-cache: 6.0.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+
   google-auth-library@7.14.1:
     dependencies:
       arrify: 2.0.1
@@ -2971,6 +3015,18 @@ snapshots:
     dependencies:
       node-forge: 1.3.1
 
+  googleapis-common@4.4.3:
+    dependencies:
+      extend: 3.0.2
+      gaxios: 4.3.3
+      google-auth-library: 6.1.6
+      qs: 6.13.0
+      url-template: 2.0.8
+      uuid: 8.3.2
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+
   googleapis-common@5.1.0:
     dependencies:
       extend: 3.0.2
@@ -2989,6 +3045,14 @@ snapshots:
       gapitoken: 0.1.5
       request: 2.51.0
       string-template: 0.2.1
+
+  googleapis@52.1.0:
+    dependencies:
+      google-auth-library: 6.1.6
+      googleapis-common: 4.4.3
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
 
   googleapis@67.1.1:
     dependencies:
@@ -3093,6 +3157,8 @@ snapshots:
       picocolors: 1.1.1
     transitivePeerDependencies:
       - chokidar
+
+  hexo-filter-nofollow@2.0.2: {}
 
   hexo-front-matter@4.2.1:
     dependencies:
@@ -3228,6 +3294,15 @@ snapshots:
       picocolors: 1.1.1
       serve-static: 1.16.2
     transitivePeerDependencies:
+      - supports-color
+
+  hexo-submit-urls-to-search-engine@2.1.0:
+    dependencies:
+      googleapis: 52.1.0
+      request: 2.88.2
+      xmlhttprequest: 1.8.0
+    transitivePeerDependencies:
+      - encoding
       - supports-color
 
   hexo-util@2.7.0:
@@ -4421,6 +4496,8 @@ snapshots:
   xml-name-validator@4.0.0: {}
 
   xmlchars@2.2.0: {}
+
+  xmlhttprequest@1.8.0: {}
 
   yallist@4.0.0: {}
 
