@@ -1,19 +1,20 @@
 ---
-abbrlink: ''
-banner: https://image.codepzj.cn/image/513cf9e614eebaf6560ccc230d03c40f.png
-categories:
-- - 技术分享
-date: '2024-10-22T11:47:18.330622+00:00'
-description: null
+title: qexo管理hexo文章
+tags: [qexo]
+categories: [技术分享]
 permalink: posts/21.html
-poster: '"topic":null,"headline":qexo管理hexo文章,"caption":null,"color":null'
-references: null
-tags:
-- qexo
-title: 服务器部署Qexo
-topic: null
-updated: '2024-10-23T00:53:18.426+08:00'
+poster:
+  topic: null
+  headline: qexo管理hexo文章
+  caption: null
+  color: null
+date: 2024-10-22 11:47:18
+topic:
+description:
+banner: /assets/banner/qexo.png
+references:
 ---
+
 ## 前言
 
 **Qexo** 是一个快速、强大、美观的在线**静态博客编辑器**，使用的Django和Bootstrap框架开发，使用 GPL3.0开源协议，支持**Vercel部署**和**本地部署**。

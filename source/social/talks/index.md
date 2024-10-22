@@ -3,6 +3,7 @@ wiki: social
 menu_id: social
 title: 我的说说 & 记录生活
 banner: /assets/banner/talks.jpg
+rightbar: latest_comment
 ---
 
 {% box %}

@@ -68,3 +68,10 @@ friends_timeline:
   api: https://cdn.jsdelivr.net/gh/codepzj/friends@main/data.json
   type: fcircle
   limit: 15
+
+latest_comment:
+  layout: timeline
+  title: 最新评论
+  api: https://twikoo.codepzj.cn # 参照文档获取服务对应的api
+  type: twikoo # 选择评论服务
+  limit: 5 # 限制获取数量

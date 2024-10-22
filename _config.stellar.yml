@@ -67,7 +67,7 @@ site_tree:
     rightbar: tagcloud
   # 其它自定义页面配置 layout: page
   page:
-    leftbar: welcome, TenYearAgreement
+    leftbar: welcome, travellings
     rightbar: timeline
 
 open_graph:
@@ -87,7 +87,8 @@ article:
     "生活思考": "#FF004D"
     "经验分享": "#43766C"
     "设计开发": "#11009E"
-  license: false
+  license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+  share: [wechat, weibo, email, link]
 # 全局样式
 style:
   prefers_theme: light
@@ -159,7 +160,7 @@ footer:
       </script>
       <div>
         <div>
-          站点访问量:<span id="qexo-site-pv"><span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span></span>次&nbsp;|&nbsp;站点访客数:<span id="qexo-site-uv"><span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span></span>次&nbsp;|&nbsp;页面访问量:<span id="qexo-page-pv"><span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span></span>次&nbsp;|&nbsp;页面载入时间:<span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span>秒
+          站点访问量:<span id="qexo-site-pv"><span class="load-time"><img src="/assets/images/loading.svg" alt="loading"></span></span>次&nbsp;|&nbsp;站点访客数:<span id="qexo-site-uv"><span class="load-time"><img src="/assets/images/loading.svg" alt="loading"></span></span>次&nbsp;|&nbsp;页面访问量:<span id="qexo-page-pv"><span class="load-time"><img src="/assets/images/loading.svg" alt="loading"></span></span>次&nbsp;|&nbsp;页面载入时间:<span class="load-time"><img src="/assets/images/loading.svg" alt="loading"></span>秒
         </div>
         <div>
           © 2024
@@ -233,5 +234,3 @@ inject:
     - <script src="/js/code-block.js"></script>
     - <script src="/js/load.js"></script>
     - <script defer src="https://umami.codepzj.cn/script.js" data-website-id="e6fdc7c7-3ad4-446e-9606-135abe5cc035"></script>
-
-
