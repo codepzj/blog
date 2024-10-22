@@ -10,5 +10,7 @@ search:
 base_dir: /social/
 tree:
   - friends/index
+  - talks/index
   - about/index
+  
   

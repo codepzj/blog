@@ -4,7 +4,7 @@ welcome:
   content: |
     本站是浩瀚星河的知识库和项目集合站，希望您在这里玩的开心。
 
-TenYearAgreement:
+travellings:
   layout: markdown
   title: 友链接力
   content: |
@@ -17,12 +17,6 @@ TenYearAgreement:
         title: 开往-友链接力
         url: https://www.travellings.cn/go-by-clouds.html
 
-timeline:
-  layout: timeline
-  title: 近期动态
-  api: https://memos.codepzj.cn/api/v1/memo?creatorId=1&limit=5
-  type: memos
-  hide: user,footer
 
 # 文章目录树
 toc:
@@ -37,7 +31,7 @@ toc:
 recent:
   layout: recent
   rss: /atom.xml # npm i hexo-generator-feed
-  limit: 5 # Count of posts
+  limit: 8 # Count of posts
 
 # 显示具有相同 tags 的其它项目列表
 related:
@@ -62,8 +56,15 @@ tagcloud:
 ghuser:
   layout: ghuser
   username: codepzj # your github login username
-  avatar: false # show avatar or not
-  menu: false # show menu or not
+  avatar: true # show avatar or not
+  menu: true # show menu or not
 
 ghrepo:
   layout: ghrepo
+
+friends_timeline:
+  layout: timeline
+  title: 朋友文章
+  api: https://cdn.jsdelivr.net/gh/codepzj/friends@main/data.json
+  type: fcircle
+  limit: 15

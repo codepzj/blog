@@ -46,7 +46,7 @@ site_tree:
     nav_tabs:
   # 博客文章内页配置
   home:
-    leftbar: welcome, TenYearAgreement
+    leftbar: welcome, travellings
   post:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: related, recent # for pages using 'layout:post'
@@ -64,7 +64,7 @@ site_tree:
     menu_id: post
     "404": "/404.html"
     leftbar: recent
-    rightbar: tagcloud, categories
+    rightbar: tagcloud
   # 其它自定义页面配置 layout: page
   page:
     leftbar: welcome, TenYearAgreement
@@ -135,18 +135,20 @@ footer:
       url: javaScript:switchTheme();
   sitemap:
     "博客":
-      - "[近期](/)"
-      - "[新闻](/news)"
+      - "[隐私政策](/document/policy/)"
+      - "[免责声明](/document/disclaimer/)"
+      - "[网站统计](https://umami.codepzj.cn/share/JA1hZArBwpHuOtAp/blog.codepzj.cn)"
+      - "[服务状态](https://status.codepzj.cn/status/codepzj)"
     "项目":
       - "[go学习指南](/wiki/go-learn/入门指南.html)"
       - "[硅谷甄选](/wiki/ggzx/项目起步.html)"
-    "站点":
-      - "[ChatGPT](https://ai.codepzj.cn/)"
-      - "[Gitea](https://repository.codepzj.cn/)"
-      - "[Docsify](https://docs.codepzj.cn/)"
+    "探索":
+      - "[我的站点](/explore/sites/收藏的站点.html)"
+      - "[年度计划](/explore/notes/探索者笔记.html)"
     "社交":
-      - "[朋友圈](/social/friends/)"
-      - "[关于我](/social/about/)"
+      - "[友链](/social/friends/)"
+      - "[说说](/social/talks/)"
+      - "[关于](/social/about/)"
   content: | # 支持 Markdown 格式
     <img src="/assets/images/keyboard.jpg" alt="描述文字" style="float:right; width:60px; margin-left:20px;">
     <center>

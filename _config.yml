@@ -5,7 +5,7 @@
 # Site
 title: 浩瀚星河
 icon: /assets/images/avatar.jpg
-subtitle: "A Go Enthusiast | 实习前的些许风霜罢了"
+subtitle: "A Go Enthusiast | blog.codepzj.cn"
 avatar: /assets/images/avatar.jpg
 author: codepzj
 email: email@codepzj.cn
@@ -20,7 +20,7 @@ language:
 timezone: "Asia/ShangHai"
 
 logo:
-  subtitle: "A Go Enthusiast | 实习前的些许风霜罢了" # 副标题
+  subtitle: "A Go Enthusiast | blog.codepzj.cn" # 副标题
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -142,25 +142,24 @@ neat_js:
     - "**/index.js"
 
 nofollow:
-  enable: true  #true/false 启用/关闭插件
-  field: site   #site/post  处理全站/仅文章链接
-  exclude:      #排除域名，同的子域名视为不同的域名
-    - 'codepzj.cn'
-    - 'image.codepzj.cn'
-    - 'share.codepzj.cn'
-    - 'repository.codepzj.cn'
-    - 'memos.codepzj.cn'
-    - 'link.codepzj.cn'
-    - 'status.codepzj.cn'
-    - 'umami.codepzj.cn'
-    - 'ai.codepzj.cn'
-    - 'oracle.codepzj.cn'
-    - 'tools.codepzj.cn'
-    - 'docs.codepzj.cn'
-    - 'twikoo.codepzj.cn'
-    - 'cloud.codepzj.cn'
-    - 'admin.codepzj.cn'
-    
+  enable: true #true/false 启用/关闭插件
+  field: site #site/post  处理全站/仅文章链接
+  exclude: #排除域名，同的子域名视为不同的域名
+    - "codepzj.cn"
+    - "image.codepzj.cn"
+    - "share.codepzj.cn"
+    - "repository.codepzj.cn"
+    - "link.codepzj.cn"
+    - "status.codepzj.cn"
+    - "umami.codepzj.cn"
+    - "ai.codepzj.cn"
+    - "oracle.codepzj.cn"
+    - "tools.codepzj.cn"
+    - "docs.codepzj.cn"
+    - "twikoo.codepzj.cn"
+    - "cloud.codepzj.cn"
+    - "admin.codepzj.cn"
+
 # auto-push-urls-to-search-engine
 hexo_submit_urls_to_search_engine:
   submit_condition: count #链接被提交的条件，可选值：count | period 现仅支持count
@@ -171,12 +170,12 @@ hexo_submit_urls_to_search_engine:
   baidu: 1 # 是否向baidu提交（0：否；1：是）
   txt_path: submit_urls.txt ## 文本文档名， 需要推送的链接会保存在此文本文档里
   baidu_host: https://blog.codepzj.cn ## 在百度站长平台中注册的域名
-  baidu_token: Z7pgyZfCLvEkPJE5  ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
+  baidu_token: Z7pgyZfCLvEkPJE5 ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
   bing_host: https://blog.codepzj.cn ## 在bing站长平台中注册的域名
-  bing_token: f8fd7eea822b45ca844d0182b8e20f73  ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
+  bing_token: f8fd7eea822b45ca844d0182b8e20f73 ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
   google_host: https://blog.codepzj.cn ## 在google站长平台中注册的域名
   google_proxy: http://127.0.0.1:7897 # 向谷歌提交网址所使用的系统 http 代理，填 0 不使用，以Clash为例
   google_key_file: codepzj-33b8bda5076e.json #Google服务项目的json文件名全称，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!
-  replace: 0  # 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）
-  find_what: 
+  replace: 0 # 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）
+  find_what:
   replace_with:
