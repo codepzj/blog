@@ -1,6 +1,6 @@
 ---
 abbrlink: ''
-banner: null
+banner: https://image.codepzj.cn/image/513cf9e614eebaf6560ccc230d03c40f.png
 categories:
 - - 技术分享
 date: '2024-10-22T11:47:18.330622+00:00'
@@ -12,7 +12,7 @@ tags:
 - qexo
 title: 服务器部署Qexo
 topic: null
-updated: '2024-10-22T22:52:19.874+08:00'
+updated: '2024-10-23T00:53:18.426+08:00'
 ---
 ## 前言
 
