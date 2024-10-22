@@ -74,3 +74,15 @@ a,
 button:not(:disabled) {
   cursor: url('https://upyun.thatcdn.cn/public/cur/yiwei/S2.cur'), auto !important
 }
+
+@media screen and (max-width: 667px) {
+  .l_body .l_left {
+      position: fixed;
+      transform: translateX(-320px);
+      transition: transform .38s ease-out;
+      margin: 0;
+      left: 8px;
+      box-shadow: 0 12px 16px -4px rgba(0, 0, 0, .2);
+      z-index: 999;
+  }
+}
