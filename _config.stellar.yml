@@ -223,6 +223,6 @@ inject:
     - <script src="https://cdn.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/input-with-fire.js"></script>
     - <script src="/js/code-block.js"></script>
     - <script src="/js/load.js"></script>
-    - <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X1EZ99HL9"></script>
-    - <script src="/js/google-analytic.js"></script>
+    - <script defer src="https://umami.codepzj.cn/script.js" data-website-id="e6fdc7c7-3ad4-446e-9606-135abe5cc035"></script>
+
 
