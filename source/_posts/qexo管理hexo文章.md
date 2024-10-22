@@ -102,7 +102,7 @@ docker build -t qexo .
 
 使用这条命令打包qexo镜像，同时我把镜像上传到了github，有需要的自取。
 
-{% link [https://github.com/codepzj/CefFlashBrowser](https://github.com/users/codepzj/packages/container/package/qexo) icon:https://github.com/favicon.ico %}
+{% link https://github.com/users/codepzj/packages/container/package/qexo qexo镜像 icon:https://github.com/favicon.ico %}
 
 ### docker-compose.yaml启动qexo容器
 
