@@ -159,7 +159,7 @@ footer:
       </script>
       <div>
         <div>
-          站点访问量:<span id="qexo-site-pv"><span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span></span> | 站点访客数:<span id="qexo-site-uv"><span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span></span> | 页面访问量:<span id="qexo-page-pv"><span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span></span> | 页面载入时间:<span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span>
+          站点访问量:<span id="qexo-site-pv"><span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span></span>&nbsp;|&nbsp;站点访客数:<span id="qexo-site-uv"><span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span></span>&nbsp;|&nbsp;页面访问量:<span id="qexo-page-pv"><span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span></span>&nbsp;|&nbsp;页面载入时间:<span class="load-time" style="font-weight: bold;"><img src="/assets/images/loading.svg" alt="loading"></span>
         </div>
         <div>
           © 2024

@@ -13,7 +13,7 @@ travellings:
     layout: linklist
     columns: 1
     items:
-      - icon: '<img src="https://www.travellings.cn/assets/travelling.png">'
+      - icon: '<img src="https://image.codepzj.cn/image/202410221926637.png">'
         title: 开往-友链接力
         url: https://www.travellings.cn/go-by-clouds.html
 
