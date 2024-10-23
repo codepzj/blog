@@ -36,7 +36,7 @@ jobs:
           node-version: "20.12.0"
       # 使用pnpm包管理
       - name: use pnpm
-        run: npm i -g pnpm && npm i -g gulp && pnpm config set registry https://registry.npmmirror.com
+        run: npm i -g pnpm & pnpm config set registry https://registry.npmmirror.com
       # 安装依赖
       - name: install packages
         run: pnpm install --no-frozen-lockfile

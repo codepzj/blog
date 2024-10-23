@@ -172,11 +172,11 @@ footer:
       
       <script src="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/statistic.js"></script>
       <script>
-          loadStatistic("https://qexo.codepzj.cn")
+        if(window.location.hostname === 'blog.codepzj.cn') loadStatistic("https://qexo.codepzj.cn")
       </script>
       <div>
         <div>
-          站点访问量:<span id="qexo-site-pv"><span class="load-time"><img src="/assets/images/loading.svg" alt="loading"></span></span>次&nbsp;|&nbsp;站点访客数:<span id="qexo-site-uv"><span class="load-time"><img src="/assets/images/loading.svg" alt="loading"></span></span>次&nbsp;|&nbsp;页面访问量:<span id="qexo-page-pv"><span class="load-time"><img src="/assets/images/loading.svg" alt="loading"></span></span>次&nbsp;|&nbsp;页面载入时间:<span class="load-time"><img src="/assets/images/loading.svg" alt="loading"></span>秒
+          站点访问量:<span id="qexo-site-pv" style="font-weight:bold;"><img style="position:relative;top:4px;" src="/assets/images/loading.svg" alt="loading"></span>次&nbsp;|&nbsp;站点访客数:<span id="qexo-site-uv" style="font-weight:bold;"><img style="position:relative;top:4px;" src="/assets/images/loading.svg" alt="loading"></span>次&nbsp;|&nbsp;页面访问量:<span id="qexo-page-pv" style="font-weight:bold;"><img style="position:relative;top:4px;" src="/assets/images/loading.svg" alt="loading"></span>次&nbsp;|&nbsp;页面载入时间:<span class="load-time" style="font-weight:bold;"><img style="position:relative;top:4px;" src="/assets/images/loading.svg" alt="loading"></span>秒
         </div>
         <div>
           © 2024

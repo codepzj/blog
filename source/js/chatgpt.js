@@ -1,4 +1,9 @@
 function ChucklePostAI(config) {
+  // 检查是否启用文章辅助 AI
+  const aisummaryStatus = window.localStorage.getItem("aisummaryStatus")
+  if (!aisummaryStatus || aisummaryStatus === 'false') {
+    return
+  }
   // 获取要插入 AI 的文章容器
   function getArticleContainer() {
     let container = null;
@@ -115,8 +120,8 @@ function ChucklePostAI(config) {
       <div class="ai-explanation">${aiInterface.name}初始化中...</div>
       <div class="ai-btn-box">
         ${aiInterface.buttons
-          .map((btn) => `<div class="ai-btn-item">${btn}</div>`)
-          .join("")}
+        .map((btn) => `<div class="ai-btn-item">${btn}</div>`)
+        .join("")}
       </div>
     `;
 

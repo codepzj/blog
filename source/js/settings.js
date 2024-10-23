@@ -1,55 +1,66 @@
 const umami = {
-  "src": "https://umami.codepzj.cn/script.js",
+  src: "https://umami.codepzj.cn/script.js",
   "data-website-id": "e6fdc7c7-3ad4-446e-9606-135abe5cc035"
-}
-const domain = window.location.hostname
-const umamiText = document.getElementById('umami')
-document.addEventListener("DOMContentLoaded", function () {
+};
 
-  let umamiStatus = window.localStorage.getItem("umamiStatus")
-  if (domain === "blog.codepzj.cn") {
-    if (umamiStatus === null || umamiStatus === 'true') {
-      enableUmami()
-    } else {
-      disableUmami()
-    }
+const domain = window.location.hostname;
+const umamiText = document.getElementById("umami");
+const aiSummaryText = document.getElementById("chatgpt");
+const BLOG_DOMAIN = "blog.codepzj.cn";
+const UMAMI_STATUS_KEY = "umamiStatus";
+const AI_SUMMARY_STATUS_KEY = "aisummaryStatus";
+
+document.addEventListener("DOMContentLoaded", function () {
+  const umamiStatus = window.localStorage.getItem(UMAMI_STATUS_KEY);
+  const aisummaryStatus = window.localStorage.getItem(AI_SUMMARY_STATUS_KEY);
+
+  if (domain === BLOG_DOMAIN) {
+    umamiStatus === 'true' ? enableUmami() : disableUmami();
   } else {
-    disableUmami()
+    disableUmami();
   }
 
-})
+  if (aiSummaryText) aiSummaryText.innerText = aisummaryStatus === 'false' ? "已禁用" : "已启用";
+});
+
 function enableUmami() {
   if (!document.querySelector(`script[src="${umami.src}"]`)) {
-    let script = document.createElement("script")
-    script.setAttribute("src", umami["src"])
-    script.setAttribute("data-website-id", umami["data-website-id"])
-    script.defer = true
-    document.body.appendChild(script)
+    const script = document.createElement("script");
+    script.src = umami.src;
+    script.setAttribute("data-website-id", umami["data-website-id"]);
+    script.defer = true;
+    document.body.appendChild(script);
   }
-  updateUmamiStorage(true)
-  umamiText.innerText = "已启用"
+  updateUmamiStorage(true);
 }
 
 function disableUmami() {
-  const umamiScript = document.querySelector(`script[src="${umami.src}"]`)
-  if (umamiScript) {
-    umamiScript.remove()
-  }
-  updateUmamiStorage(false)
-  umamiText.innerText = "已禁用"
+  const umamiScript = document.querySelector(`script[src="${umami.src}"]`);
+  if (umamiScript) umamiScript.remove();
+  updateUmamiStorage(false);
 }
 
 function updateUmamiStorage(enable) {
-  window.localStorage.setItem("umamiStatus", enable)
-  umamiText.innerText = enable ? "已启用" : "已禁用"
+  window.localStorage.setItem(UMAMI_STATUS_KEY, enable);
+  if (umamiText) {
+    umamiText.innerText = enable ? "已启用" : "已禁用";
+  }
 }
 
 function toggleUmamiStatus() {
-  if (domain !== "blog.codepzj.cn") {
-    hud.toast("非博客页面，无法修改Umami统计状态")
-    return
+  if (domain !== BLOG_DOMAIN) {
+    hud.toast("非博客页面，无法修改Umami统计状态");
+    return;
   }
-  const umamiStatus = window.localStorage.getItem("umamiStatus");
-  umamiStatus === 'true' ? disableUmami() : enableUmami();
+  const umamiStatus = window.localStorage.getItem(UMAMI_STATUS_KEY);
+  (umamiStatus === 'true' ? disableUmami : enableUmami)();
   hud.toast(umamiStatus === 'true' ? "已禁用Umami统计" : "已启用Umami统计");
+}
+
+function toggleAISummaryStatus() {
+  const aisummaryStatus = window.localStorage.getItem(AI_SUMMARY_STATUS_KEY);
+  const newStatus = aisummaryStatus === 'true' ? 'false' : 'true';
+  window.localStorage.setItem(AI_SUMMARY_STATUS_KEY, newStatus);
+  aiSummaryText.innerText = newStatus === 'true' ? "已启用" : "已禁用";
+  hud.toast(newStatus === 'true' ? "已启用文章辅助AI" : "已禁用文章辅助AI");
 }
