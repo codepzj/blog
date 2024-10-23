@@ -27,29 +27,22 @@ references:
 
 ### 第一步、修改主题配置文件
 
-首先，来到主题配置文件：`theme/stellar/_config.yml`
+首先，来到主题配置文件：`_config.stellar.yml`
 
-在大概**507 行**左右的位置修改为:
+直接在最后插入以下代码:
 
-```yaml
-# AI 摘要
-# https://github.com/qxchuckle/Post-Summary-AI
-tianli_gpt:
-  enable: true
-  js: /js/chatgpt.js
-  field: post # all, post, wiki
-  key: 5Q5mpqRK5DkwT1X9Gi5e # tianli_gpt key
-  total_length: 1000 # 设置提交的字数限制，默认为1000字，上限为5000，超过5000字符将被截断
-  typewriter: true # 打字机动画
-  summary_directly: true # 是否直接显示摘要，否则显示 AI 简介
-  rec_method: all # all, web # 文章推荐方式，all：匹配数据库内所有文章进行推荐，web：仅当前站内的文章，默认all
-  hide_shuttle: true # 是否隐藏矩阵穿梭
-  summary_toggle: false
-  interface:
-    name: 文章摘要
-    introduce: "我是文章辅助AI，点击下方的按钮，让我生成本文简介"
-    version: OpenAI
-    button: ["介绍自己", "生成摘要"]
+```yml 
+plugins: _config.stellar.yml
+  ...
+  tianli_gpt:
+    enable: true
+    js: /js/chatgpt.js
+    field: post
+    interface:
+      name: 文章摘要
+      introduce: "我是文章辅助AI，点击下方的按钮，让我生成本文简介"
+      version: OpenAI
+      button: ["介绍自己", "生成摘要"]
 ```
 
 ### 第二步、注入自定义 GPT 的 js 文件
