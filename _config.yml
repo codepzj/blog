@@ -111,37 +111,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: stellar
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  - type: cjh_google_url_submitter
-  - type: cjh_bing_url_submitter
-  - type: cjh_baidu_url_submitter
-
 wiki_dir: wiki
 
 sitemap:
   path: sitemap.xml
-
-# 开启压缩
-uglify:
-  mangle: true
-  output:
-  compress:
-  exclude:
-    - "*.min.js"
-
-clean_css:
-  exclude:
-    - "*.min.css"
-
-html_minifier:
-  collapseBooleanAttributes: true
-  collapseWhitespace: true
-  ignoreCustomComments: [!!js/regexp /^\s*more/]
-  removeComments: true
-  removeEmptyAttributes: true
-  removeScriptTypeAttributes: true
-  removeStyleLinkTypeAttributes: true
-  minifyJS: true
-  minifyCSS: true

@@ -2,9 +2,7 @@
 title: 设置
 date: 2024-10-23 16:06:52
 description: 要设置一下吗？
-layout: post
 comments: false
-useai: false
 ---
 
 ## Umami统计

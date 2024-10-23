@@ -16,8 +16,7 @@ references:
 ---
 
 {% note TIPS
-最近要做项目，要使用响应式布局，而且 element-plus 想要实现响应式布局只能在 el-row 和 el-col 内部写入元素，对于我这种强迫症患者，还是选择了 tailwindcss，接下来我介绍一下我的学习笔记 
-color:yellow %}
+最近要做项目，要使用响应式布局，而且 element-plus 想要实现响应式布局只能在 el-row 和 el-col 内部写入元素，对于我这种强迫症患者，还是选择了 tailwindcss，接下来我介绍一下我的学习笔记 color:yellow %}
 
 ## 布局
 
