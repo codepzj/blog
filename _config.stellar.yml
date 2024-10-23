@@ -226,11 +226,19 @@ loading:
 inject:
   head:
     - <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+    - <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
+    - <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/MSCMDD/Qexo-Talks@main/Stellar/qexo_talk.css">
     - <link rel="stylesheet" href="/css/code-block.css">
     - <link rel="stylesheet" href="/css/custom.css">
 
+
   script:
     - <script src="https://cdn.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/input-with-fire.js"></script>
+    - <script defer src="https://umami.codepzj.cn/script.js" data-website-id="e6fdc7c7-3ad4-446e-9606-135abe5cc035"></script>
+    - <script src="https://unpkg.com/qexo-friends/Stellar/friends.js"></script>
+    - <script src="https://gcore.jsdelivr.net/gh/MSCMDD/Qexo-Talks@main/Stellar/qexo_talk.js"></script>
     - <script src="/js/code-block.js"></script>
     - <script src="/js/load.js"></script>
-    - <script defer src="https://umami.codepzj.cn/script.js" data-website-id="e6fdc7c7-3ad4-446e-9606-135abe5cc035"></script>
+    - <script>loadQexoFriends("friend-content", "https://qexo.codepzj.cn")</script>
+    - <script>showQexoTalks("qexot", "https://qexo.codepzj.cn", 20)</script>
+
