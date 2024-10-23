@@ -5,7 +5,6 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "seo": "hexo clean & hexo deploy & hexo clean",
     "dev": "hexo clean & hexo server"
   },
   "hexo": {
@@ -13,8 +12,6 @@
   },
   "dependencies": {
     "hexo": "^7.3.0",
-    "hexo-deployer-git": "^4.0.0",
-    "hexo-filter-nofollow": "^2.0.2",
     "hexo-fs": "^4.1.3",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.9",
@@ -31,7 +28,6 @@
     "hexo-renderer-marked": "^6.3.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-submit-urls-to-search-engine": "^2.1.0",
     "hexo-util": "^3.3.0",
     "tslib": "^2.8.0"
   }

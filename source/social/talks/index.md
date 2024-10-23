@@ -11,3 +11,4 @@ rightbar: latest_comment
 {% endbox %}
 
 <div id="qexot" class="tag-plugin timeline"></div>
+<script>showQexoTalks("qexot", "https://qexo.codepzj.cn", 20)</script>
