@@ -125,23 +125,23 @@ sitemap:
 
 # 开启压缩
 uglify:
-    mangle: true
-    output:
-    compress:
-    exclude:
-        - "*.min.js"
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - "*.min.js"
 
 clean_css:
-    exclude:
-        - "*.min.css"
+  exclude:
+    - "*.min.css"
 
 html_minifier:
-    collapseBooleanAttributes: true
-    collapseWhitespace: true
-    ignoreCustomComments: [!!js/regexp /^\s*more/]
-    removeComments: true
-    removeEmptyAttributes: true
-    removeScriptTypeAttributes: true
-    removeStyleLinkTypeAttributes: true
-    minifyJS: true
-    minifyCSS: true
+  collapseBooleanAttributes: true
+  collapseWhitespace: true
+  ignoreCustomComments: [!!js/regexp /^\s*more/]
+  removeComments: true
+  removeEmptyAttributes: true
+  removeScriptTypeAttributes: true
+  removeStyleLinkTypeAttributes: true
+  minifyJS: true
+  minifyCSS: true
