@@ -115,3 +115,20 @@ wiki_dir: wiki
 
 sitemap:
   path: sitemap.xml
+
+# 压缩代码
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'

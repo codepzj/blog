@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     disableUmami();
   }
 
-  if (aiSummaryText) aiSummaryText.innerText = aisummaryStatus === 'false' ? "已禁用" : "已启用";
+  if (aiSummaryText) aiSummaryText.innerText = aisummaryStatus === 'true' ? "已启用" : "已禁用";
 });
 
 function enableUmami() {

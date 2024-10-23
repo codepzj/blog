@@ -185,7 +185,6 @@ footer:
           主题，星际地球第<span id="runtime_span"></span>
         </div>
         <a href="https://beian.miit.gov.cn/" target="_blank" style="font-weight:bold;">粤ICP备2024275864号</a>
-        <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         <script type="text/javascript">
           function show_runtime() {
               window.setTimeout("show_runtime()", 1000);
