@@ -9,6 +9,7 @@ rightbar: friends_timeline
 {% quot 我的小伙伴们 icon:hashtag %}
 
 <div id="friend-content" class="friend-content"></div>
+<script src="https://unpkg.com/qexo-friends/Stellar/friends.js"></script>
 <script>loadQexoFriends("friend-content", "https://qexo.codepzj.cn")</script>
 
 {% quot 如何交换友链？ icon:hashtag %}

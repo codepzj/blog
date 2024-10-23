@@ -6,4 +6,4 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
-codepzj-33b8bda5076e.json
+pnpm-lock.yaml

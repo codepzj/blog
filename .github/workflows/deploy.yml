@@ -39,7 +39,7 @@ jobs:
         run: npm i -g pnpm && pnpm config set registry https://registry.npmmirror.com
       # 安装依赖
       - name: install packages
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
       # 清空缓存
       - name: clear
         run: pnpm run clean
