@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const aisummaryStatus = window.localStorage.getItem(AI_SUMMARY_STATUS_KEY);
 
   if (domain === BLOG_DOMAIN) {
-    umamiStatus === 'true' ? enableUmami() : disableUmami();
+    if (umamiStatus === null) enableUmami()
   } else {
     disableUmami();
   }
-
+  if (umamiText) umamiText.innerText = (umamiStatus === 'true' ? "已启用" : "已禁用");
+  if (aisummaryStatus === null) window.localStorage.setItem(AI_SUMMARY_STATUS_KEY, false);
   if (aiSummaryText) aiSummaryText.innerText = aisummaryStatus === 'true' ? "已启用" : "已禁用";
 });
 
@@ -42,9 +43,6 @@ function disableUmami() {
 
 function updateUmamiStorage(enable) {
   window.localStorage.setItem(UMAMI_STATUS_KEY, enable);
-  if (umamiText) {
-    umamiText.innerText = enable ? "已启用" : "已禁用";
-  }
 }
 
 function toggleUmamiStatus() {
@@ -53,7 +51,14 @@ function toggleUmamiStatus() {
     return;
   }
   const umamiStatus = window.localStorage.getItem(UMAMI_STATUS_KEY);
-  (umamiStatus === 'true' ? disableUmami : enableUmami)();
+  if (umamiStatus === 'true') {
+    disableUmami()
+    umamiText.innerText = "已禁用";
+  }
+  else {
+    enableUmami()
+    umamiText.innerText = "已启用";
+  }
   hud.toast(umamiStatus === 'true' ? "已禁用Umami统计" : "已启用Umami统计");
 }
 
