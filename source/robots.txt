@@ -5,4 +5,7 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /404.html
 
-Sitemap: https://blog.codepzj.cn/sitemap.xml
+Sitemap: https://blog.codepzj.cn/post-sitemap.xml
+Sitemap: https://blog.codepzj.cn/page-sitemap.xml
+Sitemap: https://blog.codepzj.cn/category-sitemap.xml
+Sitemap: https://blog.codepzj.cn/tag-sitemap.xml
