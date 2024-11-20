@@ -1,0 +1,39 @@
+name: deploy-hexo-blog
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 安装nodejs
+      - name: install nodejs
+        uses: actions/setup-node@v3.4.1
+        with:
+          node-version: "20.12.0"
+      # 使用pnpm包管理
+      - name: use pnpm
+        run: npm i -g pnpm && pnpm config set registry https://registry.npmmirror.com
+      # 安装依赖
+      - name: install packages
+        run: pnpm install --no-frozen-lockfile
+      # 清空缓存
+      - name: clear
+        run: pnpm run clean
+      # 打包项目
+      - name: build
+        run: pnpm run build
+      # 部署项目
+      - name: deploy to server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          password: ${{ secrets.REMOTE_PASSWORD }}
+          port: ${{ secrets.REMOTE_PORT }}
+          source: "public/"
+          target: ${{ secrets.REMOTE_TARGET }}

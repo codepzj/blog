@@ -1,0 +1,14 @@
+name: 我的笔记
+title: 温故知新
+subtitle: "温故知新 | blog.codepzj.cn"
+tags: 笔记
+icon: /assets/wiki/notes/icon.svg
+cover: /assets/wiki/notes/icon.svg
+coverpage: true
+description: 温故而知新，可以为师矣
+share: true
+comments: false
+base_dir: /wiki/notes/
+tree:
+  "2024":
+    - 2024/11/index

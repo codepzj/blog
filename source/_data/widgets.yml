@@ -1,0 +1,98 @@
+welcome:
+  layout: markdown
+  title: 友链接力
+  content: |
+    无人扶我青云志，我自踏雪至山巅，您已来到世界边缘，喜欢的话欢迎评论区交流吧～
+  linklist:
+    columns: 1
+    items:
+      - icon: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.629 20.472l-.542.916c-.483.816-1.69.816-2.174 0l-.542-.916c-.42-.71-.63-1.066-.968-1.262c-.338-.197-.763-.204-1.613-.219c-1.256-.021-2.043-.098-2.703-.372a5 5 0 0 1-2.706-2.706C2 14.995 2 13.83 2 11.5v-1c0-3.273 0-4.91.737-6.112a5 5 0 0 1 1.65-1.651C5.59 2 7.228 2 10.5 2h3c3.273 0 4.91 0 6.113.737a5 5 0 0 1 1.65 1.65C22 5.59 22 7.228 22 10.5v1c0 2.33 0 3.495-.38 4.413a5 5 0 0 1-2.707 2.706c-.66.274-1.447.35-2.703.372c-.85.015-1.275.022-1.613.219c-.338.196-.548.551-.968 1.262" opacity=".5"></path><path fill="currentColor" d="M7.25 9A.75.75 0 0 1 8 8.25h8a.75.75 0 0 1 0 1.5H8A.75.75 0 0 1 7.25 9m0 3.5a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75"></path></svg>'
+        title: 立即前往
+        url: /social/about/#comments
+
+
+social:
+  title: 社交
+  layout: linklist
+  columns: 1 
+  items:
+    - icon: 🙌
+      title: 小伙伴们
+      url: /social/friends/
+    - icon: ✋
+      title: 我的说说
+      url: /social/talks/
+    - icon: 👋
+      title: 关于本站
+      url: /social/about/
+    - icon: ✌️
+      title: 数据统计
+      url: /social/stats/
+
+# 文章目录树
+toc:
+  layout: toc
+  list_number: false
+  min_depth: 1
+  max_depth: 6
+  collapse: false # true / false / auto
+  # 编辑本文按钮
+  edit_this_page: # 从开头开始匹配替换
+    '_posts/': https://github.com/codepzj/blog/tree/main/source/_posts/
+    'wiki/go-learn/': https://github.com/codepzj/blog/tree/main/source/wiki/go-learn/
+    'wiki/ggzx/': https://github.com/codepzj/blog/tree/main/source/wiki/ggzx/
+
+# rss插件，最近更新的文章
+recent:
+  layout: recent
+  rss: /atom.xml # npm i hexo-generator-feed
+  limit: 8 # Count of posts
+
+# 显示具有相同 tags 的其它项目列表
+related:
+  layout: related
+
+# 标签索引组件
+tagcloud:
+  layout: tagcloud
+  title: 标签索引
+  # 标签索引配置
+  min_font: 12
+  max_font: 24
+  amount: 100
+  orderby: name
+  order: 1 # 1, sac 升序；-1, desc 降序
+  color: false # 使用颜色
+  start_color: # 开始的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  end_color: # 结束的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  show_count: false # 显示每个标签的文章总数
+
+# github用户卡片
+ghuser:
+  layout: ghuser
+  username: codepzj # your github login username
+  avatar: true # show avatar or not
+  menu: true # show menu or not
+
+ghrepo:
+  layout: ghrepo
+
+friends_timeline:
+  layout: timeline
+  title: 朋友文章
+  api: https://cdn.jsdelivr.net/gh/codepzj/friends@main/data.json
+  type: fcircle
+  limit: 20
+
+latest_comment:
+  layout: timeline
+  title: 最新评论
+  api: https://comment.codepzj.cn/api/v2/stats/latest_comments?site_name=星河代码库 # 参照文档获取服务对应的api
+  type: artalk # 选择评论服务
+  limit: 15 # 限制获取数量
+
+tagtree:
+  layout: tagtree
+  expand_all: false # 是否展开所有节点
+  expand_active: true # 是否展开当前节点
+  show_tagcon: true # 是否显示标签 icon

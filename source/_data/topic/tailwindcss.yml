@@ -1,0 +1,5 @@
+name: tailwindcss # 在面包屑导航上会显示较短的名字
+title: tailwindcss # 在列表页会显示完整的专栏标题
+description: tailwindcss - 无需自己写css的样式，直接在HTML中应用预先存在的类来设置元素的样式。
+icon: /assets/icons/tailwindcss.svg
+order_by: date

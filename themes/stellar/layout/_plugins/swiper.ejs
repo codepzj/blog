@@ -1,0 +1,29 @@
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    const swiper_api = document.getElementById("swiper-api");
+    if (swiper_api != undefined) {
+      utils.css(`<%- conf.css %>`);
+      utils.js(`<%- conf.js %>`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute("effect") || "";
+        const isHomepage = swiper_api.getAttribute("homepage") === "true";
+        var swiper = new Swiper(".swiper#swiper-api", {
+          slidesPerView: "auto",
+          spaceBetween: 8,
+          centeredSlides: !isHomepage,
+          effect: effect,
+          rewind: !isHomepage,
+          loop: isHomepage,
+          autoplay: false,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      });
+    }
+  });
+</script>

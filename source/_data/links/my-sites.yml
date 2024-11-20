@@ -1,0 +1,29 @@
+- title: gitea存储库
+  url: https://repository.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410191423538.png
+  icon: https://repository.codepzj.cn/assets/img/favicon.png
+
+- title: it-tools实用工具库
+  url: https://tools.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410191423462.png
+  icon: https://tools.codepzj.cn/android-chrome-192x192.png
+
+- title: alist云盘
+  url: https://share.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410191435392.png
+  icon: https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg
+
+- title: yourls短链接
+  url: https://link.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410201933322.png
+  icon: https://link.codepzj.cn/frontend/assets/img/favicon.ico
+
+- title: uptime状态监控
+  url: https://status.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410202212806.png
+  icon: https://status.codepzj.cn/favicon.ico
+
+- title: umami网站统计
+  url: https://umami.codepzj.cn/
+  cover: https://image.codepzj.cn/image/202410202214325.png
+  icon: https://umami.codepzj.cn/favicon.ico

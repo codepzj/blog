@@ -1,0 +1,279 @@
+/* 基础滚动条样式 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(200, 155, 155, 0);
+  border-radius: 3em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c3c0c1;
+  border-radius: 2em;
+  opacity: 1;
+}
+
+/* 导航栏提示框 */
+.nav-item {
+  position: relative;
+  /* 确保可以相对定位提示框 */
+  cursor: pointer;
+}
+
+.nav-item::before {
+  content: attr(title);
+  /* 使用元素的 title 属性作为内容 */
+  position: absolute;
+  white-space: nowrap;
+  color: #ffffff;
+  background: #656565;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: block;
+  /* 始终保持显示，但使用 opacity 控制可见性 */
+  transform: translateX(-50%);
+  /* 将提示框向左移动自身宽度的50%，以居中 */
+  top: 100%;
+  /* 将提示框放置在元素的底部 */
+  left: 50%;
+  /* 开始于元素的中心位置 */
+  opacity: 0;
+  /* 初始为透明，不可见 */
+  transition: opacity 0.2s ease-in-out;
+  /* 仅对透明度应用过渡效果 */
+  pointer-events: none;
+  /* 确保提示框不会影响鼠标事件 */
+  margin-top: 5px;
+  /* 在元素下方留一点间隙 */
+  z-index: 9999;
+  /* 确保提示在最上层显示 */
+}
+
+.nav-item:hover::before {
+  opacity: 1;
+  /* 鼠标悬停时全不透明，完全可见 */
+}
+
+/* 推荐文章标题颜色调整为白 */
+.related-posts .item .title {
+  color: var(--text);
+}
+
+/*鼠标样式*/
+body {
+  cursor: url('/assets/cur/S1.cur'), auto;
+}
+
+a,
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+  cursor: url('/assets/cur/S2.cur'), auto !important
+}
+
+@media screen and (max-width: 667px) {
+  .l_body .l_left {
+    position: fixed;
+    transform: translateX(-320px);
+    transition: transform .38s ease-out;
+    margin: 0;
+    left: 8px;
+    box-shadow: 0 12px 16px -4px rgba(0, 0, 0, .2);
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .l_body .l_right {
+    top: 8px;
+    position: fixed;
+    max-height: calc(100% - 8px* 2);
+    transform: translateX(320px);
+    transition: transform .38s ease-out;
+    margin: 0;
+    right: 8px;
+    box-shadow: 0 12px 16px -4px rgba(0, 0, 0, .2);
+    z-index: 100;
+    background: var(--site-bg);
+    overflow: auto;
+    --blur-bg: var(--alpha60);
+    --blur-px: 50px;
+  }
+}
+
+/* 代码块样式 */
+html .hljs {
+  background: var(--block);
+  padding: 0.2em !important;
+}
+
+html[data-theme="dark"] .hljs {
+  background: var(--block);
+  color: #eee;
+  padding: 0.2em;
+}
+
+html[data-theme="light"] .hljs {
+  background: var(--block);
+  color: #111;
+  padding: 0.2em;
+}
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol,
+.hljs-name {
+  color: #c78300
+}
+
+.hljs-link {
+  color: #569cd6;
+  text-decoration: underline
+}
+
+.hljs-built_in,
+.hljs-type {
+  color: #4ec9b0
+}
+
+.hljs-number,
+.hljs-class {
+  color: #2094f3
+}
+
+.hljs-string,
+.hljs-meta-string {
+  color: #4caf50
+}
+
+.hljs-regexp,
+.hljs-template-tag {
+  color: #9a5334
+}
+
+.hljs-subst,
+.hljs-function,
+.hljs-title,
+.hljs-params,
+.hljs-formula {
+  color: #c78300
+}
+
+.hljs-property {
+  color: #9c67a1;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #57a64a;
+  font-style: italic
+}
+
+.hljs-doctag {
+  color: #608b4e
+}
+
+.hljs-meta,
+.hljs-meta-keyword,
+.hljs-tag {
+  color: #9b9b9b
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: #bd63c5
+}
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-builtin-name {
+  color: #d34141
+}
+
+.hljs-section {
+  color: gold
+}
+
+.hljs-emphasis {
+  font-style: italic
+}
+
+.hljs-strong {
+  font-weight: bold
+}
+
+.hljs-bullet,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #c78300
+}
+
+.hljs-addition {
+  background-color: #00ff1121;
+  display: inline-block;
+  width: 100%
+}
+
+.hljs-deletion {
+  background-color: #ff000e21;
+  display: inline-block;
+  width: 100%
+}
+
+.bounce {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+.bounce:hover {
+  color: hsl(14 100% 57%);
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-2px);
+  }
+
+  60% {
+    transform: translateY(-0.5px);
+  }
+}
+
+.CodeClose {
+  color: #999;
+  margin: 0 auto 0.2em;
+  background: var(--block);
+  width: 100%;
+}
+
+.code-collapsed {
+  max-height: 500px;
+  overflow: hidden !important;
+  width: 100%;
+}
+
+.code-expanded {
+  height: auto;
+  overflow: visible !important;
+  width: 100%;
+}
+
+.social-wrap .social:hover {
+  background-color: #d7beb6
+}
