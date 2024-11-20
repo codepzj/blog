@@ -597,13 +597,13 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放<br>
 
 ```text
 {% ghcard codepzj %}
-{% ghcard codepzj/blog %}
+{% ghcard codepzj/AKGraph %}
 ```
 
 ### 效果
 
 {% ghcard codepzj theme: dark %}
-{% ghcard codepzj/blog theme: dark %}
+{% ghcard codepzj/AKGraph theme: dark %}
 
 ## toc 文档目录树
 

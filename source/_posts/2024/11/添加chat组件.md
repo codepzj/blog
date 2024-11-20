@@ -48,7 +48,7 @@ chat 组件，我参考了且听风吟和星日语大佬的博客，感谢他们
 
 <!-- chatcell user:user1 -->
 
-{% link https://github.com/codepzj/blog Blog icon:https://github.com/favicon.ico %}
+{% link https://github.com/codepzj/AKGraph 数据科学概论实验 icon:https://github.com/favicon.ico %}
 {% endchat %}
 
 <!-- tab wechat -->
@@ -73,7 +73,7 @@ chat 组件，我参考了且听风吟和星日语大佬的博客，感谢他们
 
 <!-- chatcell user:user1 -->
 
-{% link https://github.com/codepzj/blog Blog icon:https://github.com/favicon.ico %}
+{% link https://github.com/codepzj/AKGraph 数据科学概论实验 icon:https://github.com/favicon.ico %}
 {% endchat %}
 {% endtabs %}
 ## 用法介绍

@@ -113,8 +113,6 @@ wiki_dir: wiki
 
 sitemap:
   path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
 
 # nofollow设置
 nofollow:
@@ -152,31 +150,6 @@ neat_js:
   compress:
   exclude:
     - '*.min.js'
-lightgallery:
-  js: 'https://cdn.jsdelivr.net/npm/lightgallery.js/dist/js/lightgallery.min.js'
-  css: 'https://cdn.jsdelivr.net/npm/lightgallery.js/dist/css/lightgallery.min.css'
-  
-# enable: 开启/关闭 推送
-# cron: 执行时间周期
-# deployBranch: 部署分支
-# count: 每次提交最新的10篇文章，输入0或者不填写则默认为所有文章(建议是最新的10篇文章)
-# date: 更新时间(updated)|创建日期(created)
-# https://github.com/Lete114/hexo-seo-autopush.git
-hexo_seo_autopush:
-  cron: "'0 */6 * * *'"
-  deployBranch: main
-  baidu:
-    enable: true
-    date: created
-    count: 10
-  bing:
-    enable: true
-    date: created
-    count: 10
-  google:
-    enable: true
-    date: created
-    count: 10
 
 # hexo-safego安全跳转插件
 # see https://blog.qyliu.top/posts/1dfd1f41/
