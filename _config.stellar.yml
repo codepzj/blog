@@ -200,12 +200,11 @@ comments:
 
 # 文章搜索
 search:
-  service: algolia_search
-  algolia_search:
-    appId: 'ZT2RBKILOZ'
-    apiKey: 'd4a60b2a2dcd29838807907d02084dc2'
-    indexName: 'codepzj'
-
+  service: local_search # local_search, algolia_search, todo...
+  local_search: # 在 front-matter 中设置 indexing:false 来避免被搜索索引
+    field: all # post, page, all
+    path: /search.json # 搜索文件存放位置
+    content: true # 是否搜索内容
 
 # 开启图片点击放大功能 {% image %}
 tag_plugins:
