@@ -1,9 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var blogDomain = "blog.codepzj.cn";
-  console.log(location.href.indexOf(blogDomain))
-  if (location.href.indexOf(blogDomain) === -1) {
-    window.location = 'https://blog.codepzj.cn';
-  }
   // 控制台信息
   console.log(
     "%c Theme Stellar Version 1.29.1 浩瀚星河祝您每天开心 %c",
