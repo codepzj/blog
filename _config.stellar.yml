@@ -260,4 +260,6 @@ inject:
     - <script src="/js/extra.js"></script>
     - <script src="/vendor/js/google.js"></script>
     - <script src="/vendor/js/snow.js"></script>
+    - <script async defer src="https://maxkb.codepzj.top/api/application/embed?protocol=https&host=maxkb.codepzj.top&token=982d88fa8e29d5e0"></script>
+
 
