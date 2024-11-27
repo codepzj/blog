@@ -168,7 +168,7 @@ footer:
   content: | # 支持 Markdown 格式
     <div>
       <div>
-        页面加载时间为<span class="load-time" style="font-weight:bold;"><img style="position:relative;top:4px;" src="/assets/images/loading.svg" alt="loading"></span>秒，本站由浩瀚星河使用 <a style="font-weight: bold;" target="_blank" rel="noopener" href="https://github.com/codepzj/hexo-theme-stellar">Stellar</a> 主题，至今已持续稳定运行<span id="runtime_span"></span>。
+        页面加载时间为<span class="load-time" style="font-weight:bold;"><img style="position:relative;top:4px;" src="/assets/images/loading.svg" alt="loading"></span>秒，本站由浩瀚星河使用 <a style="font-weight: bold;" target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题，至今已持续稳定运行<span id="runtime_span"></span>。
       </div>
       <script type="text/javascript">
         function show_runtime() {
@@ -258,8 +258,5 @@ inject:
     - <link rel="stylesheet" href="/css/extra.css">
   script:
     - <script src="/js/extra.js"></script>
-    - <script src="/vendor/js/google.js"></script>
     - <script src="/vendor/js/snow.js"></script>
-    - <script async defer src="https://maxkb.codepzj.top/api/application/embed?protocol=https&host=maxkb.codepzj.top&token=982d88fa8e29d5e0"></script>
-
 

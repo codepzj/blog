@@ -20,57 +20,10 @@ function generate_title() {
   return config.title + ' | ' + config.subtitle;
 }
 function generate_description() {
-  if (theme.open_graph && theme.open_graph.enable) {
-    return '';
-  }
-  if (page.wiki) {
-    const proj = theme.wiki.tree[page.wiki]
-    if (proj?.description) {
-      return '<meta name="description" content="' + proj.description + '">'
-    }
-  }
-  if (page.description || page.excerpt || page.content) {
-    return '<meta name="description" content="' + truncate(strip_html(page.description || page.excerpt || page.content), {length: 150}) + '">';
-  }
   return '<meta name="description" content="' + config.description + '">';
 }
 function generate_keywords() {
-  if (page.keywords && page.keywords.length > 0) {
-    return '<meta name="keywords" content="' + page.keywords + '">';
-  } else if (page.tags && Array.isArray(page.tags) && page.tags.length > 0) {
-    return '<meta name="keywords" content="' + page.tags.map(tag => tag.name).join(',') + '">';
-  } else if (config.keywords && config.keywords.length > 0) {
-    return '<meta name="keywords" content="' + config.keywords + '">';
-  } else {
-    return '';
-  }
-}
-
-function generate_robots() {
-  if (is_home() == true) {
-    return '';
-  }
-  if (page.robots) {
-    return '<meta name="robots" content="' + page.robots + '">';
-  }
-}
-function og_args() {
-  var args = {};
-  if (theme.open_graph.twitter_id) {
-    args.twitter_id = theme.open_graph.twitter_id;
-  }
-  if (page.layout == 'post' && page.cover) {
-    args.twitter_card = 'summary_large_image';
-  }
-  return Object.assign(args, page.open_graph);
-}
-
-function preconnect() {
-  var el = '';
-  for (let href of (theme.preconnect || [])) {
-    el += `<link rel="preconnect" href="${href}" crossorigin>`;
-  }
-  return el;
+  return '<meta name="keywords" content="' + config.keywords + '">';
 }
 
 function custom_inject() {
@@ -91,46 +44,41 @@ function custom_inject() {
 
 <head>
   <meta charset="utf-8">
-  <meta name="robots" content="index">
-  <meta name="hexo-theme" content="<%- stellar_info('tree') %>" theme-name="<%- stellar_info('name') %>" theme-version="<%- stellar_info('version') %>">
-  <%- generate_robots() %>
-  <%- meta_generator() %>
-  <meta http-equiv='x-dns-prefetch-control' content='on' />
-  <%- preconnect() %>
-  <meta name="renderer" content="webkit">
-  <meta name="force-rendering" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="HandheldFriendly" content="True" >
-  <meta name="mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
-  <meta name="theme-color" content="#f9fafb">
-  <meta name="google-site-verification" content="A7e_s_KL4qrsCD3llOOfd0BTCmVLNuC3aqhVWFQF0WU" />
-  <meta name="sogou_site_verification" content="SNb0HKBCgF" /> 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X1EZ99HL9"></script>
-  
-  <title><%- generate_title() %></title>
-
-  <% if (theme.open_graph && theme.open_graph.enable) { %>
-    <%- open_graph(og_args()) %>
-  <% } %>
-  <%- generate_description() %>
-  
-  <%- generate_keywords() %>
-
-
-  
+  <title><%- config.title %></title>
+  <link rel="icon" href="https://blog.codepzj.cn/assets/images/avatar.jpg">
   <!-- feed -->
   <% if (config.feed && config.feed.path) { %>
     <%- feed_tag(config.feed.path, {title: config.title}) %>
   <% } %>
+  <meta name="author" content="<%- config.author %>">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#000">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<%- config.title %>">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  
+  <%- generate_description() %>
+  
+  <%- generate_keywords() %>
+
+  <meta property="og:image" content="https://blog.codepzj.cn/assets/images/avatar.jpg">
   
   <link rel="stylesheet" href="<%- url_for(`${theme.stellar.main_css}?v=${stellar_info('version')}`) %>">
 
-
-  <% if (config.favicon) { %>
-    <%- favicon_tag(config.favicon) %>
+  <!-- 动态生成 canonical 标签 -->
+  <% let path = page.path; %>
+  <% if (path.startsWith('/')) { %>
+    <% path = path.slice(1); %>
   <% } %>
+  <% if (path.endsWith('index.html')) { %>
+    <link rel="canonical" href="https://blog.codepzj.cn/<%- path.replace('index.html', '') %>">
+  <% } else { %>
+    <link rel="canonical" href="https://blog.codepzj.cn/<%- path %>">
+  <% } %>
+  
+  <meta property="og:url" content="<%- config.url %>">
+  <meta property="og:site_name" content="<%- config.title %>">
 
   <% if (config.highlight && config.highlight.enable == true && config.highlight.hljs == true) { %>
     <%- css(theme.style.codeblock.highlightjs_theme) %>
