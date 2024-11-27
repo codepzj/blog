@@ -112,7 +112,12 @@ theme: stellar
 wiki_dir: wiki
 
 sitemap:
-  path: sitemap.xml
+  path: 
+    - sitemap.xml
+  template: ./sitemap_template.xml
+  rel: false
+  tags: false
+  categories: false
 
 # nofollow设置
 nofollow:
@@ -131,8 +136,6 @@ feed:
   order_by: -date
   icon: /assets/images/avatar.jpg
   autodiscovery: true
-  template:
-    - ./source/custom.xml
 
 # 压缩代码
 neat_enable: true
