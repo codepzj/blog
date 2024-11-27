@@ -1062,9 +1062,9 @@
 
 .artalk pre,
 .atk-layer-wrap pre {
-  margin: 10px 0 0;
-  padding: 0;
-  line-height: 0;
+  margin: 1em 0 0 !important;
+  padding: 1em !important;
+  line-height: 0 !important;
 }
 
 .artalk pre code,

@@ -187,7 +187,7 @@ function ChucklePostAI(config) {
       return;
     }
     const content = getArticleContent();
-    const apiKey = "sk-2MWSccrkC6FH04DiVvbI1VlMWgXVUBY3dfDgMU8gMH9dGIzg";
+    const apiKey = "sk-HSTAHxreZSiNLiG35dD8Fb884bB946C796FbB0C25791A689";
     const requestBody = {
       model: "gpt-3.5-turbo",
       messages: [
@@ -203,7 +203,7 @@ function ChucklePostAI(config) {
 
     try {
       const response = await fetch(
-        "https://api.chatanywhere.tech/v1/chat/completions",
+        "https://free.v36.cm/v1/chat/completions",
         {
           method: "POST",
           headers: {
