@@ -4,22 +4,31 @@ function generate_title() {
     const proj = theme.wiki.tree[page.wiki]
     const wiki = proj?.name || page.wiki
     if (page.title) {
-      return wiki + __('symbol.colon') + page.title + ' - ' + config.title;
+      return wiki + __('symbol.colon') + page.title + ' | ' + config.title;
     } else {
-      return wiki + ' - ' + config.title;
+      return wiki + ' | ' + config.title;
     }
   } else {
     if (page.title) {
-      return page.title + ' - ' + config.title;
+      return page.title + ' | ' + config.title;
     } else if (page.category) {
-      return __('btn.category') + __('symbol.colon') + page.category + ' - ' + config.title;
+      return __('btn.category') + __('symbol.colon') + page.category + ' | ' + config.title;
     } else if (page.tag) {
-      return __('btn.tag') + __('symbol.colon') + page.tag + ' - ' + config.title;
+      return __('btn.tag') + __('symbol.colon') + page.tag + ' | ' + config.title;
     }
   }
-  return config.title + ' | ' + config.subtitle;
+  return config.title;
 }
 function generate_description() {
+  if (page.wiki) {
+    const proj = theme.wiki.tree[page.wiki]
+    if (proj?.description) {
+      return '<meta name="description" content="' + proj.description + '">'
+    }
+  }
+  if (page.description || page.excerpt || page.content) {
+    return '<meta name="description" content="' + truncate(strip_html(page.description || page.excerpt || page.content), {length: 150}) + '">';
+  }
   return '<meta name="description" content="' + config.description + '">';
 }
 function generate_keywords() {
@@ -45,17 +54,16 @@ function custom_inject() {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
-  <title><%- config.title %></title>
+  <title><%- generate_title() %></title>
   <link rel="icon" href="https://blog.codepzj.cn/assets/images/avatar.jpg">
-  <!-- feed -->
   <% if (config.feed && config.feed.path) { %>
-    <%- feed_tag(config.feed.path, {title: config.title}) %>
+    <%- feed_tag(config.feed.path, {title: generate_title()}) %>
   <% } %>
   <meta name="author" content="<%- config.author %>">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#000">
   <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="<%- config.title %>">
+  <meta property="og:title" content="<%- generate_title() %>">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   
   <%- generate_description() %>
@@ -73,11 +81,12 @@ function custom_inject() {
   <% } %>
   <% if (path.endsWith('index.html')) { %>
     <link rel="canonical" href="https://blog.codepzj.cn/<%- path.replace('index.html', '') %>">
+    <meta property="og:url" content="https://blog.codepzj.cn/<%- path.replace('index.html', '') %>">
   <% } else { %>
     <link rel="canonical" href="https://blog.codepzj.cn/<%- path %>">
+    <meta property="og:url" content="https://blog.codepzj.cn/<%- path %>">
   <% } %>
   
-  <meta property="og:url" content="<%- config.url %>">
   <meta property="og:site_name" content="<%- config.title %>">
 
   <% if (config.highlight && config.highlight.enable == true && config.highlight.hljs == true) { %>
