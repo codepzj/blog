@@ -21,4 +21,12 @@ updated: 2024-08-20 00:00:00
 
 {% timeline api:https://tgtalk.codepzj.cn/?cid=0&tag=talk&usetgclassification=true type:memos avatar:/assets/images/avatar.jpg %}
 {% endtimeline %}
+
+<!-- tab Qexo -->
+
+<div id="qexot" class="tag-plugin timeline"></div>
+<script src="/vendor/js/qexo_talk.js"></script>
+<link rel="stylesheet" href="/vendor/css/qexo_talk.css">
+<script>showQexoTalks("qexot", "https://qexo.codepzj.cn", 10)</script>
+
 {% endtabs %}

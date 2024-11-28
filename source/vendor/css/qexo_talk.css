@@ -1,0 +1,140 @@
+/*加载样式*/
+.qexo_inner,
+.qexo_loader {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.qexo_loading {
+  min-height: 200px;
+}
+
+.qexo_part {
+  min-height: 100px;
+}
+
+.qexo_loader {
+  background-color: #90939920;
+  width: 64px;
+  height: 64px;
+  perspective: 800px;
+}
+
+.qexo_inner {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.qexo_inner.one {
+  left: 0;
+  top: 0;
+  animation: rotate-one 1s linear infinite;
+  border-bottom: 3px solid #888;
+  position: absolute;
+}
+
+.qexo_inner.two {
+  right: 0;
+  top: 0;
+  animation: rotate-two 1s linear infinite;
+  border-right: 3px solid #888;
+  position: absolute;
+}
+
+.qexo_inner.three {
+  right: 0;
+  bottom: 0;
+  animation: rotate-three 1s linear infinite;
+  border-top: 3px solid #888;
+  position: absolute;
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+#qexot .qexot-list .timenode .body .footer {
+    margin: 0 0 -.5rem;
+    padding: .5rem 0 1rem;
+    user-select: none;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    background: var(--card);
+}
+
+#qexot .qexot-list .timenode .body .footer .flex {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .75rem;
+    align-items: stretch;
+}
+
+#qexot .qexot-list .timenode .body .footer .flex .item {
+    border-width: 1px;
+    border-color: var(--block);
+    border-style: solid;
+    margin: 2px;
+    border-radius: 4px;
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+}
+
+#qexot .qexot-like {
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: xx-small;
+  fill: currentColor;
+}
+
+#qexot .qexot-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.qexot-more {
+    transition: .38s ease-out;
+    background: linear-gradient(to right,#4c95fa,#38c9fa,#24f9c4,#24f9c4,#38c9fa,#4c95fa);
+    background-size: 1000%;
+    color: #fff;
+    text-shadow: 0 0 1px rgb(0 0 0 / 12%);
+    animation: glow 60s linear infinite;
+    border-radius: 100px;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1;
+    padding: .75rem 2rem;
+    font-size: .9375rem;
+    user-select: none;
+}

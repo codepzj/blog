@@ -168,21 +168,31 @@ footer:
   content: | # 支持 Markdown 格式
     <div>
       <div>
-        页面加载时间为<span class="load-time" style="font-weight:bold;"><img style="position:relative;top:4px;" src="/assets/images/loading.svg" alt="loading"></span>秒，本站由浩瀚星河使用 <a style="font-weight: bold;" target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题，至今已持续稳定运行<span id="runtime_span"></span>。
+          页面加载时间为<span class="load-time" style="font-weight: bold;">
+              <img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading">
+          </span>秒，本站由浩瀚星河使用 
+          <a style="font-weight: bold;" target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 
+          主题，至今已持续稳定运行<span id="runtime_span"></span>。
       </div>
+      站点访问量<span id="qexo-site-pv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>人
+      站点访客数<span id="qexo-site-uv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>人
+      页面访问量<span id="qexo-page-pv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>次
+      <script src="/vendor/js/statistic.js"></script>
+      <script>
+          loadStatistic("https://qexo.codepzj.cn");
+      </script>
       <script type="text/javascript">
-        function show_runtime() {
-            X = new Date("08/10/2024 00:00:00");
-            Y = new Date();
-            T = (Y.getTime() - X.getTime());
-            M = 24 * 60 * 60 * 1000;
-            a = T / M;
-            A = Math.floor(a);
-            runtime_span.innerHTML = A + "天"
-        }
-        show_runtime();
+          function show_runtime() {
+              const startDate = new Date("08/10/2024 00:00:00");
+              const currentDate = new Date();
+              const timeDifference = currentDate.getTime() - startDate.getTime();
+              const daysDifference = Math.floor(timeDifference / (24 * 60 * 60 * 1000));
+              document.getElementById("runtime_span").innerHTML = daysDifference + "天";
+          }
+          show_runtime();
       </script>
     </div>
+
 
 copycode:
   enable: true

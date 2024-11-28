@@ -1,7 +1,6 @@
 ---
 menu_id: social
 title: 小伙伴们 & 朋友文章
-
 leftbar: social, recent
 rightbar: friends_timeline
 updated: 2024-08-20 00:00:00
@@ -9,7 +8,10 @@ updated: 2024-08-20 00:00:00
 
 {% quot 我的小伙伴们 icon:hashtag %}
 
-{% friends friends-link %}
+<div id="qexo-friends"></div>
+<link rel="stylesheet" href="/vendor/css/friends.css"/>
+<script src="/vendor/js/friends.js"></script>
+<script>loadQexoFriends("qexo-friends", "https://qexo.codepzj.cn")</script>
 
 {% quot 如何交换友链？ icon:hashtag %}
 
@@ -21,9 +23,19 @@ updated: 2024-08-20 00:00:00
 
 欢迎大家来申请友链 {% emoji blobcat blobcatflower %}
 
+{% folding 我已满足全部条件，快告诉我如何交换友链！ %}
+
+{% note color:warning 如果您没有满足上述条件，即时提交了申请也不会通过哦～ %}
+
 ```yaml
-- title: 浩瀚星河
-  url: https://blog.codepzj.cn
-  avatar: https://image.codepzj.cn/image/202409111608193.jpg
-  description: A Go Enthusiast
+- 网站名: 浩瀚星河
+  网站简介: A Go Enthusiast
+  网址: https://blog.codepzj.cn
+  头像: https://image.codepzj.cn/image/202409111608193.jpg
 ```
+
+<div id="friends-api"></div>
+<script src="/vendor/js/friends-api.js"></script>
+<script>qexo_friend_api("friends-api", "https://qexo.codepzj.cn", "");</script>
+
+{% endfolding %}
