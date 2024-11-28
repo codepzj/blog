@@ -42,8 +42,9 @@ function generateStats(hexo) {
     topTags,
     topCategories
   };
-
-  const outputPath = path.join(hexo.source_dir, 'stats.json');
+  const isDevelopment = hexo.env.cmd === 'server';
+  const outputDir = isDevelopment ? hexo.source_dir : hexo.public_dir;
+  const outputPath = path.join(outputDir, 'stats.json');
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
 }
