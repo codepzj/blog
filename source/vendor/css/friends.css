@@ -86,7 +86,7 @@
 }
 
 .qexo-friends a {
-  color: black;
+  color: var(--text-p1);
 }
 
 .qexo-friends p {
@@ -95,7 +95,7 @@
 
 .qexo-friendurl {
   text-decoration: none !important;
-  color: black;
+  color: var(--text-p1);
 }
 
 .qexo-myfriend {
