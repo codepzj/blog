@@ -1,6 +1,6 @@
 welcome:
   layout: markdown
-  title: 友链接力
+  title: 欢迎，旅行者👋
   content: |
     无人扶我青云志，我自踏雪至山巅，您已来到世界边缘，喜欢的话欢迎评论区交流吧～
   linklist:
@@ -10,6 +10,23 @@ welcome:
         title: 立即前往
         url: /social/about/#comments
 
+announcement:
+  layout: markdown
+  title: 重要通知
+  content: |
+    从2024年11月起本站已不再开源，已经持有源码副本或fork的朋友请及时删除以防止被他人恶意搬运的情况继续发生。
+
+friends_apply:
+  layout: markdown
+  title: 携手并进
+  content: |
+    本站友链已改成动态形式，可点击👇的链接按钮前往申请
+  linklist:
+    columns: 1
+    items:
+      - icon: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10" opacity=".5"></path><path fill="currentColor" d="M8.397 15.553a.75.75 0 0 1 1.05-.155c.728.54 1.607.852 2.553.852s1.825-.313 2.553-.852a.75.75 0 1 1 .894 1.204A5.766 5.766 0 0 1 12 17.75a5.766 5.766 0 0 1-3.447-1.148a.75.75 0 0 1-.156-1.049M15 12c.552 0 1-.672 1-1.5S15.552 9 15 9s-1 .672-1 1.5s.448 1.5 1 1.5m-6 0c.552 0 1-.672 1-1.5S9.552 9 9 9s-1 .672-1 1.5s.448 1.5 1 1.5"></path></svg>'
+        title: 立即前往
+        url: /social/friends/
 
 social:
   title: 社交

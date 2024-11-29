@@ -51,8 +51,8 @@ site_tree:
     nav_tabs:
   # 博客文章内页配置
   home:
-    leftbar: welcome, recent
-    rightbar: tagcloud, latest_comment
+    leftbar: welcome, announcement
+    rightbar: friends_apply, tagcloud, latest_comment
   post:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: related, recent # for pages using 'layout:post'
