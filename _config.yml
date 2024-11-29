@@ -4,9 +4,9 @@
 
 # Site
 title: 浩瀚星河
-icon: /assets/images/avatar.jpg
+icon: /assets/images/avatar.webp
 subtitle: "代码,日常,人生 | haohanxinghe.com"
-avatar: /assets/images/avatar.jpg
+avatar: /assets/images/avatar.webp
 author: 浩瀚星河
 email: email@codepzj.cn
 description: "浩瀚星河的个人博客，分享技术与生活。“无人扶我青云志，我自踏雪至山巅🧐”。浩瀚星河是一名开源爱好者，结识了许多志同道合的朋友。这个博客记录了他在生活和技术学习中的点滴经历，充满启发与思考。网站界面简洁美观，内容丰富实用，人气互动活跃，涵盖了编程、生活、学习等多个领域，为读者提供了卓越的阅读体验。"
@@ -101,7 +101,7 @@ pagination_dir: page
 ## include:/exclude: options only apply to the 'source/' folder
 include:
 exclude:
-  - 'custom.xml'
+  - "custom.xml"
 ignore:
 
 # Extensions
@@ -112,7 +112,7 @@ theme: stellar
 wiki_dir: wiki
 
 sitemap:
-  path: 
+  path:
     - sitemap.xml
   template: ./sitemap_template.xml
   rel: false
@@ -124,7 +124,7 @@ nofollow:
   enable: true
   field: site
 
-# 订阅RSS 
+# 订阅RSS
 feed:
   enable: true
   type: atom
@@ -132,7 +132,7 @@ feed:
   limit: false
   content: true
   order_by: -date
-  icon: /assets/images/avatar.jpg
+  icon: /assets/images/avatar.webp
   autodiscovery: true
 
 # 压缩代码
@@ -143,34 +143,34 @@ neat_html:
 neat_css:
   enable: true
   exclude:
-    - '*.min.css'
+    - "*.min.css"
 neat_js:
   enable: true
   mangle: true
   output:
   compress:
   exclude:
-    - '*.min.js'
+    - "*.min.js"
 
 # hexo-safego安全跳转插件
 # see https://blog.qyliu.top/posts/1dfd1f41/
 hexo_safego:
-  enable: true  # 是否启用 hexo-safego 插件
-  enable_base64_encode: true  # 是否启用 Base64 编码链接
-  enable_target_blank: true  # 是否在跳转链接中添加 target="_blank"
-  url_param_name: 'u'  # URL 参数名，用于生成跳转链接
-  html_file_name: 'go.html'  # 跳转页面文件名
-  ignore_attrs:  # 需要忽略的链接属性列表
-    - 'data-fancybox'
-  apply_containers:  # 容器 ID 列表，如果为空则匹配整个 body
-    - '.md-text'
-  domain_whitelist:  # 域名白名单列表，包含白名单中的域名的链接将被忽略
-    - 'github.com'
-  apply_pages:  # 生效页面路径列表，只有在这些页面上才会对链接进行处理
-    - '/posts/'
-    - '/wiki/'
-  avatar: /assets/images/avatar.jpg  # 头像图片链接
-  title: "浩瀚星河"  # 标题
-  subtitle: "安全中心"  # 副标题
-  darkmode: true  # 是否启用夜间模式
-  debug: false  # 是否启用调试模式，开启后会输出详细的调试信息
+  enable: true # 是否启用 hexo-safego 插件
+  enable_base64_encode: true # 是否启用 Base64 编码链接
+  enable_target_blank: true # 是否在跳转链接中添加 target="_blank"
+  url_param_name: "u" # URL 参数名，用于生成跳转链接
+  html_file_name: "go.html" # 跳转页面文件名
+  ignore_attrs: # 需要忽略的链接属性列表
+    - "data-fancybox"
+  apply_containers: # 容器 ID 列表，如果为空则匹配整个 body
+    - ".md-text"
+  domain_whitelist: # 域名白名单列表，包含白名单中的域名的链接将被忽略
+    - "github.com"
+  apply_pages: # 生效页面路径列表，只有在这些页面上才会对链接进行处理
+    - "/posts/"
+    - "/wiki/"
+  avatar: /assets/images/avatar.webp # 头像图片链接
+  title: "浩瀚星河" # 标题
+  subtitle: "安全中心" # 副标题
+  darkmode: true # 是否启用夜间模式
+  debug: false # 是否启用调试模式，开启后会输出详细的调试信息

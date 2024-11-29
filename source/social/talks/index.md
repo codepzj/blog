@@ -19,7 +19,7 @@ updated: 2024-08-20 00:00:00
 
 <!-- tab Telegram -->
 
-{% timeline api:https://tgtalk.codepzj.cn/?cid=0&tag=talk&usetgclassification=true type:memos avatar:/assets/images/avatar.jpg %}
+{% timeline api:https://tgtalk.codepzj.cn/?cid=0&tag=talk&usetgclassification=true type:memos avatar:/assets/images/avatar.webp %}
 {% endtimeline %}
 
 <!-- tab Qexo -->

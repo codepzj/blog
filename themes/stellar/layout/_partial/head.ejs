@@ -58,7 +58,11 @@ function custom_inject() {
   <meta name="theme-color" content="#f9fafb">
   
   <title><%- generate_title() %></title>
-  <link rel="icon" href="https://haohanxinghe.com/assets/images/avatar.jpg">
+  <link rel="preconnect" href="https://comment.codepzj.cn">
+  <link rel="preconnect" href="https://image.codepzj.cn">
+  <link rel="preconnect" href="https://qexo.codepzj.cn">
+  <link rel="preconnect" href="https://npm.elemecdn.com">
+  <link rel="icon" href="https://haohanxinghe.com/assets/images/avatar.webp">
   <% if (config.feed && config.feed.path) { %>
     <%- feed_tag(config.feed.path, {title: generate_title()}) %>
   <% } %>
@@ -72,10 +76,8 @@ function custom_inject() {
   
   <%- generate_keywords() %>
 
-  <meta property="og:image" content="https://haohanxinghe.com/assets/images/avatar.jpg">
-  
-  <link rel="stylesheet" href="<%- url_for(`${theme.stellar.main_css}?v=${stellar_info('version')}`) %>">
-
+  <meta property="og:image" content="https://haohanxinghe.com/assets/images/avatar.webp">
+  <meta property="og:site_name" content="<%- config.title %>">
   <!-- 动态生成 canonical 标签 -->
   <% let path = page.path; %>
   <% if (path.startsWith('/')) { %>
@@ -88,8 +90,7 @@ function custom_inject() {
     <link rel="canonical" href="https://haohanxinghe.com/<%- path %>">
     <meta property="og:url" content="https://haohanxinghe.com/<%- path %>">
   <% } %>
-  
-  <meta property="og:site_name" content="<%- config.title %>">
+  <link rel="stylesheet" href="<%- url_for(`${theme.stellar.main_css}?v=${stellar_info('version')}`) %>">
 
   <meta name="msvalidate.01" content="30CD55A935E75B69A1565E31EA21513B" />
   <meta name="google-site-verification" content="Qy3yx1TuuE2ugoMZxLVO06pQ0cGF_oy7Ruemxkv3Ro0" />

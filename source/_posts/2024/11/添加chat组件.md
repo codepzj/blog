@@ -24,6 +24,7 @@ chat 组件，我参考了且听风吟和星日语大佬的博客，感谢他们
 {% endbox %}
 
 ## 效果展示
+
 {% tabs active:1 align:center %}
 
 <!-- tab qq -->
@@ -76,7 +77,9 @@ chat 组件，我参考了且听风吟和星日语大佬的博客，感谢他们
 {% link https://github.com/codepzj/AKGraph 数据科学概论实验 icon:https://github.com/favicon.ico %}
 {% endchat %}
 {% endtabs %}
+
 ## 用法介绍
+
 ```txt
 {% chat style:qq/wechat title:标题 time:时间 %}
 <!-- chattip 2024年5月22日 21:43  -->
@@ -92,19 +95,27 @@ content2
 {% endbox %}
 **对应效果**
 {% chat style:wechat title:标题 time:时间 %}
+
 <!-- chattip 2024年5月22日 21:43  -->
 <!-- chatcell user:user1 -->
+
 content1
+
 <!-- chatcell user:user2 align:right -->
+
 content2
 {% endchat %}
+
 ## 具体实现
 
-### 注册chat组件
+### 注册 chat 组件
+
 在`themes/stellar/scripts/tags/index.js`下新增以下代码
+
 ```js
-hexo.extend.tag.register('chat', require('./lib/chat')(hexo), true)
+hexo.extend.tag.register("chat", require("./lib/chat")(hexo), true);
 ```
+
 ### 新增 chat.js
 
 新建`themes/stellar/scripts/tags/lib/chat.js`，并写入以下代码
@@ -763,7 +774,7 @@ module.exports = (ctx) => {
 ```yaml users.yml
 user1:
   name: 浩瀚星河
-  avatar: https://haohanxinghe.com/assets/images/avatar.jpg
+  avatar: https://haohanxinghe.com/assets/images/avatar.webp
   label:
     text: 群主
 user2:

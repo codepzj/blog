@@ -31,7 +31,7 @@ updated: 2024-08-20 00:00:00
 - 网站名: 浩瀚星河
   网站简介: 代码，日常，生活
   网址: https://haohanxinghe.com
-  头像: https://haohanxinghe.com/assets/images/avatar.jpg
+  头像: https://haohanxinghe.com/assets/images/avatar.webp
 ```
 
 <div id="friends-api"></div>

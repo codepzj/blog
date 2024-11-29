@@ -108,6 +108,7 @@ style:
   leftbar:
     blur-px: 100px
     blur-bg: var(--alpha60)
+    background-image: url(/assets/images/sidebar.webp)
   text-align: left # justify/left/center/right
   prefix:
     h2: https://api.iconify.design/ci:heading-h2.svg
