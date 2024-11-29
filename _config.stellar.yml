@@ -230,21 +230,6 @@ plugins:
     enable: true
     js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
     transition: blur
-
-  fancybox:
-    enable: true
-    loader: /js/plugins/fancybox-loader.js
-    js: https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js
-    css: https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css
-    selector: .timenode p>img,article p img,.tag-plugin>.image-bg>img,.atk-content>p>img
-
-  mermaid:
-    enable: true # 可以在特定文章的 front-matter 中设置 mermaid: true 来开启，也可以在这里设置全局开启
-    style_optimization: false # use custom style in stellar
-    # js: https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js
-    js: https://cdn.jsdelivr.net/npm/mermaid@v9/dist/mermaid.min.js
-    # Available themes: default | dark | forest | neutral
-    theme: default
     
   tianli_gpt:
     enable: true
@@ -255,12 +240,6 @@ plugins:
       introduce: "我是文章辅助AI，点击下方的按钮，让我生成本文简介"
       version: OpenAI
       button: ["介绍自己", "生成摘要"]
-      
-  swiper:
-    enable: true
-    css: https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css
-    js: https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js
-
 
 inject:
   head:

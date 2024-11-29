@@ -88,15 +88,18 @@ git merge <branch>
 {% folding git merge 的前提 open: false %}
 当前处于 main 分支，现在需求是将最新的 dev 分支合并，合并的前提是 dev 与 main 分支的均来源于同一个祖先节点。
 
-```mermaid
-stateDiagram
-  [*] --> origin
-  origin --> dev
-  origin --> main
-  dev --> commit1
-  commit1 --> commit2
-  commit2 --> merge
-  main --> merge
+```txt
+         [*]
+          |
+      [origin]
+        /    \
+    [dev]    [main]
+       |        |
+   [commit1]    |
+       |         |
+   [commit2]    |
+       |         |
+    [merge] <----|
 ```
 
 {% endfolding %}
