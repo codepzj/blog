@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 星河代码库
+title: 浩瀚星河
 icon: /assets/images/avatar.jpg
-subtitle: "A Go Enthusiast | blog.codepzj.cn"
+subtitle: "代码,日常,人生 | haohanxinghe.com"
 avatar: /assets/images/avatar.jpg
 author: 浩瀚星河
 email: email@codepzj.cn
 description: "浩瀚星河的个人博客，分享技术与生活。“无人扶我青云志，我自踏雪至山巅🧐”。浩瀚星河是一名开源爱好者，结识了许多志同道合的朋友。这个博客记录了他在生活和技术学习中的点滴经历，充满启发与思考。网站界面简洁美观，内容丰富实用，人气互动活跃，涵盖了编程、生活、学习等多个领域，为读者提供了卓越的阅读体验。"
-keywords: "星河代码库,技术分享,生活思考,产品思考,设计开发"
+keywords: "浩瀚星河,技术分享,生活思考,产品思考,设计开发"
 favicon: /favicon.ico
-# subtitle: # subtitle 已移至主题配置中
+
 # 多语言
 language:
   - zh-CN
@@ -21,7 +21,7 @@ timezone: "Asia/ShangHai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.codepzj.cn
+url: https://haohanxinghe.com
 permalink: posts/:title.html
 permalink_defaults:
 pretty_urls:

@@ -205,7 +205,7 @@ comments:
     js: /vendor/js/artalk.js
     server: https://comment.codepzj.cn # 后端服务地址
     placeholder: "此时无声胜有声"
-    site: 星河代码库
+    site: 浩瀚星河
     darkMode: auto
 
 # 文章搜索

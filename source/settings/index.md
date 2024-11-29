@@ -13,7 +13,7 @@ updated: 2024-10-23 16:06:52
 
 当前状态：<span id="umami">loading</span>
 
-[访问数据统计](https://umami.codepzj.cn/share/JA1hZArBwpHuOtAp/blog.codepzj.cn)
+[访问数据统计](https://umami.codepzj.cn/share/oLUtFWLzW1nwDkOr/haohanxinghe.com)
 
 {% button 启用/禁用 javascript:toggleUmamiStatus() %}
 

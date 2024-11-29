@@ -55,7 +55,7 @@ function custom_inject() {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
   <title><%- generate_title() %></title>
-  <link rel="icon" href="https://blog.codepzj.cn/assets/images/avatar.jpg">
+  <link rel="icon" href="https://haohanxinghe.com/assets/images/avatar.jpg">
   <% if (config.feed && config.feed.path) { %>
     <%- feed_tag(config.feed.path, {title: generate_title()}) %>
   <% } %>
@@ -69,7 +69,7 @@ function custom_inject() {
   
   <%- generate_keywords() %>
 
-  <meta property="og:image" content="https://blog.codepzj.cn/assets/images/avatar.jpg">
+  <meta property="og:image" content="https://haohanxinghe.com/assets/images/avatar.jpg">
   
   <link rel="stylesheet" href="<%- url_for(`${theme.stellar.main_css}?v=${stellar_info('version')}`) %>">
 
@@ -79,11 +79,11 @@ function custom_inject() {
     <% path = path.slice(1); %>
   <% } %>
   <% if (path.endsWith('index.html')) { %>
-    <link rel="canonical" href="https://blog.codepzj.cn/<%- path.replace('index.html', '') %>">
-    <meta property="og:url" content="https://blog.codepzj.cn/<%- path.replace('index.html', '') %>">
+    <link rel="canonical" href="https://haohanxinghe.com/<%- path.replace('index.html', '') %>">
+    <meta property="og:url" content="https://haohanxinghe.com/<%- path.replace('index.html', '') %>">
   <% } else { %>
-    <link rel="canonical" href="https://blog.codepzj.cn/<%- path %>">
-    <meta property="og:url" content="https://blog.codepzj.cn/<%- path %>">
+    <link rel="canonical" href="https://haohanxinghe.com/<%- path %>">
+    <meta property="og:url" content="https://haohanxinghe.com/<%- path %>">
   <% } %>
   
   <meta property="og:site_name" content="<%- config.title %>">

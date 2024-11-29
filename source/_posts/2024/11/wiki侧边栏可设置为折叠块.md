@@ -146,7 +146,7 @@ color: yellow %}
 ```yaml
 name: golang学习指南
 title: golang学习指南
-subtitle: "go语言圣经 | blog.codepzj.cn"
+subtitle: "go语言圣经 | haohanxinghe.com"
 tags: 文档
 icon: /assets/wiki/go-learn/icon.svg
 cover: /assets/wiki/go-learn/icon.svg

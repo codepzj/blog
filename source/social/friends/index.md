@@ -29,9 +29,9 @@ updated: 2024-08-20 00:00:00
 
 ```yaml
 - 网站名: 浩瀚星河
-  网站简介: A Go Enthusiast
-  网址: https://blog.codepzj.cn
-  头像: https://image.codepzj.cn/image/202409111608193.jpg
+  网站简介: 代码，日常，生活
+  网址: https://haohanxinghe.com
+  头像: https://haohanxinghe.com/assets/images/avatar.jpg
 ```
 
 <div id="friends-api"></div>

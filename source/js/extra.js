@@ -61,13 +61,12 @@ if (window.PerformanceObserver) {
 // 设置页面基本配置
 const umami = {
   src: "https://umami.codepzj.cn/script.js",
-  "data-website-id": "e6fdc7c7-3ad4-446e-9606-135abe5cc035",
+  "data-website-id": "304aef24-a1fe-4dbd-a9fd-8f2edc618713",
 };
 
 const domain = window.location.host;
 const umamiText = document.getElementById("umami");
 const aiSummaryText = document.getElementById("chatgpt");
-const BLOG_DOMAIN = ["codepzj.cn", "blog.codepzj.cn", "localhost:4000"];
 const UMAMI_STATUS_KEY = "umamiStatus";
 const AI_SUMMARY_STATUS_KEY = "aisummaryStatus";
 
@@ -75,11 +74,7 @@ const AI_SUMMARY_STATUS_KEY = "aisummaryStatus";
 const initSetting = () => {
   const umamiStatus = window.localStorage.getItem(UMAMI_STATUS_KEY);
   const aisummaryStatus = window.localStorage.getItem(AI_SUMMARY_STATUS_KEY);
-  if (BLOG_DOMAIN.includes(domain)) {
-    if (umamiStatus === null) enableUmami();
-  } else {
-    disableUmami();
-  }
+  if (umamiStatus === null) enableUmami();
   if (umamiText)
     umamiText.innerText = umamiStatus === "true" ? "已启用" : "已禁用";
 
@@ -112,10 +107,6 @@ function updateUmamiStorage(enable) {
 }
 
 function toggleUmamiStatus() {
-  if (!BLOG_DOMAIN.includes(domain)) {
-    hud.toast("非博客页面");
-    return;
-  }
   const umamiStatus = window.localStorage.getItem(UMAMI_STATUS_KEY);
   if (umamiStatus === "true") {
     disableUmami();
