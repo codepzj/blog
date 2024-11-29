@@ -10,8 +10,6 @@
     selector += `, ${ctx.fancybox.selector}`;
   }
 
-  console.log(selector);
-
   var checkInterval = setInterval(function() {
     // 检查页面上是否有符合 selector 的元素
     var needFancybox = document.querySelectorAll(selector).length !== 0;
