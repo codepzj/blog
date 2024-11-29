@@ -123,8 +123,6 @@ sitemap:
 nofollow:
   enable: true
   field: site
-  exclude:
-    - 'codepzj.cn'
 
 # 订阅RSS 
 feed:
