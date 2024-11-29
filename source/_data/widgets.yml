@@ -106,7 +106,7 @@ latest_comment:
   title: 最新评论
   api: https://comment.codepzj.cn/api/v2/stats/latest_comments?site_name=浩瀚星河 # 参照文档获取服务对应的api
   type: artalk # 选择评论服务
-  limit: 15 # 限制获取数量
+  limit: 10 # 限制获取数量
 
 tagtree:
   layout: tagtree
