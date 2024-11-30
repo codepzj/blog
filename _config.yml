@@ -138,7 +138,7 @@ feed:
 # 压缩代码
 neat_enable: true
 neat_html:
-  enable: false
+  enable: true
   exclude:
 neat_css:
   enable: true

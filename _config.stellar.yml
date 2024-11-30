@@ -226,6 +226,7 @@ tag_plugins:
     default_color: accent # theme, accent, red, orange, yellow, green, cyan, blue, purple
 
 plugins:
+
   # 默认打开
   lazyload:
     enable: true
