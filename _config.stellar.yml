@@ -226,7 +226,13 @@ tag_plugins:
     default_color: accent # theme, accent, red, orange, yellow, green, cyan, blue, purple
 
 plugins:
-
+  fancybox:
+    enable: true
+    loader: /js/plugins/fancybox-loader.js
+    js: /vendor/js/fancybox.umd.js
+    css: /vendor/css/fancybox.css
+    selector: .timenode p>img,article p img,.tag-plugin>.image-bg>img,.atk-content>p>img
+    
   # 默认打开
   lazyload:
     enable: true
