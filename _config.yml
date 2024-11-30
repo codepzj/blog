@@ -4,7 +4,7 @@
 
 # Site
 title: 浩瀚星河
-icon: /assets/images/avatar.webp
+icon: /assets/images/avatar.jpg
 subtitle: "代码,日常,人生 | haohanxinghe.com"
 avatar: /assets/images/avatar.webp
 author: 浩瀚星河
@@ -132,7 +132,7 @@ feed:
   limit: false
   content: true
   order_by: -date
-  icon: /assets/images/avatar.webp
+  icon: /assets/images/avatar.jpg
   autodiscovery: true
 
 # 压缩代码
