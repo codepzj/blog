@@ -1,5 +1,5 @@
 ---
-title: 文章标题
+title: 2024/12/文章标题
 date: '2024-12-01 14:53:03'
 tags: []
 categories: []
@@ -13,4 +13,5 @@ poster: # 海报（可选，全图封面卡片）
   caption: # 标题下方的小字 # 可选
   color: # 标题颜色 # 可选
 references:
+  - '[文字](链接)'
 ---
