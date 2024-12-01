@@ -2,7 +2,7 @@
 abbrlink: ''
 categories:
 - 技术分享
-date: '2024-10-22T11:47:18+00:00'
+date: '2024-10-22 11:47:18'
 description: null
 excerpt: 本文介绍了使用Docker部署Qexo来搭建hexo博客的后台。
 permalink: posts/21.html
@@ -16,7 +16,7 @@ tags:
 - qexo
 title: qexo管理hexo文章
 topic: null
-updated: '2024-12-02T01:44:01.899+08:00'
+updated: ''
 ---
 ## 前言
 
