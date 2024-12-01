@@ -5,6 +5,7 @@ layout: page
 comments: false
 rightbar: toc
 updated: 2024-10-23 16:06:52
+excerpt: 个人博客的设置页面，控制Umami 统计，AI 摘要，黑夜模式，雪花模式的开关。
 ---
 
 ## Umami 统计

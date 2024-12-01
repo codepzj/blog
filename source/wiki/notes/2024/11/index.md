@@ -2,6 +2,7 @@
 wiki: notes
 title: 2024/11
 updated: 2024-11-1 00:00:00
+excerpt: 2024年11月份的代码笔记
 ---
 
 {% folders %}

@@ -1,9 +1,9 @@
 ---
 wiki: explore
 menu_id: explore
-title: window相关问题
-
+title: windows相关问题
 updated: 2024-8-18 00:00:00
+excerpt: windows相关问题及解决方案。
 ---
 
 {% folders %}

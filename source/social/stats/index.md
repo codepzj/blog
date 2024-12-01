@@ -3,6 +3,7 @@ title: 数据统计
 date: 2024-11-11 13:10:57
 leftbar: social, recent
 rightbar: toc
+excerpt: 博客热力图，文章分类，标签统计图。
 ---
 
 ### Blog Heatmap

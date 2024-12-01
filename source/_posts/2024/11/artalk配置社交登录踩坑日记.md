@@ -47,13 +47,11 @@ references:
 
 ![创建一个 app](https://image.codepzj.cn/image/202411171510177.png)
 
-{% note 注意 
+{% note 注意
 
 **Homepage** 写的是博客首页，**Callback** 写的是 artalk 对应的回调地址
 
 color: red %}
-
-
 
 ### 微信登录
 
@@ -94,4 +92,3 @@ color: red %}
 ![三个登录方式](https://image.codepzj.cn/image/202411171852589.png)
 
 一般来说，三个登录方式就够了，如果说用多种方式登录对应的邮箱是一致的，那么就可以合并到一个账户里面去。
-

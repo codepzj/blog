@@ -5,6 +5,7 @@ decription: 本站的隐私政策
 layout: page
 comments: false
 updated: 2024/10/22/15:00:00
+excerpt: 站点的隐私政策，使用UA，Cookie，LocalStorage来统计访客数据。
 ---
 
 ## 信息收集

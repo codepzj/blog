@@ -137,7 +137,7 @@ function findPageSectionIndex(sections, currentPagePath) {
 ## 使用方法
 
 在 `data/wiki/example.yml` 中设置 `folding` 属性为 `true` 即可。
-{% note 注意 
+{% note 注意
 如果不设置，默认 wiki 侧边栏不折叠
 color: yellow %}
 
@@ -170,6 +170,5 @@ tree:
     - 基本语法/函数
     - 基本语法/数组与切片
 ```
-
 
 配置好后的 [折叠效果](/wiki/go-learn/入门指南.html#start)

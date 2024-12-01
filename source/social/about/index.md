@@ -1,10 +1,10 @@
 ---
 menu_id: social
 title: 关于本站 & 留言板
-
 leftbar: social, recent
 rightbar: ghuser
 updated: 2024-08-20 00:00:00
+excerpt: 关于本站的介绍和留言板供游客发言。
 ---
 
 本站是 [**浩瀚星河**](https://haohanxinghe.com) 的 Blog，我爱好轻音乐，喜欢打乒乓球，常活跃于开源社区，热衷于设计和打磨美妙的东西。喜欢折腾一些博客，脚本，动画之类的玩意儿，希望大家能够喜欢我的博客。

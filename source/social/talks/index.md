@@ -1,10 +1,10 @@
 ---
 menu_id: social
 title: 我的说说 & 记录生活
-
 leftbar: social, recent
 rightbar: latest_comment
 updated: 2024-08-20 00:00:00
+excerpt: 博客的说说页面，包含Github，Telegram，Qexo
 ---
 
 {% box %}
