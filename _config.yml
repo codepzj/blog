@@ -119,6 +119,9 @@ sitemap:
   tags: false
   categories: true
 
+baidusitemap:
+  path: baidusitemap.xml
+  
 # nofollow设置
 nofollow:
   enable: true
