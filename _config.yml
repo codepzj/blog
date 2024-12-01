@@ -134,6 +134,8 @@ feed:
   order_by: -date
   icon: /assets/images/avatar.jpg
   autodiscovery: true
+  template:
+    - ./source/custom.xml
 
 # 压缩代码
 neat_enable: true
