@@ -1,22 +1,23 @@
 ---
-title: qexo管理hexo文章
-tags: [qexo]
-categories: [技术分享]
-permalink: posts/21.html
+abbrlink: ''
+categories:
+- 技术分享
+date: '2024-10-22T11:47:18+00:00'
+description: null
 excerpt: 本文介绍了使用Docker部署Qexo来搭建hexo博客的后台。
+permalink: posts/21.html
 poster:
-  topic: null
-  headline: qexo管理hexo文章
   caption: null
   color: null
-date: 2024-10-22 11:47:18
-updated: 2024-10-22 11:47:18
-topic:
-description:
-
-references:
+  headline: qexo管理hexo文章
+  topic: null
+references: null
+tags:
+- qexo
+title: qexo管理hexo文章
+topic: null
+updated: '2024-12-02T01:44:01.899+08:00'
 ---
-
 ## 前言
 
 **Qexo** 是一个快速、强大、美观的在线**静态博客编辑器**，使用的 Django 和 Bootstrap 框架开发，使用 GPL3.0 开源协议，支持**Vercel 部署**和**本地部署**。
@@ -43,7 +44,7 @@ mkdir build
 cd build
 ```
 
-新建一个 `qexo`文件夹，用于存放 qexo 的应用程序以及构建镜像所需的配置文件（build 文件夹），先进入 build 文件夹，新增两个文件，分别是 `Dockerfile`和 `configs.py`
+新建一个 `qexo`文件夹，用于存放 qexo 的应用程序以及构建镜像所需的配置文件（build 文件夹），先进入 build 文件夹，新增三个文件，分别是 `Dockerfile`， `configs.py`，`run.sh`
 
 ### Dockerfile
 
@@ -65,7 +66,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 # 设置工作目录
 WORKDIR /app
 # 拷贝数据
-RUN git clone https://ghproxy.com/https://github.com/Qexo/Qexo.git /app
+RUN git clone -b dev https://github.com/Qexo/Qexo.git .
 # 安装依赖
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
@@ -78,24 +79,35 @@ EXPOSE 8000
 VOLUME ["/app/db", "/app/data"]
 # 启动django
 ENTRYPOINT ["/bin/sh", "/app/run.sh"]
+
 ```
 
 ### configs.py
 
 ```python
-# 数据库配置
-import pymysql,os
+import pymysql
+import os
 
-DOMAINS = ["127.0.0.1", "qexo.codepzj.cn", "45.207.197.140"]
+DOMAINS = "*"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join('/app/db' , 'db.sqlite3'),
+        'NAME': os.path.join('/app/db', 'db.sqlite3'),
     }
 }
 ```
 
 我们这里使用 `Sqlite`数据库进行部署，这是一个文件数据库，主要是方便，这只是一个管理后台，并不需要过多的请求，所以直接使用文件数据库即可。
+
+### run.sh
+
+```bash
+#!/bin/bash
+
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver 0.0.0.0:8000 --noreload
+```
 
 ### 打包镜像
 
@@ -103,7 +115,7 @@ DATABASES = {
 docker build -t qexo .
 ```
 
-使用这条命令打包 qexo 镜像，同时我把镜像上传到了 github，有需要的自取。
+使用这条命令打包 qexo 镜像，同时我把镜像上传到了 github，直接使用即可，不需要担心任何问题，有需要的自取。
 
 {% link https://github.com/users/codepzj/packages/container/package/qexo qexo镜像 icon:https://github.com/favicon.ico %}
 
