@@ -3,7 +3,7 @@ abbrlink: ''
 banner: null
 categories:
 - - 技术分享
-date: '2024-12-01'
+date: '2024-12-01 14:53:03'
 excerpt: 升级1panel中openresty版本，让网站使用http3协议，加快网站速度。
 permalink: posts/34.html
 poster: '"topic":null,"headline":升级1panel中openresty版本，让网站使用http3协议，加快网站速度。,"caption":null,"color":null'
@@ -14,7 +14,7 @@ tags:
 - 1panel
 title: 1panel绕过限制，使用http3传输
 topic: null
-updated: '2024-12-01'
+updated: ''
 ---
 http3使用的**QUIC**传输协议（基于 UDP），对比http2，有以下优点：
 
