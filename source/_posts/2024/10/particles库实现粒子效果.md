@@ -12,8 +12,6 @@ poster:
 date: 2024-10-09 01:57:28
 updated: 2024-10-09 01:57:28
 topic:
-description:
-
 references:
 repo: VincentGarreau/particles.js
 ---

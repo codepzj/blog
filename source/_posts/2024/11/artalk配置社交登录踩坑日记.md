@@ -10,6 +10,7 @@ poster:
   caption: null
   color: null
 date: 2024-11-17 15:03:13
+updated: 2024-11-17 15:03:13
 topic:
 banner:
 references:

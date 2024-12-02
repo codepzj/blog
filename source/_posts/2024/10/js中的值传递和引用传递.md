@@ -12,8 +12,6 @@ poster:
 date: 2024-10-08 12:18:00
 updated: 2024-10-08 12:18:00
 topic:
-description:
-
 references:
 ---
 

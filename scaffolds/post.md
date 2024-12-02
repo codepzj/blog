@@ -1,6 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
+updated: {{ date }}
 tags: []
 categories: []
 permalink: posts/1.html

@@ -1,23 +1,21 @@
 ---
-abbrlink: ''
-categories:
-- 技术分享
-date: '2024-10-22 11:47:18'
-description: null
-excerpt: 本文介绍了使用Docker部署Qexo来搭建hexo博客的后台。
-permalink: posts/21.html
-poster:
-  caption: null
-  color: null
-  headline: qexo管理hexo文章
-  topic: null
-references: null
-tags:
-- qexo
 title: qexo管理hexo文章
-topic: null
-updated: '2024-12-02 02:05:19'
+date: '2024-10-22 11:47:18'
+updated: '2024-10-22 11:47:18'
+tags: [qexo]
+categories: [技术分享]
+permalink: posts/21.html
+topic:
+excerpt: "本文介绍了使用Docker部署Qexo来搭建hexo博客的后台。"
+banner:
+  poster:
+    topic:
+    headline: qexo管理hexo文章
+    caption:
+    color:
+references:
 ---
+
 ## 前言
 
 **Qexo** 是一个快速、强大、美观的在线**静态博客编辑器**，使用的 Django 和 Bootstrap 框架开发，使用 GPL3.0 开源协议，支持**Vercel 部署**和**本地部署**。
