@@ -2,5 +2,3 @@
 
 hexo.extend.filter.register('after_render:html', require('./lib/img_lazyload').processSite);
 hexo.extend.filter.register('after_render:html', require('./lib/img_onerror').processSite);
-hexo.extend.filter.register('after_generate', () => require('./lib/generate-stats').generateStats(hexo));
-
