@@ -97,7 +97,7 @@ ghrepo:
 friends_timeline:
   layout: timeline
   title: 朋友文章
-  api: https://cdn.jsdelivr.net/gh/codepzj/friends@main/data.json
+  api: https://raw.githubusercontent.com/codepzj/friends/refs/heads/main/data.json
   type: fcircle
   limit: 20
 
@@ -106,7 +106,7 @@ latest_comment:
   title: 最新评论
   api: https://comment.codepzj.cn/api/v2/stats/latest_comments?site_name=浩瀚星河 # 参照文档获取服务对应的api
   type: artalk # 选择评论服务
-  limit: 10 # 限制获取数量
+  limit: 5 # 限制获取数量
 
 tagtree:
   layout: tagtree

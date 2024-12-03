@@ -19,6 +19,8 @@ repo: codepzj/hexo-graph
 
 > hexo-graph，一个基于 echarts，集成博客热力图，博客月份统计图，分类统计图，标签统计图的多元化插件。
 
+请查看具体效果：https://haohanxinghe.com/social/stats/
+
 代码仓库：
 - [NPMJS](https://www.npmjs.com/package/hexo-graph?activeTab=readme)
 - [GitHub](https://github.com/codepzj/hexo-graph)
