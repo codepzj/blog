@@ -78,9 +78,9 @@ references:
 
 ### 效果
 
-{% icon solar: planet-bold-duotone %}
+{% icon solar:planet-bold-duotone %}
 {% icon https://image.codepzj.cn/image/202410192142540.png %}
-{% icon ph: seal-question-fill color: green %}
+{% icon ph:seal-question-fill color:green %}
 
 ## mark 标记标签
 
@@ -105,17 +105,17 @@ references:
 ### 效果
 
 {% mark 默认 %}
-{% mark 红 color: red %}
-{% mark 橙 color: orange %}
-{% mark 黄 color: yellow %}
-{% mark 绿 color: green %}
-{% mark 青 color: cyan %}
-{% mark 蓝 color: blue %}
-{% mark 紫 color: purple %}
-{% mark 亮 color: light %}
-{% mark 暗 color: dark %}
-{% mark 警告 color: warning %}
-{% mark 错误 color: error %}
+{% mark 红 color:red %}
+{% mark 橙 color:orange %}
+{% mark 黄 color:yellow %}
+{% mark 绿 color:green %}
+{% mark 青 color:cyan %}
+{% mark 蓝 color:blue %}
+{% mark 紫 color:purple %}
+{% mark 亮 color:light %}
+{% mark 暗 color:dark %}
+{% mark 警告 color:warning %}
+{% mark 错误 color:error %}
 
 ## hashtag 标签
 
@@ -145,13 +145,13 @@ references:
 ```
 
 ```text
-src: 图片地址
-description: 图片描述
-download: href # 下载地址，设置此值后鼠标放在图片上会显示下载地址，如果下载地址为图片地址，可以设置为 true
-width: 200px # 图片宽度
-padding: 16px # 图片四周填充宽度
-bg: '#ffffff' # 图片区域背景颜色，16进制
-fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大，如果放大地址为图片地址，可以设置为 true
+src:图片地址
+description:图片描述
+download:href # 下载地址，设置此值后鼠标放在图片上会显示下载地址，如果下载地址为图片地址，可以设置为 true
+width:200px # 图片宽度
+padding:16px # 图片四周填充宽度
+bg:'#ffffff' # 图片区域背景颜色，16进制
+fancybox:href # fancybox 放大地址，设置此值后会调用该链接放大，如果放大地址为图片地址，可以设置为 true
 ```
 
 ### 用法
@@ -163,8 +163,8 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 ### 效果
 
-{% image https://image.codepzj.cn/image/202410192146575.gif download: true width: 200px %}
-{% image https://image.codepzj.cn/image/202410192148722.gif 调试 css 的狼狈样子 download: true width: 200px padding: 16px %}
+{% image https://image.codepzj.cn/image/202410192146575.gif download:true width:200px %}
+{% image https://image.codepzj.cn/image/202410192148722.gif 调试 css 的狼狈样子 download:true width:200px padding:16px %}
 
 ## quot 引用
 
@@ -180,9 +180,9 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 ### 效果
 
 {% quot Stellar 是迄今为止最好用的主题 %}
-{% quot 热门话题 icon: hashtag %}
-{% quot 特别引用 icon: default %}
-{% quot prefix: solar: planet-bold-duotone 这是一个 icons.yml 配置的示例 %}
+{% quot 热门话题 icon:hashtag %}
+{% quot 特别引用 icon:default %}
+{% quot prefix:solar:planet-bold-duotone 这是一个 icons.yml 配置的示例 %}
 
 ## poetry 诗词
 
@@ -199,7 +199,7 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 ### 效果
 
-{% poetry 观沧海 author: 曹操 footer: 诗词节选 %}
+{% poetry 观沧海 author:曹操 footer:诗词节选 %}
 东临碣石，以观沧海。
 水何澹澹，山岛竦峙。
 树木丛生，百草丰茂。
@@ -235,7 +235,7 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 ### 效果
 
-{% paper style: underline title: 六国论 author: 苏洵 date: 宋 %}
+{% paper style:underline title:六国论 author:苏洵 date:宋 %}
 
 <!-- paragraph -->
 
@@ -277,7 +277,7 @@ fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大
 
 ### 效果
 
-{% reel 滕王阁序 author: 王勃 date: 重九日 footer: 节选 %}
+{% reel 滕王阁序 author:王勃 date:重九日 footer:节选 %}
 时维九月，序属三秋。
 潦水尽而寒潭清，烟光凝而暮山紫。
 俨骖騑于上路，访风景于崇阿。
@@ -322,7 +322,7 @@ color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、l
 实际：刚偷偷改完这个 bug <br> <br>
 
 使用场景：当非技术部门的同事给技术报问题的时候，技术可能在想“你个傻 X 会用吗”，当真的发现是自己的 bug，会默默改掉，然后给出上边的答复，让非技术部门的人觉得什么也没发生过。
-color: green %}
+color:green %}
 
 ## link 链接卡片
 
@@ -340,9 +340,9 @@ color: green %}
 
 ### 效果
 
-{% link https://www.baidu.com 百度 icon: https://www.baidu.com/favicon.ico %}
+{% link https://www.baidu.com 百度 icon:https://www.baidu.com/favicon.ico %}
 
-{% link https://github.com Github icon: https://github.com/favicon.ico %}
+{% link https://github.com Github icon:https://github.com/favicon.ico %}
 
 ## button 按钮
 
@@ -360,7 +360,7 @@ color: green %}
 
 ### 效果
 
-{% button vue3 文档 https://cn.vuejs.org icon: https://vueschool.io/images/banners/assets/CERTIFICATES/logo.svg color: yellow size: s %}
+{% button vue3 文档 https://cn.vuejs.org icon:https://vueschool.io/images/banners/assets/CERTIFICATES/logo.svg color:yellow size:s %}
 
 ## okr 目标管理
 
@@ -435,9 +435,9 @@ color: green %}
 
 {% copy curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh %}
 {% copy curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh prefix:$ %}
-{% copy git: https aceld/golang %}
-{% copy git: ssh aceld/golang %}
-{% copy git: gh aceld/golang %}
+{% copy git:https aceld/golang %}
+{% copy git:ssh aceld/golang %}
+{% copy git:gh aceld/golang %}
 
 ## radio 单选
 
@@ -450,8 +450,8 @@ color: green %}
 
 ### 效果
 
-{% radio color: red 未勾选的单选框 %}
-{% radio checked: true color: green 已勾选的单选框 %}
+{% radio color:red 未勾选的单选框 %}
+{% radio checked:true color:green 已勾选的单选框 %}
 
 ## checkbox 复选
 
@@ -468,10 +468,10 @@ color: green %}
 ### 效果
 
 {% checkbox 普通的没有勾选的复选框 %}
-{% checkbox checked: true 普通的已勾选的复选框 %}
-{% checkbox symbol: plus color: green checked: true 显示为加号的绿色的已勾选的复选框 %}
-{% checkbox symbol: minus color: yellow checked: true 显示为减号的黄色的已勾选的复选框 %}
-{% checkbox symbol: times color: red checked: true 显示为乘号的红色的已勾选的复选框 %}
+{% checkbox checked:true 普通的已勾选的复选框 %}
+{% checkbox symbol:plus color:green checked:true 显示为加号的绿色的已勾选的复选框 %}
+{% checkbox symbol:minus color:yellow checked:true 显示为减号的黄色的已勾选的复选框 %}
+{% checkbox symbol:times color:red checked:true 显示为乘号的红色的已勾选的复选框 %}
 
 ## audio 音频标签
 
@@ -482,14 +482,14 @@ color: green %}
 ```
 
 ```text
-type: 2/0 # 歌曲/歌单 # 不设置默认为2歌曲模式<br>
-netease: xxx # 歌曲/歌单 id ，具体 id 在网易云网页版的网址链接中寻找<br>
-autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放<br>
+type:2/0 # 歌曲/歌单 # 不设置默认为2歌曲模式<br>
+netease:xxx # 歌曲/歌单 id ，具体 id 在网易云网页版的网址链接中寻找<br>
+autoplay:1/0 # 自动播放/手动播放 # 不设置默认0手动播放<br>
 ```
 
 ### 效果
 
-{% audio type: 2 netease: 30375354 autoplay: 0 %}
+{% audio type:2 netease:30375354 autoplay:0 %}
 
 ## video 视频标签
 
@@ -501,7 +501,7 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放<br>
 
 ### 效果
 
-{% video bilibili: BV1BK411L7DJ width: 80% autoplay: 0 %}
+{% video bilibili:BV1BK411L7DJ width:80% autoplay:0 %}
 
 ## navbar 导航栏
 
@@ -525,7 +525,7 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放<br>
 
 ### 效果
 
-{% frame iphone11 img: https://xaoxuu.com/assets/wiki/prohud/toast/demo-loading.png video: https://xaoxuu.com/assets/wiki/prohud/toast/demo-loading.mp4 focus: top %}
+{% frame iphone11 img:https://xaoxuu.com/assets/wiki/prohud/toast/demo-loading.png video:https://xaoxuu.com/assets/wiki/prohud/toast/demo-loading.mp4 focus:top %}
 
 ## 文本修饰标签集
 
@@ -549,7 +549,7 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放<br>
 - 这是 {% emp 着重号 %} 标签
 - 这是 {% wavy 波浪线 %} 标签
 - 这是 {% del 删除线 %} 标签
-- 这是 {% sup 上角标 color: red %} 标签
+- 这是 {% sup 上角标 color:red %} 标签
 - 这是 {% sub 下角标 %} 标签
 - 这是 {% kbd 键盘样式 %} 标签，试一试：{% kbd Ctrl %} + {% kbd S %}
 
@@ -602,8 +602,8 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放<br>
 
 ### 效果
 
-{% ghcard codepzj theme: dark %}
-{% ghcard codepzj/AKGraph theme: dark %}
+{% ghcard codepzj theme:dark %}
+{% ghcard codepzj/AKGraph theme:dark %}
 
 ## toc 文档目录树
 
@@ -621,7 +621,7 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放<br>
 
 ### 效果
 
-{% toc wiki: niuke open: true 牛客 %}
+{% toc wiki:niuke open:true 牛客 %}
 
 ## folding 折叠容器
 
@@ -645,7 +645,7 @@ content
 
 ### 效果
 
-{% folding 这是一段 js 代码 open: false color: blue %}
+{% folding 这是一段 js 代码 open:false color:blue %}
 
 ```js
 console.log(555);
@@ -700,11 +700,11 @@ console.log(555);
 
 ### 效果
 
-{% tabs active: 2 align: center %}
+{% tabs active:2 align:center %}
 
 <!-- tab 图片 -->
 
-{% image https://xaoxuu.com/assets/wiki/stellar/icon.svg width: 100px %}
+{% image https://xaoxuu.com/assets/wiki/stellar/icon.svg width:100px %}
 
 <!-- tab 代码块 -->
 
