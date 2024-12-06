@@ -19,7 +19,7 @@ excerpt: 博客的说说页面，包含Github，Telegram，Qexo
 
 <!-- tab Telegram -->
 
-{% timeline api:https://tgtalk.codepzj.cn/?cid=0&tag=talk&usetgclassification=true type:memos avatar:/assets/images/avatar.webp %}
+{% timeline api:https://tgtalk.codepzj.cn/?cid=0&tag=talk&usetgclassification=true type:memos avatar:/assets/images/avatar.jpg %}
 {% endtimeline %}
 
 <!-- tab Qexo -->
