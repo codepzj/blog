@@ -105,6 +105,9 @@ style:
     link: "hsl(207 90% 54%)" # 超链接颜色
     button: "hsl(192 98% 55%)" # 按钮颜色
     hover: "hsl(14 100% 57%)" # 按钮高亮颜色
+  animated_avatar:
+    animate: always # auto, always
+    background:
   leftbar:
     blur-px: 100px
     blur-bg: var(--alpha60)
