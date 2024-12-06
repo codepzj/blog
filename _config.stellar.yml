@@ -73,7 +73,7 @@ site_tree:
     rightbar: tagcloud
   # 其它自定义页面配置 layout: page
   page:
-    leftbar:  recent
+    leftbar: recent
     rightbar: timeline
 
 open_graph:
@@ -105,9 +105,6 @@ style:
     link: "hsl(207 90% 54%)" # 超链接颜色
     button: "hsl(192 98% 55%)" # 按钮颜色
     hover: "hsl(14 100% 57%)" # 按钮高亮颜色
-  animated_avatar:
-    animate: always # auto, always
-    background:
   leftbar:
     blur-px: 100px
     blur-bg: var(--alpha60)
@@ -179,14 +176,14 @@ footer:
           <a style="font-weight: bold;" target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 
           主题，至今已持续稳定运行<span id="runtime_span"></span>。
       </div>
-      站点访问量<span id="qexo-site-pv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>人
-      站点访客数<span id="qexo-site-uv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>人
+      站点访问量<span id="qexo-site-pv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>次
       页面访问量<span id="qexo-page-pv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>次
+      站点访客数<span id="qexo-site-uv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>人
       <div style="text-align: center;margin-top:2em;">
         <a target="_blank" href="https://hexo.io/" data-title="博客框架为Hexo_v7.3.0" title="博客框架为Hexo_v7.3.0"
             style="text-decoration: none;">
             <img src="https://image.codepzj.cn/image/202412012021794.svg"
-                data-lazy-src="https://image.codepzj.cn/image/202412012021794.svg" alt="博客框架为Hexo_v5.4.0"
+                data-lazy-src="https://image.codepzj.cn/image/202412012021794.svg" alt="博客框架为Hexo_v7.3.0"
                 style="max-width: 100%; display: inline-block;">
         </a>
         <a href="https://http3.wcode.net/?q=haohanxinghe.com" data-title="本站已支持HTTP/3" title="本站已支持HTTP/3" target="_blank"
@@ -213,17 +210,15 @@ footer:
           loadStatistic("https://qexo.codepzj.cn");
       </script>
       <script type="text/javascript">
-          function show_runtime() {
-              const startDate = new Date("08/10/2024 00:00:00");
-              const currentDate = new Date();
-              const timeDifference = currentDate.getTime() - startDate.getTime();
-              const daysDifference = Math.floor(timeDifference / (24 * 60 * 60 * 1000));
-              document.getElementById("runtime_span").innerHTML = daysDifference + "天";
-          }
-          show_runtime();
+          document.addEventListener("DOMContentLoaded", function () {
+            const startDate = new Date("08/10/2024 00:00:00");
+            const currentDate = new Date();
+            const timeDifference = currentDate.getTime() - startDate.getTime();
+            const daysDifference = Math.floor(timeDifference / (24 * 60 * 60 * 1000));
+            document.getElementById("runtime_span").innerHTML = daysDifference + "天";
+          });
       </script>
     </div>
-
 
 copycode:
   enable: true
@@ -262,13 +257,13 @@ plugins:
     js: /vendor/js/fancybox.umd.js
     css: /vendor/css/fancybox.css
     selector: .timenode p>img,article p img,.tag-plugin>.image-bg>img,.atk-content>p>img
-    
+
   # 默认打开
   lazyload:
     enable: true
     js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
     transition: blur
-    
+
   tianli_gpt:
     enable: true
     js: /vendor/js/chatgpt.js
@@ -286,4 +281,3 @@ inject:
   script:
     - <script src="/js/extra.js"></script>
     - <script src="/vendor/js/snow.js"></script>
-
