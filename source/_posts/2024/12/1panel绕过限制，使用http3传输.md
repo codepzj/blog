@@ -3,7 +3,7 @@ title: 1panel绕过限制，使用http3传输
 tags: [1panel, http3]
 categories: [技术分享]
 permalink: posts/34.html
-excerpt: 升级1panel中openresty版本，让网站使用http3协议，加快网站速度。
+excerpt: 1panel的最新官方应用商店的openresty的版本为1.21，不满足开启 http31panel升级1panel中openresty版本，让网站使用http3协议，加快网站速度。
 poster:
   topic: null
   headline: 1panel绕过限制，使用http3传输

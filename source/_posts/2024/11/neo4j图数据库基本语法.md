@@ -3,7 +3,7 @@ title: neo4j图数据库基本语法
 tags: [neooj]
 categories: [技术分享]
 permalink: posts/24.html
-excerpt: 本文讲述了neo4j图数据库的基本概念及增删改查。
+excerpt: 本文讲述了neo4j图数据库的基本概念及增删改查，如增加节点，增加关系，修改节点属性，查询节点，删除节点特定属性等等
 poster:
   topic: null
   headline: neo4j图数据库基本语法

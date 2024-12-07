@@ -4,7 +4,7 @@ title: 小伙伴们 & 朋友文章
 leftbar: social, recent
 rightbar: friends_timeline
 updated: 2024-08-20 00:00:00
-excerpt: 小伙伴文章和交换友链的要求。
+excerpt: 通过rss记录小伙伴文章，交换友链的要求以及提供动态申请友链的入口。
 ---
 
 {% quot 我的小伙伴们 icon:hashtag %}

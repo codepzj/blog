@@ -3,7 +3,7 @@ title: tailwindcss学习笔记
 tags: [taiwindcss, css]
 categories: [技术分享]
 permalink: posts/4.html
-excerpt: 本文是一份关于使用TailwindCSS实现响应式布局的学习笔记。
+excerpt: 本文是一份关于使用TailwindCSS实现响应式布局的学习笔记，涵盖布局、弹性盒子、间距、、尺寸、排版、背景、边框、效果、过渡和动画多个属性。
 poster:
   topic: null
   headline: tailwindcss学习笔记

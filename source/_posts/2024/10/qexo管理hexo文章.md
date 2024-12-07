@@ -6,7 +6,7 @@ tags: [qexo]
 categories: [技术分享]
 permalink: posts/21.html
 topic:
-excerpt: "本文介绍了使用Docker部署Qexo来搭建hexo博客的后台。"
+excerpt: 本文介绍了如何使用Docker构建Qexo镜像，提供了相关代码和脚本，并说明如何使用Qexo镜像来搭建hexo博客的后台。
 banner:
   poster:
     topic:

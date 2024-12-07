@@ -3,7 +3,7 @@ title: wiki侧边栏可设置为折叠块
 tags: [stellar]
 categories: [技术分享]
 permalink: posts/29.html
-excerpt: wiki添加folding属性控制侧边栏折叠
+excerpt: wiki添加folding属性控制侧边栏折叠，原主题wiki文档数量过多的时候会有滚动条，未免有点难定位到自己的文章，因此魔改来方便自己查阅文章。
 poster:
   topic: null
   headline: wiki侧边栏可设置为折叠块

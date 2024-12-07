@@ -3,7 +3,7 @@ title: 数据统计
 date: 2024-11-11 13:10:57
 leftbar: social, recent
 rightbar: toc
-excerpt: 博客热力图，文章分类，标签统计图。
+excerpt: 通过博客热力图，月份统计图，文章分类图，标签统计图来记录博客的发表文章的状况，使用的hexo-graph包。
 ---
 
 ### Blog Heatmap

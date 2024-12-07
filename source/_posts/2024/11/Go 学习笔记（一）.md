@@ -3,7 +3,7 @@ title: Go 学习笔记（一）
 tags: [golang]
 categories: [技术分享]
 permalink: posts/31.html
-excerpt: Golang的学习笔记，涵盖锁、文件读写、原生http的使用。
+excerpt: Golang的第一次学习笔记，涵盖锁（互斥锁，读写锁）、文件读写、原生http（客户端，服务端）的使用。
 poster:
   topic: null
   headline: Go 学习笔记（一）

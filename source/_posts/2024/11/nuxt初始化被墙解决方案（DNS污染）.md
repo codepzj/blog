@@ -3,7 +3,7 @@ title: nuxt初始化被墙解决方案（DNS污染）
 tags: [nuxt]
 categories: [设计开发]
 permalink: posts/33.html
-excerpt: nuxt初始化被墙，修改hosts文件解决
+excerpt: nuxt初始化被墙，raw.githubusercontent.com无法ping通，通过修改hosts文件和更换npm镜像源解决
 poster:
   topic: null
   headline: nuxt初始化被墙解决方案（DNS污染）

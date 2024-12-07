@@ -11,7 +11,7 @@ poster:
 date: 2024-10-31 17:29:05
 updated: 2024-10-31 17:29:05
 topic:
-excerpt: 本文介绍了一款名为Follow的订阅源工具。
+excerpt: 本文介绍了一款名为Follow的订阅源工具，可以订阅各种源，例如：Github，博客，小红书，豆瓣，知乎等，甚至还可以订阅 Follow 用户，以及用户分享的订阅列表。
 references:
 ---
 

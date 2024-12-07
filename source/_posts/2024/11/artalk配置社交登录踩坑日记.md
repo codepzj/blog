@@ -3,7 +3,7 @@ title: artalk配置社交登录踩坑日记
 tags: [artalk]
 categories: [技术分享]
 permalink: posts/30.html
-excerpt: 记录一次配置artalk登录配置遇到的坑。
+excerpt: 记录一次配置artalk登录配置遇到的坑，通过配置匿名登录，邮件登录，GitHub登录，微信登录来完善artalk的登录功能，其中微信登录要300元。
 poster:
   topic: null
   headline: artalk配置社交登录踩坑日记
