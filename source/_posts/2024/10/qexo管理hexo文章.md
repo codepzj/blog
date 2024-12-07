@@ -114,7 +114,7 @@ docker build -t qexo .
 
 使用这条命令打包 qexo 镜像，同时我把镜像上传到了 github，直接使用即可，不需要担心任何问题，有需要的自取。
 
-{% link https://github.com/users/codepzj/packages/container/package/qexo qexo镜像 icon:https://github.com/favicon.ico %}
+{% link https://hub.docker.com/repository/docker/codepzj/qexo/tags qexo镜像 icon:https://hub.docker.com/favicon.ico %}
 
 ### docker-compose.yaml 启动 qexo 容器
 
@@ -124,7 +124,7 @@ docker build -t qexo .
 version: "3.9"
 services:
   qexo:
-    image: "ghcr.io/codepzj/qexo:latest"
+    image: "codepzj/qexo:1.0"
     volumes:
       - "./data/blog:/app/data"
       - "./data/qexo/db:/app/db"
