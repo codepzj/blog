@@ -35,6 +35,7 @@ openSUSE-Tumbleweed             openSUSE Tumbleweed
 
 查看可安装镜像
 {% copy wsl --list prefix:$ %}
+
 ```txt
 适用于 Linux 的 Windows 子系统分发:
 docker-desktop-data (默认)
@@ -44,5 +45,61 @@ Ubuntu-24.04
 
 设置`Ubuntu-24.04`为默认
 {% copy wsl --set-default Ubuntu-24.04 prefix:$ %}
+
+<!-- folder gin中匹配路由`*`和`:`的区别 -->
+
+```go
+/find/user 这种可以接收到路由（带/）
+pg.GET("/find/*id", ProgramApi.ProgramFindAll) # /user
+
+/find/6  这种接收参数
+pg.GET("/find/:id", ProgramApi.ProgramFindAll) # "6"
+```
+
+<!-- folder pinia持久化存储的原理 -->
+
+将对象序列化成 json 存储到 session 和 localstorge 里面，每次修改或获取值都通过 setItem 和 getItem 完成。
+
+<!-- folder cookie在前后端的交互是怎么样的 -->
+
+用户登录，后端往浏览器置入`cookie`，在用户发起请求的时候会校验请求头`token`或者`cookie`中的`jwt`加密字符串，一般前端会使用`pinia`把登录后返回的用户信息存储起来。
+退出登录，要让`pinia`持久化数据失效，同时向后端发起清空 cookie 的操作。
+cookie 应该设置`HttpOnly`让前端无法直接访问，防止一些跨站脚本的攻击。
+
+<!-- folder a标签的target参数分析 -->
+
+```html
+target: "_self",指的是在当前页打开 target: "_blank",指的是在新的标签页打开
+```
+
+<!-- folder 数据库允许root用户远程登录 -->
+
+```bash
+mysql> SELECT Host, User FROM mysql.user WHERE User = 'root';
++-----------+------+
+| Host      | User |
++-----------+------+
+| localhost | root |
++-----------+------+
+1 row in set (0.00 sec)
+
+mysql> CREATE USER 'root'@'%' IDENTIFIED BY 'pzj20162116';
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SELECT Host, User FROM mysql.user WHERE User = 'root';
++-----------+------+
+| Host      | User |
++-----------+------+
+| %         | root |
+| localhost | root |
++-----------+------+
+2 rows in set (0.00 sec)
+```
 
 {% endfolders %}
