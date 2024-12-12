@@ -102,4 +102,28 @@ mysql> SELECT Host, User FROM mysql.user WHERE User = 'root';
 2 rows in set (0.00 sec)
 ```
 
+<!-- folder vue3设置@别名可点击跳转 -->
+
+在项目根目录新建`jsconfig.json`:
+
+```json jsconfig.json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "target": "ES6",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+```
+
+<!-- folder gin中ShouldBind传参传默认值，切记不要使用required -->
+
+在 gin 里面，有 c.ShouldBind 这个方法，常用于绑定结构体，如果你设置 json 字段为`required`（即必填），就算你填了对应的零值（即默认值），shouldbind 会认为你没填，就会绑定失败。
+
+所以如果传参包含默认值，对应的 json 字段不应该设置为 required，比如说金额（int），默认为 0，我没买东西，传参为 0，设定 required 是无法识别的，会误认为你没有传参。
 {% endfolders %}
