@@ -132,14 +132,7 @@
               }
             }
           }, 5000);
-          let headers = {};
-
-          if (url.includes("api.github.com")) {
-            headers = {
-              Authorization: `Bearer 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`,
-            };
-          }
-          fetch(url, { headers })
+          fetch(url)
             .then(function (response) {
               if (status !== 2) {
                 clearTimeout(timer);
