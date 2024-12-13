@@ -2,7 +2,7 @@ welcome:
   layout: markdown
   title: 欢迎，旅行者👋
   content: |
-    无人扶我青云志，我自踏雪至山巅，您已来到世界边缘，喜欢的话欢迎评论区交流吧～
+    纸上得来终觉浅，绝知此事要躬行。您已来到世界边缘，喜欢的话欢迎评论区交流吧～
   linklist:
     columns: 1
     items:
@@ -12,9 +12,9 @@ welcome:
 
 announcement:
   layout: markdown
-  title: 重要通知
+  title: 个性签名
   content: |
-    网站域名已变更为[**haohanxinghe.com**](https://haohanxinghe.com)。从2024年11月起本站已不再开源，已经持有源码副本或fork的朋友请及时删除以防止被他人恶意搬运的情况继续发生。
+    低级的欲望通过放纵就可获得；高级的欲望通过自律方可获得；顶级的欲望通过煎熬才可获得。“所谓自由，不是随心所欲，而是自我主宰。”
 
 friends_apply:
   layout: markdown

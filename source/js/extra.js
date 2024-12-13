@@ -127,4 +127,10 @@ function toggleAISummaryStatus() {
   hud.toast(newStatus === "true" ? "已启用文章辅助AI" : "已禁用文章辅助AI");
 }
 
+function cleanCache() {
+  localStorage.clear();
+  document.cookie = "";
+  location.reload();
+}
+
 document.addEventListener("DOMContentLoaded", initSetting);
