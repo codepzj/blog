@@ -178,3 +178,6 @@ hexo_safego:
   subtitle: "安全中心" # 副标题
   darkmode: true # 是否启用夜间模式
   debug: false # 是否启用调试模式，开启后会输出详细的调试信息
+
+hexo_graph:
+  theme: "light"
