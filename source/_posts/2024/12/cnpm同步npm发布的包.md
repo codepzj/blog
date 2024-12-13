@@ -18,7 +18,9 @@ references:
 
 在 npm 发布新的包后，下载的时候发现从 npm 仓库拉下来的不是刚刚最新发布到仓库的包，原因是我们太"墙"大了，cnpm 还没有把 npm 包给同步过来，可能得 1，2 天左右。
 
-所以我们要手动同步，前往https://npmmirror.com/package/<your_package_name>
+所以我们要手动同步，前往https://npmmirror.com/package/hexo-graph
+
+后面填写你的`<package_name>`
 
 点击 Sync 按钮，手动同步
 
