@@ -2,7 +2,7 @@
 title: cnpm同步npm发布的包
 tags: [npm]
 categories: [技术分享]
-permalink: posts/42.html
+permalink: posts/43.html
 excerpt: cnpm同步npm发布的包，解决数据源没及时更新，无法拉取最新包的问题。
 poster:
   topic: null
