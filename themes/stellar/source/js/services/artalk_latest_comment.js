@@ -15,14 +15,14 @@ utils.jq(() => {
             var cell = '<div class="timenode" index="' + i + '">';
             cell += '<div class="header">';
             cell += '<div class="user-info">';
-            // cell += '<img src="https://cravatar.cn/avatar/' + (item.email_encrypted) + '?d=mp&s=240">';
+            cell += '<img src="https://cravatar.cn/avatar/' + (item.email_encrypted) + '?d=mp&s=240">';
             cell += '<span>' + item.nick + '</span>';
             cell += '</div>';
             cell += '<span>' + new Date(item.date).toLocaleString() + '</span>';
             cell += '</div>';
-            cell += '<a class="body" href="' + item.page_url + '#atk-comment-' + item.id + '" target="_blank" rel="external nofollow noopener noreferrer">';
+            cell += '<div class="body" style="display:inline-block" onclick="window.open(\'' + item.page_url + '#atk-comment-' + item.id + '\', \'_blank\');">';
             cell += item.content_marked;
-            cell += '</a>';
+            cell += '</div>';
             cell += '</div>';
             $(el).append(cell);
           });
