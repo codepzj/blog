@@ -150,6 +150,9 @@ footer:
     Settings:
       icon: <img src="/assets/footer/settings.svg" alt="settings" />
       url: /settings/
+    Cache:
+      icon: <img src="/assets/footer/cache.svg" alt="cache" />
+      url: javaScript:cleanCache();
   sitemap:
     "博客":
       - "[数据统计](https://umami.codepzj.cn/share/oLUtFWLzW1nwDkOr/haohanxinghe.com)"

@@ -60,14 +60,14 @@ $border-button = 4px
 
 // 可以动态变化的属性
 :root
-  --width-main: 720px
+  --width-main: 775px
   --fsp: $fs-body
   --fsh2: 'calc(%s + 11px)' % var(--fsp)
   --fsh3: 'calc(%s + 7px)' % var(--fsp)
   --fsh4: 'calc(%s + 4px)' % var(--fsp)
   
   // 侧边栏文字内容宽度
-  --side-content-width: 224px
+  --side-content-width: 250px
   // 元素轮廓到容器边缘的间距
   --gap-margin: 16px
   // 元素文本内容到元素自身的轮廓的间距
@@ -83,9 +83,9 @@ $border-button = 4px
     --width-main: 860px
   // iPad 竖屏
   @media screen and (max-width: $device-tablet)
-    --side-content-width: 188px
+    --side-content-width: 200px
   @media screen and (max-width: $device-mobile-max)
-    --side-content-width: 224px
+    --side-content-width: 250px
 
 // 动态计算值
 :root
