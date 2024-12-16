@@ -1,7 +1,7 @@
 ---
 title: qexo管理hexo文章
-date: '2024-10-22 11:47:18'
-updated: '2024-10-22 11:47:18'
+date: "2024-10-22 11:47:18"
+updated: "2024-10-22 11:47:18"
 tags: [qexo]
 categories: [技术分享]
 permalink: posts/21.html
@@ -143,3 +143,7 @@ services:
 
 ![效果预览](https://image.codepzj.cn/image/fc80dc890c2974468d94223767f5751c.png)
 
+## 本地部署
+
+`2024/12/16`更新
+因为有小伙伴私信我，问这个本地该如何部署，很简单，直接按照这个视频做即可，[qexo 本地部署教学视频](https://share.codepzj.cn/%E5%85%B1%E4%BA%AB%E8%B5%84%E6%BA%90/qexo%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91/qexo%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91.mp4)，每次操作完就会在挂载目录生成新的文章，不过需要在服务器本地通过 pnpm run build 重新生成静态文件，放置到 nginx 对应的网站目录当中。

@@ -58,65 +58,19 @@ if (window.PerformanceObserver) {
   observer.observe({ type: "navigation", buffered: true });
 }
 
-// 设置页面基本配置
-const umami = {
-  src: "https://umami.codepzj.cn/script.js",
-  "data-website-id": "304aef24-a1fe-4dbd-a9fd-8f2edc618713",
-};
-
 const domain = window.location.host;
-const umamiText = document.getElementById("umami");
 const aiSummaryText = document.getElementById("chatgpt");
-const UMAMI_STATUS_KEY = "umamiStatus";
 const AI_SUMMARY_STATUS_KEY = "aisummaryStatus";
 
 //初始化设置配置
 const initSetting = () => {
-  const umamiStatus = window.localStorage.getItem(UMAMI_STATUS_KEY);
   const aisummaryStatus = window.localStorage.getItem(AI_SUMMARY_STATUS_KEY);
-  if (umamiStatus === null) enableUmami();
-  if (umamiText)
-    umamiText.innerText = umamiStatus === "true" ? "已启用" : "已禁用";
 
   if (aisummaryStatus === null)
     window.localStorage.setItem(AI_SUMMARY_STATUS_KEY, false);
   if (aiSummaryText)
     aiSummaryText.innerText = aisummaryStatus === "true" ? "已启用" : "已禁用";
 };
-
-// Umami状态监控
-function enableUmami() {
-  if (!document.querySelector(`script[src="${umami.src}"]`)) {
-    const script = document.createElement("script");
-    script.src = umami.src;
-    script.setAttribute("data-website-id", umami["data-website-id"]);
-    script.defer = true;
-    document.body.appendChild(script);
-  }
-  updateUmamiStorage(true);
-}
-
-function disableUmami() {
-  const umamiScript = document.querySelector(`script[src="${umami.src}"]`);
-  if (umamiScript) umamiScript.remove();
-  updateUmamiStorage(false);
-}
-
-function updateUmamiStorage(enable) {
-  window.localStorage.setItem(UMAMI_STATUS_KEY, enable);
-}
-
-function toggleUmamiStatus() {
-  const umamiStatus = window.localStorage.getItem(UMAMI_STATUS_KEY);
-  if (umamiStatus === "true") {
-    disableUmami();
-    umamiText.innerText = "已禁用";
-  } else {
-    enableUmami();
-    umamiText.innerText = "已启用";
-  }
-  hud.toast(umamiStatus === "true" ? "已禁用Umami统计" : "已启用Umami统计");
-}
 
 // 文章辅助AI
 function toggleAISummaryStatus() {
