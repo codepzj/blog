@@ -114,13 +114,13 @@ style:
     h2: https://api.iconify.design/ci:heading-h2.svg
   darkmode: auto # auto true false
   font-size:
-    root: 16px # 改这个会影响全局所有文字的字号
+    root: 16.5px # 改这个会影响全局所有文字的字号
     body: 17px # 影响正文区域的字号，如果改成 px 则不受 root 影响
     code: 85% # 相较于其所在行的文本大小，建议用百分比
     codeblock: 0.8125rem # 13px
   font-family:
-    logo: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
-    body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    logo: '"Alimama DongFangDaKai", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: '"Alimama DongFangDaKai", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
   border-radius:
@@ -128,6 +128,9 @@ style:
     card: 12px # 文章内大部分卡片的圆角
     bar: 8px # 横条类元素的圆角
     image: 12px # 图片圆角
+  codeblock:
+    scrollbar: 4px
+    highlightjs_theme: /vendor/css/atom-one-dark.min.css
 
 # 页脚
 footer:
@@ -279,7 +282,7 @@ plugins:
 
 inject:
   head:
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cn-fontsource-alimama-dong-fang-da-kai-regular/font.css"></link>
     - <link rel="stylesheet" href="/css/extra.css">
   script:
     - <script src="/js/extra.js"></script>
