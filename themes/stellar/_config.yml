@@ -641,5 +641,5 @@ default:
 
 api_host:
   ghapi: https://api.github.com
-  ghraw: https://ghp.ci/https://raw.githubusercontent.com
+  ghraw: https://github.moeyy.xyz/https://raw.githubusercontent.com
   gist: https://gist.github.com

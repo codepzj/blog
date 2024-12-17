@@ -114,13 +114,13 @@ style:
     h2: https://api.iconify.design/ci:heading-h2.svg
   darkmode: auto # auto true false
   font-size:
-    root: 16.5px # 改这个会影响全局所有文字的字号
+    root: 17px # 改这个会影响全局所有文字的字号
     body: 17px # 影响正文区域的字号，如果改成 px 则不受 root 影响
-    code: 85% # 相较于其所在行的文本大小，建议用百分比
-    codeblock: 0.8125rem # 13px
+    code: 80% # 相较于其所在行的文本大小，建议用百分比
+    codeblock: 0.75rem # 13px
   font-family:
-    logo: '"Alimama DongFangDaKai", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
-    body: '"Alimama DongFangDaKai", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    logo: '"AlimamaDongFangDaKai", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: '"AlimamaDongFangDaKai", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
   border-radius:
@@ -282,7 +282,6 @@ plugins:
 
 inject:
   head:
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cn-fontsource-alimama-dong-fang-da-kai-regular/font.css"></link>
     - <link rel="stylesheet" href="/css/extra.css">
   script:
     - <script src="/js/extra.js"></script>

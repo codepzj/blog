@@ -97,7 +97,7 @@ ghrepo:
 friends_timeline:
   layout: timeline
   title: 朋友文章
-  api: https://ghp.ci/https://raw.githubusercontent.com/codepzj/friends/refs/heads/main/data.json
+  api: https://github.moeyy.xyz/https://raw.githubusercontent.com/codepzj/friends/refs/heads/main/data.json
   type: fcircle
   limit: 20
 

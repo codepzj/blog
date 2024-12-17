@@ -10,7 +10,11 @@
       "https://www.cuiliangblog.cn/",
       "https://oss.cuiliangblog.cn/image/logo.png"
     ],
-    ["杜老师说", "https://dusays.com", "https://cdn.dusays.com/avatar.png"],
+    [
+      "杜老师说",
+      "https://dusays.com",
+      "https://cdn.dusays.com/avatar.png"
+    ],
     [
       "Thun888",
       "https://blog.hzchu.top/",
@@ -21,7 +25,11 @@
       "https://blog.zhheo.com/",
       "https://bu.dusays.com/2022/12/28/63ac2812183aa.png"
     ],
-    ["MC-Sep", "https://mc-sep.js.cool/", "https://mc-sep.js.cool/logo.png"],
+    [
+      "MC-Sep",
+      "https://mc-sep.js.cool/",
+      "https://mc-sep.js.cool/logo.png"
+    ],
     [
       "纸鹿本鹿",
       "https://blog.zhilu.cyou",
@@ -97,6 +105,15 @@
       "https://wangkay.top",
       "https://image.codepzj.cn/image/202412011513828.png"
     ],
-    ["陵长镜", "https://r1n.top", "https://r1n.top/avatar_nr.jpg"]
+    [
+      "陵长镜",
+      "https://r1n.top",
+      "https://r1n.top/avatar_nr.jpg"
+    ],
+    [
+      "Allen的小破站",
+      "https://www.xiaode.tech/",
+      "https://www.xiaode.tech/upload/DSC_0178.png"
+    ]
   ]
 }
