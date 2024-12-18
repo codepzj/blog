@@ -283,7 +283,6 @@ plugins:
 inject:
   head:
     - <link rel="stylesheet" href="/css/extra.css">
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/codepzj/fonts@main/QianMoKai/result.css">
   script:
     - <script src="/js/extra.js"></script>
     - <script src="/vendor/js/snow.js"></script>
