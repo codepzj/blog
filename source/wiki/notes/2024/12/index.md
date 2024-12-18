@@ -126,4 +126,33 @@ mysql> SELECT Host, User FROM mysql.user WHERE User = 'root';
 在 gin 里面，有 c.ShouldBind 这个方法，常用于绑定结构体，如果你设置 json 字段为`required`（即必填），就算你填了对应的零值（即默认值），shouldbind 会认为你没填，就会绑定失败。
 
 所以如果传参包含默认值，对应的 json 字段不应该设置为 required，比如说金额（int），默认为 0，我没买东西，传参为 0，设定 required 是无法识别的，会误认为你没有传参。
+
+<!-- folder jsdliver有缓存怎么强制清除 -->
+
+假如说你的 cdn 地址是这样
+
+https://cdn.jsdelivr.net/gh/user/repo@version/file
+
+那么使用如下地址
+
+https://purge.jsdelivr.net/gh/user/repo@version/file
+
+```json
+{
+  "id": "oBCXlFgXNJdiqwIb",
+  "status": "finished",
+  "timestamp": "2024-12-18T06:20:53.917Z",
+  "paths": {
+    "/gh/codepzj/fonts@main/QianMoKai/result.css": {
+      "throttled": false,
+      "providers": {
+        "CF": true,
+        "FY": true
+      }
+    }
+  }
+}
+```
+返回如下结果就说明刷新成功。
+
 {% endfolders %}

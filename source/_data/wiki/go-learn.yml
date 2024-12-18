@@ -9,7 +9,6 @@ description: 总结学习golang的一些常用知识点
 share: true
 comments: false
 base_dir: /wiki/go-learn/
-folding: true
 tree:
   "快速开始":
     - 入门指南
