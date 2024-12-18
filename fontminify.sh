@@ -12,6 +12,10 @@ origin='QianMoKai.ttf'
 # 压缩后的字体名称，注意需要和 font-face中定义的字体名一致
 optimized='QianMoKai.woff2'
 
+# 输出 ripgrep 版本，确认是否安装成功
+echo "检查 ripgrep 版本:"
+rg --version
+
 echo "开始根据使用情况缩减字符..."
 subset_characters=$(rg -e '[\w\d]' -oN --no-filename | sort | uniq | tr -d '\n')
 echo "将要缩减的字符为：$subset_characters"

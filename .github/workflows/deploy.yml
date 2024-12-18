@@ -41,7 +41,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y python3-pip
-          pip3 install fonttools
+          pip3 install fonttools brotli
           sudo apt-get install ripgrep
 
       # Run the fontminify script
