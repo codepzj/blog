@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'QianMoKai';
-    src: url('/fonts/QianMoKai.woff2') format('woff2'),
-         url('/fonts/QianMoKai.ttf') format('truetype');
+    src: url('/fonts/QianMoKai.woff2');
     font-weight: normal;
     font-style: normal;
 }

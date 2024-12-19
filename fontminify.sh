@@ -27,4 +27,7 @@ fonttools ttLib.woff2 compress -o "fonts/$optimized" "fonts/${origin/\./\.subset
 echo "删除中间文件..."
 rm "fonts/${origin/\./\.subset\.}"
 
+echo "删除ttf文件"
+rm "fonts/$origin"
+
 echo "压缩完成，继续部署..."
