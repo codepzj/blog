@@ -28,9 +28,12 @@ def check_ripgrep():
 def get_subset_characters():
     print("开始根据使用情况缩减字符...")
     result = subprocess.run(['rg', '-e', r'[\w\d]', '-oN', '--no-filename'], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    # 获取所有匹配的字符，去掉换行符后转换为集合去重
     subset_characters = result.stdout.decode().strip().replace('\n', '')
-    print(f"将要缩减的字符为：{subset_characters}")
-    return subset_characters
+    # 使用 set 去重
+    unique_characters = ''.join(sorted(set(subset_characters)))
+    print(f"将要缩减的字符为：{unique_characters}")
+    return unique_characters
 
 # 使用 fontTools 的 Subsetter 缩减字体
 def subset_font(origin, subset_characters):
