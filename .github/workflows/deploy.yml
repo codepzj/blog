@@ -32,21 +32,16 @@ jobs:
       - name: build
         run: pnpm run build
 
-      # Make the fontminify script executable
-      - name: Make fontminify script executable
-        run: chmod +x fontminify.sh
-
       # Install dependencies for fontminify script
       - name: Install dependencies for fontminify
         run: |
           sudo apt-get update
           sudo apt-get install -y python3-pip
-          pip3 install fonttools brotli
-          sudo apt-get install ripgrep
+          pip3 install fonttools brotli ripgrep
 
       # Run the fontminify script
       - name: run fontminify script
-        run: ./fontminify.sh
+        run: python3 fontminify.py
 
       # Deploy the project to the server
       - name: deploy to server
