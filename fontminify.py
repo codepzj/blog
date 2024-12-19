@@ -13,7 +13,7 @@ from fontTools.ttLib import TTFont
 from fontTools.subset import Subsetter, Options
 
 # 设置全局变量 basedir
-BASEDIR = 'public/fonts'
+BASEDIR = 'source/fonts'
 
 # 检查 ripgrep 是否安装
 def check_ripgrep():

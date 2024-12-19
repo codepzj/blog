@@ -6,6 +6,7 @@
     "build": "hexo generate && gulp",
     "clean": "hexo clean",
     "dev": "hexo clean & hexo server",
+    "fontmin": "python fontminify.py",
     "deploy": "hexo deploy"
   },
   "hexo": {
