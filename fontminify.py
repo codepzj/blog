@@ -4,7 +4,7 @@ pip install fonttools ripgrep brotli
 指定字体文件夹 BASEDIR
 origin = 'xxx.ttf'  # 原始字体名称
 optimized = 'xxx.woff2'  # 优化后的字体名称
-将会扫描当前目录下所有文件的字体，ttf对字体取自己，转成woff2
+将会扫描当前目录下所有文件的字体，ttf对字体取子集，转成woff2
 当前案例为本地hexo，也可用于Linux和CI/CD环境使用，打包前端文件优化
 """
 import subprocess
@@ -13,7 +13,7 @@ from fontTools.ttLib import TTFont
 from fontTools.subset import Subsetter, Options
 
 # 设置全局变量 basedir
-BASEDIR = 'source/fonts'
+BASEDIR = 'public/fonts'
 
 # 检查 ripgrep 是否安装
 def check_ripgrep():
