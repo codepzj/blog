@@ -119,8 +119,8 @@ style:
     code: 70% # 相较于其所在行的文本大小，建议用百分比
     codeblock: 0.7rem # 13px
   font-family:
-    logo: '"QianMoKai", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
-    body: '"QianMoKai", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    logo: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
   border-radius:
@@ -283,7 +283,7 @@ plugins:
 inject:
   head:
     - <link rel="stylesheet" href="/css/extra.css">
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codepzj-fonts@1.0.0/QianMoKai/result.css">
+    - <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css"/>
   script:
     - <script src="/js/extra.js"></script>
     - <script src="/vendor/js/snow.js"></script>
