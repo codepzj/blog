@@ -20,7 +20,7 @@ friends_apply:
   layout: markdown
   title: 携手并进
   content: |
-    本站友链已改成动态形式，可点击👇的链接按钮前往申请
+    友链可点击👇的链接按钮前往申请
   linklist:
     columns: 1
     items:

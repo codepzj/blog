@@ -182,9 +182,6 @@ footer:
           <a style="font-weight: bold;" target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 
           主题，至今已持续稳定运行<span id="runtime_span"></span>。
       </div>
-      站点访问量<span id="qexo-site-pv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>次
-      页面访问量<span id="qexo-page-pv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>次
-      站点访客数<span id="qexo-site-uv"><img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading"></span>人
       <div style="text-align: center;margin-top:2em;">
         <a target="_blank" href="https://hexo.io/" data-title="博客框架为Hexo_v7.3.0" title="博客框架为Hexo_v7.3.0"
             style="text-decoration: none;">
@@ -211,10 +208,6 @@ footer:
                 alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" style="max-width: 100%; display: inline-block;">
         </a>
       </div>
-      <script src="/vendor/js/statistic.js"></script>
-      <script>
-          loadStatistic("https://qexo.codepzj.cn");
-      </script>
       <script type="text/javascript">
           document.addEventListener("DOMContentLoaded", function () {
             const startDate = new Date("08/10/2024 00:00:00");
