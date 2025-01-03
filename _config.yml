@@ -181,3 +181,4 @@ hexo_safego:
 
 hexo_graph:
   theme: "light"
+  echarts_js: "/vendor/js/echarts.min.js"
