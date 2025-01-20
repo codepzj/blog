@@ -1,0 +1,5 @@
+name: git教程 # 在面包屑导航上会显示较短的名字
+title: git教程 # 在列表页会显示完整的专栏标题
+description: git - 分布式版本控制工具
+icon: /assets/icons/git.svg
+order_by: date

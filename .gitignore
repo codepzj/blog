@@ -1,0 +1,14 @@
+/.vitepress
+docs/.vitepress/cache
+docs/docs
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+/public/
+.deploy*/
+_multiconfig.yml
+pnpm-lock.yaml
+package-lock.json
+source/stats.json

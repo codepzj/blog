@@ -1,0 +1,5 @@
+name: 建站优化 # 在面包屑导航上会显示较短的名字
+title: 建站优化 # 在列表页会显示完整的专栏标题
+description: 建站优化 - 提升网站的速度和性能
+icon: /assets/icons/station.svg
+order_by: date

@@ -1,0 +1,25 @@
+name: golang学习指南
+title: golang学习指南
+subtitle: "go语言圣经 | haohanxinghe.com"
+tags: 文档
+icon: /assets/wiki/go-learn/icon.svg
+cover: /assets/wiki/go-learn/icon.svg
+coverpage: true
+description: 总结学习golang的一些常用知识点
+share: true
+comments: false
+base_dir: /wiki/go-learn/
+tree:
+  "快速开始":
+    - 入门指南
+  "语法基础":
+    - 基本语法/包
+    - 基本语法/关键字
+    - 基本语法/运算符
+    - 基本语法/字面量
+    - 基本语法/字符串
+    - 基本语法/时间与日期
+    - 基本语法/指针
+    - 基本语法/函数
+    - 基本语法/数组与切片
+    - 基本语法/锁

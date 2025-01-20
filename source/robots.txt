@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://haohanxinghe.com/sitemap.xml
+Sitemap: https://haohanxinghe.com/baidusitemap.xml

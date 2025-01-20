@@ -1,0 +1,14 @@
+name: 硅谷甄选
+title: 硅谷甄选 - vue3+ts后台管理实战项目
+subtitle: "vue3+ts商城管理系统 | haohanxinghe.com"
+tags: 项目
+icon: /assets/wiki/ggzx/icon.svg
+cover: /assets/wiki/ggzx/icon.svg
+coverpage: true
+description: 总结在该项目中遇到的bug及解决过程
+share: true
+comments: false
+base_dir: /wiki/ggzx/
+tree:
+  "前置内容":
+    - 项目起步

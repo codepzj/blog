@@ -1,0 +1,20 @@
+name: 浩瀚星河
+subtitle: '探索未知，踏上冒险之旅！' # 副标题
+logo:
+  avatar: "[{config.avatar}](/social/about/)"
+  title: "[{config.title}](/)"
+  subtitle: "{config.subtitle}"
+comments: false
+search:
+  filter: /explore/
+  placeholder: 在 探索 中搜索...
+base_dir: /explore/
+tree:
+  "站点":
+    - sites/收藏的站点
+  "笔记":
+    - notes/探索者笔记
+  "解决方案":
+    - solutions/node相关问题
+    - solutions/windows相关问题
+  

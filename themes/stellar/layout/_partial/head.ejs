@@ -1,0 +1,112 @@
+<%
+function generate_title() {
+  if (page.wiki) {
+    const proj = theme.wiki.tree[page.wiki]
+    const wiki = proj?.name || page.wiki
+    if (page.title) {
+      return wiki + __('symbol.colon') + page.title + ' | ' + config.title;
+    } else {
+      return wiki + ' | ' + config.title;
+    }
+  } else {
+    if (page.title) {
+      return page.title + ' | ' + config.title;
+    } else if (page.category) {
+      return __('btn.category') + __('symbol.colon') + page.category + ' | ' + config.title;
+    } else if (page.tag) {
+      return __('btn.tag') + __('symbol.colon') + page.tag + ' | ' + config.title;
+    }
+  }
+  return config.title + " | " + config.subtitle;
+}
+function generate_description() {
+  if (page.wiki) {
+    const proj = theme.wiki.tree[page.wiki]
+    if (proj?.description) {
+      return '<meta name="description" content="' + proj.description + '">'
+    }
+  }
+  if (page.description || page.excerpt || page.content) {
+    return '<meta name="description" content="' + truncate(strip_html(page.description || page.excerpt || page.content), {length: 150}) + '">';
+  }
+  return '<meta name="description" content="' + config.description + '">';
+}
+function generate_keywords() {
+  return '<meta name="keywords" content="' + config.keywords + '">';
+}
+
+function custom_inject() {
+  var el = '';
+  for (let item of (config.inject?.head || [])) {
+    el += item;
+  }
+  for (let item of (theme.inject?.head || [])) {
+    el += item;
+  }
+  for (let item of (page.inject?.head || [])) {
+    el += item;
+  }
+  return el;
+}
+
+%>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <% let path = page.path; %>
+  <% if (path.startsWith('/')) { %>
+    <% path = path.slice(1); %>
+  <% } %>
+  <% if (path.endsWith('index.html')) { %>
+    <link rel="canonical" href="https://haohanxinghe.com/<%- path.replace('index.html', '') %>">
+  <% } else { %>
+    <link rel="canonical" href="https://haohanxinghe.com/<%- path %>">
+  <% } %>
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <meta name="theme-color" content="#f9fafb">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#000">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://comment.codepzj.cn">
+  <link rel="preconnect" href="https://comment.codepzj.cn" crossorigin>
+  <link rel="dns-prefetch" href="https://image.codepzj.cn">
+  <link rel="preconnect" href="https://image.codepzj.cn" crossorigin>
+  <link rel="dns-prefetch" href="https://npm.elemecdn.com">
+  <link rel="preconnect" href="https://npm.elemecdn.com" crossorigin>
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta http-equiv="Content-Security-Policy" content=" default-src 'self' https:; block-all-mixed-content; base-uri 'self' https:; form-action 'self' https:; worker-src 'self' https:; connect-src 'self' https: *; img-src 'self' data: https: *; media-src 'self' https: *; font-src 'self' data: https: *; frame-src 'self' https: *; manifest-src 'self' https: *; child-src https:; script-src 'self' https: 'unsafe-inline' *; style-src 'self' https: 'unsafe-inline' *; ">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <link rel="icon" type="image/jpeg" href="/assets/images/avatar.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="preload" href="/css/extra.css" as="style">
+  <% if (config.feed && config.feed.path) { %>
+    <%- feed_tag(config.feed.path, {title: generate_title()}) %>
+  <% } %>
+  <title><%- generate_title() %></title>
+  <meta name="author" content="<%- config.author %>">
+  <%- generate_keywords() %>
+  <%- generate_description() %>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<%- generate_title() %>">
+  <meta property="og:image" content="https://haohanxinghe.com/assets/images/avatar.jpg">
+  <meta property="og:site_name" content="<%- config.title %>">
+  <% if (path.endsWith('index.html')) { %>
+    <meta property="og:url" content="https://haohanxinghe.com/<%- path.replace('index.html', '') %>">
+  <% } else { %>
+    <meta property="og:url" content="https://haohanxinghe.com/<%- path %>">
+  <% } %>
+  <link rel="stylesheet" href="<%- url_for(`${theme.stellar.main_css}?v=${stellar_info('version')}`) %>">
+  <meta name="baidu-site-verification" content="codeva-NVhlE81dTF" />
+  <meta name="msvalidate.01" content="30CD55A935E75B69A1565E31EA21513B" />
+  <meta name="google-site-verification" content="Qy3yx1TuuE2ugoMZxLVO06pQ0cGF_oy7Ruemxkv3Ro0" />
+  <% if (config.highlight && config.highlight.enable == true && config.highlight.hljs == true) { %>
+    <%- css(theme.style.codeblock.highlightjs_theme) %>
+  <% } %>
+  <%- custom_inject() %>
+</head>

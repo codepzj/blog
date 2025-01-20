@@ -1,0 +1,269 @@
+logo:
+  avatar: "[{config.avatar}](/social/about/)"
+  title: "[{config.title}](/)"
+  subtitle: "{config.subtitle}"
+
+# 侧边栏配置
+menubar:
+  columns: 4 # 一行多少个
+  items: # 可按照自己需求增加，符合以下格式即可
+    - id: post # 页面中高亮的 menu_id
+      theme: "#1BCDFC" # 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
+      icon: solar:documents-bold-duotone # 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
+      title: 首页 # 标题
+      url: / # 跳转链接，支持相对路径和绝对路径
+    - id: wiki
+      theme: "#3DC550"
+      icon: solar:notebook-bookmark-bold-duotone
+      title: 文档
+      url: /wiki/
+    - id: explore
+      theme: "#FA6400"
+      icon: solar:planet-bold-duotone
+      title: 探索
+      url: /explore/sites/收藏的站点.html
+    - id: social
+      theme: "#F44336"
+      icon: solar:chat-square-like-bold-duotone
+      title: 社交
+      url: /social/friends/
+
+# 站点主结构树
+site_tree:
+  # 博客列表页配置
+  index_blog:
+    base_dir: blog # 只影响自动生成的页面路径
+    menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
+    leftbar: recent # for categories/tags/archives
+    rightbar: ghrepo
+    nav_tabs: # 近期发布 分类 标签 专栏 归档 and ...
+      "新闻": /news/
+  # 博客专栏列表页配置
+  index_topic:
+    base_dir: topic # 只影响自动生成的页面路径
+    menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 topic 的页面默认使用这里配置的 menu_id
+  # 文档列表页配置
+  index_wiki:
+    base_dir: wiki # 只影响自动生成的页面路径
+    menu_id: wiki # 未在 front-matter 中指定 menu_id 时，layout 为 wiki 的页面默认使用这里配置的 menu_id
+    leftbar: ghissues, related, recent # for wiki
+    rightbar: ghrepo
+    nav_tabs:
+  # 博客文章内页配置
+  home:
+    leftbar: welcome, announcement
+    rightbar: study, tagcloud
+  post:
+    menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
+    leftbar: related, recent # for pages using 'layout:post'
+    rightbar: ghrepo, toc
+  # 博客专栏文章内页配置
+  topic:
+    menu_id: post
+  # 文档内页配置
+  wiki:
+    menu_id: wiki # 未在 front-matter 中指定 menu_id 时，layout 为 wiki 的页面默认使用这里配置的 menu_id
+    leftbar: tree
+    rightbar: ghrepo, toc
+  # 错误页配置
+  error_page:
+    menu_id: post
+    "404": "/404.html"
+    leftbar: recent
+    rightbar: tagcloud
+  # 其它自定义页面配置 layout: page
+  page:
+    leftbar: recent
+    rightbar: timeline
+
+open_graph:
+  enable: false
+  twitter_id: # for open_graph meta
+
+article:
+  type: tech # tech/story: story类文字和段落间增距大。
+  auto_cover: false # 根据tags在线搜索封面
+  auto_description: 20 # 生成摘要的字
+  related_posts:
+    enable: true
+    title: 您可能感兴趣的文章
+    max_count: 2
+  license: false
+  share: [wechat, weibo, email, link]
+# 全局样式
+style:
+  prefers_theme: light
+  color:
+    # 动态颜色（会根据明暗主题重设明度值，只用关心色相和饱和度即可）
+    background: "hsl(212 16% 98%)" # 浅色背景颜色
+    block: "hsl(212 8% 95%)" # 块背景颜色
+    code: "hsl(14 100% 48%)" # 行内代码颜色
+    text: "hsl(0 0% 20%)" # 文本颜色
+    # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
+    theme: "hsl(192 98% 55%)" # 主题色
+    accent: "hsl(14 100% 57%)" # 强调色
+    link: "hsl(207 90% 54%)" # 超链接颜色
+    button: "hsl(192 98% 55%)" # 按钮颜色
+    hover: "hsl(14 100% 57%)" # 按钮高亮颜色
+  leftbar:
+    blur-px: 100px
+    blur-bg: var(--alpha60)
+    background-image: url(/assets/images/sidebar.webp)
+  text-align: left # justify/left/center/right
+  prefix:
+    h2: https://api.iconify.design/ci:heading-h2.svg
+  darkmode: auto # auto true false
+  font-size:
+    root: 17.5px # 改这个会影响全局所有文字的字号
+    body: 18px # 影响正文区域的字号，如果改成 px 则不受 root 影响
+    code: 70% # 相较于其所在行的文本大小，建议用百分比
+    codeblock: 0.7rem # 13px
+  font-family:
+    logo: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace'
+    codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+  border-radius:
+    card-l: 16px # 侧边栏、文章横幅位置的圆角
+    card: 12px # 文章内大部分卡片的圆角
+    bar: 8px # 横条类元素的圆角
+    image: 12px # 图片圆角
+  codeblock:
+    scrollbar: 4px
+    highlightjs_theme: /vendor/css/atom-one-dark.min.css
+
+# 页脚
+footer:
+  social:
+    Github:
+      icon: <img src="/assets/footer/github.svg" alt="github" />
+      url: https://github.com/codepzj
+    Comment:
+      icon: <img src="/assets/footer/comment.svg" alt="comment" />
+      url: /social/about/#comments
+    Rss:
+      icon: <img src="/assets/footer/rss.svg" alt="rss" />
+      url: /sitemap.xml
+    Settings:
+      icon: <img src="/assets/footer/settings.svg" alt="settings" />
+      url: /settings/
+    Document:
+      icon: <img src="/assets/footer/document.svg" alt="document" />
+      url: https://docs.codepzj.cn
+    Cache:
+      icon: <img src="/assets/footer/cache.svg" alt="cache" />
+      url: javaScript:cleanCache();
+  sitemap:
+    "博客":
+      - "[数据统计](/social/stats/)"
+      - "[更新日志](/update/)"
+      - "[隐私政策](/document/policy/)"
+      - "[免责声明](/document/disclaimer/)"
+    "维基":
+      - "[项目](/wiki/tags/项目/)"
+      - "[文档](/wiki/tags/文档/)"
+      - "[笔记](/wiki/tags/笔记/)"
+      - "[答疑](/wiki/tags/答疑/)"
+    "探索":
+      - "[我的站点](/explore/sites/收藏的站点.html)"
+      - "[年度计划](/explore/notes/探索者笔记.html)"
+    "社交":
+      - "[开往](https://www.travellings.cn/go-by-clouds.html)"
+      - "[异次元之旅](https://travel.moe/go)"
+  content: | # 支持 Markdown 格式
+    <div>
+      <div>
+          页面加载时间为<span class="load-time" style="font-weight: bold;">
+              <img style="position: relative; top: 4px;" src="/assets/images/loading.svg" alt="loading">
+          </span>秒，本站由浩瀚星河使用 
+          <a style="font-weight: bold;" target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 
+          主题，至今已持续稳定运行<span id="runtime_span"></span>。
+      </div>
+      <div style="text-align: center;margin-top:2em;">
+        <a target="_blank" href="https://hexo.io/" data-title="博客框架为Hexo_v7.3.0" title="博客框架为Hexo_v7.3.0"
+            style="text-decoration: none;">
+            <img src="https://image.codepzj.cn/image/202412012021794.svg"
+                data-lazy-src="https://image.codepzj.cn/image/202412012021794.svg" alt="博客框架为Hexo_v7.3.0"
+                style="max-width: 100%; display: inline-block;">
+        </a>
+        <a href="https://http3.wcode.net/?q=haohanxinghe.com" data-title="本站已支持HTTP/3" title="本站已支持HTTP/3" target="_blank"
+            style="text-decoration: none;">
+            <img src="https://image.codepzj.cn/image/202412012020265.svg" alt=""
+                style="max-width: 100%; height: 20px; display: inline-block;" />
+        </a>
+        <a target="_blank" href="https://github.com/" data-title="本站项目由Github托管" title="本站项目由Github托管"
+            style="text-decoration: none;">
+            <img src="https://image.codepzj.cn/image/202412012019577.svg"
+                data-lazy-src="https://image.codepzj.cn/image/202412012019577.svg" alt="本站项目由Github托管"
+                style="max-width: 100%; display: inline-block;">
+        </a>
+        <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"
+            style="text-decoration: none;">
+            <img src="https://image.codepzj.cn/image/202412012021343.svg"
+                data-lazy-src="https://image.codepzj.cn/image/202412012021343.svg"
+                alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" style="max-width: 100%; display: inline-block;">
+        </a>
+      </div>
+      <script type="text/javascript">
+          document.addEventListener("DOMContentLoaded", function () {
+            const startDate = new Date("08/10/2024 00:00:00");
+            const currentDate = new Date();
+            const timeDifference = currentDate.getTime() - startDate.getTime();
+            const daysDifference = Math.floor(timeDifference / (24 * 60 * 60 * 1000));
+            document.getElementById("runtime_span").innerHTML = daysDifference + "天";
+          });
+      </script>
+    </div>
+
+copycode:
+  enable: true
+
+# 文章搜索
+search:
+  service: local_search # local_search, algolia_search, todo...
+  local_search: # 在 front-matter 中设置 indexing:false 来避免被搜索索引
+    field: all # post, page, all
+    path: /search.json # 搜索文件存放位置
+    content: true # 是否搜索内容
+
+# 开启图片点击放大功能 {% image %}
+tag_plugins:
+  image:
+    fancybox: true
+  icon:
+    # 留空时，图标和文字颜色相同
+    default_color: accent # theme, accent, red, orange, yellow, green, cyan, blue, purple
+
+plugins:
+  fancybox:
+    enable: true
+    loader: /js/plugins/fancybox-loader.js
+    js: /vendor/js/fancybox.umd.js
+    css: /vendor/css/fancybox.css
+    selector: .timenode p>img,article p img,.tag-plugin>.image-bg>img,.atk-content>p>img
+
+  # 默认打开
+  lazyload:
+    enable: true
+    js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+    transition: blur
+
+  tianli_gpt:
+    enable: true
+    js: /vendor/js/chatgpt.js
+    field: post
+    interface:
+      name: 文章摘要
+      introduce: "我是文章辅助AI，点击下方的按钮，让我生成本文简介"
+      version: OpenAI
+      button: ["介绍自己", "生成摘要"]
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/extra.css">
+    - <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css"/>
+  script:
+    - <script src="/js/extra.js"></script>
+    - <script src="/vendor/js/snow.js"></script>
+    - <script data-website-id="91357f39-3d88-42f3-bf11-e1c1206ac8ab" src="https://logsphere.codepzj.cn/js/track.js"></script>

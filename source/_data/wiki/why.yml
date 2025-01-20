@@ -1,0 +1,14 @@
+name: 十万个为什么
+title: 十万个为什么
+subtitle: "小知识,大智慧 | haohanxinghe.com"
+tags: 答疑
+icon: /assets/wiki/why/icon.svg
+cover: /assets/wiki/why/icon.svg
+coverpage: true
+description: 人一生中，常常会遇到各种困惑和迷茫。
+share: true
+comments: false
+base_dir: /wiki/why/
+tree:
+  "2024":
+    - 2024/11/index

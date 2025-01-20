@@ -1,0 +1,184 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 浩瀚星河
+icon: /assets/images/avatar.jpg
+subtitle: "代码,日常,人生 | haohanxinghe.com"
+avatar: /assets/images/avatar.jpg
+author: 浩瀚星河
+email: email@codepzj.cn
+description: "浩瀚星河的个人博客，分享技术与生活。“无人扶我青云志，我自踏雪至山巅🧐”。浩瀚星河是一名开源爱好者，结识了许多志同道合的朋友。这个博客记录了他在生活和技术学习中的点滴经历，充满启发与思考。网站界面简洁美观，内容丰富实用，人气互动活跃，涵盖了编程、生活、学习等多个领域，为读者提供了卓越的阅读体验。"
+keywords: "浩瀚星河,浩瀚星河的博客,浩瀚星河的blog,haohanxinghe,技术分享,生活思考,产品思考,设计开发,hexo,前端,web,js,html,css,vue,react,angular,node,python,java,go,rust,swift,php,mysql,mongodb,redis,linux,docker,kubernetes,git,github,markdown,seo,webpush,web-push,web-push-notification,web-push-api,web-push-protocol,web-push-service-worker,web-push-api-service-worker,web-push-api-service-worker-protocol,web-push-api-service-worker-specification,web-push-api-service-worker-specification-draft,web-push-api-service-worker-specification-draft-01,web-push-api-service-worker-specification-draft-02,web-push-api-service-worker-specification-draft-03,web-push-api-service-worker-specification-draft-04,web-push-api-service-worker-specification-draft"
+favicon: /favicon.ico
+
+# 多语言
+language:
+  - zh-CN
+  - en
+timezone: "Asia/ShangHai"
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://haohanxinghe.com
+permalink: posts/:title.html
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :year/:month/:title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ""
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  enable: true
+  auto_detect: false
+  line_number: true
+  tab_replace: "  "
+  wrap: false
+  hljs: true
+prismjs:
+  preprocess: true
+  line_number: true
+  line_threshold: 0
+  tab_replace: ""
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ""
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: "mtime"
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+  - "custom.xml"
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: stellar
+
+wiki_dir: wiki
+
+sitemap:
+  path:
+    - sitemap.xml
+  template: ./sitemap_template.xml
+  rel: false
+  tags: false
+  categories: true
+
+# nofollow设置
+nofollow:
+  enable: true
+  field: site
+
+# 订阅RSS
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: false
+  content: true
+  order_by: -date
+  icon: /assets/images/avatar.jpg
+  autodiscovery: true
+  template:
+    - ./source/custom.xml
+
+# 压缩代码
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+neat_css:
+  enable: true
+  exclude:
+    - "*.min.css"
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - "*.min.js"
+
+# hexo-safego安全跳转插件
+# see https://blog.qyliu.top/posts/1dfd1f41/
+hexo_safego:
+  enable: true # 是否启用 hexo-safego 插件
+  enable_base64_encode: true # 是否启用 Base64 编码链接
+  enable_target_blank: true # 是否在跳转链接中添加 target="_blank"
+  url_param_name: "u" # URL 参数名，用于生成跳转链接
+  html_file_name: "go.html" # 跳转页面文件名
+  ignore_attrs: # 需要忽略的链接属性列表
+    - "data-fancybox"
+  apply_containers: # 容器 ID 列表，如果为空则匹配整个 body
+    - ".md-text"
+  domain_whitelist: # 域名白名单列表，包含白名单中的域名的链接将被忽略
+    - "haohanxinghe.com"
+    - "github.com"
+    - "www.npmjs.com"
+  apply_pages: # 生效页面路径列表，只有在这些页面上才会对链接进行处理
+    - "/posts/"
+    - "/wiki/"
+  avatar: /assets/images/avatar.jpg # 头像图片链接
+  title: "浩瀚星河" # 标题
+  subtitle: "安全中心" # 副标题
+  darkmode: true # 是否启用夜间模式
+  debug: false # 是否启用调试模式，开启后会输出详细的调试信息
+
+hexo_graph:
+  theme: "light"
+  echarts_js: "/vendor/js/echarts.min.js"

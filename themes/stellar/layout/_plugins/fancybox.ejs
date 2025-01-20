@@ -1,0 +1,36 @@
+<script>
+  ctx.fancybox = {
+    selector: `<%- conf.selector %>`,
+    css: `<%- conf.css %>`,
+    js: `<%- conf.js %>`
+  };
+
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`;
+  }
+
+  var checkInterval = setInterval(function() {
+    // 检查页面上是否有符合 selector 的元素
+    var needFancybox = document.querySelectorAll(selector).length !== 0;
+    
+    if (needFancybox) {
+      clearInterval(checkInterval); // 找到元素后清除定时器
+      
+      // 加载 CSS 和 JS
+      utils.css(ctx.fancybox.css);
+      utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+        // 初始化 Fancybox
+        Fancybox.bind(selector, {
+          hideScrollbar: false,
+          Thumbs: {
+            autoStart: false,
+          },
+          caption: (fancybox, slide) => {
+            return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null;
+          }
+        });
+      });
+    }
+  }, 1000); // 每 1 毫秒检查一次，直到元素加载完成
+</script>

@@ -1,0 +1,89 @@
+welcome:
+  layout: markdown
+  title: 欢迎，旅行者👋
+  content: |
+    纸上得来终觉浅，绝知此事要躬行。
+
+announcement:
+  layout: markdown
+  title: 个性签名
+  content: |
+    低级的欲望通过放纵就可获得；高级的欲望通过自律方可获得；顶级的欲望通过煎熬才可获得。“所谓自由，不是随心所欲，而是自我主宰。”
+
+study:
+  layout: markdown
+  title: 携手并进
+  content: |
+    全站评论区已关闭，如今学习为主，有什么事Github留言
+
+social:
+  title: 社交
+  layout: linklist
+  columns: 1 
+  items:
+    - icon: 🙌
+      title: 小伙伴们
+      url: /social/friends/
+    - icon: ✋
+      title: 我的说说
+      url: /social/talks/
+    - icon: 👋
+      title: 关于本站
+      url: /social/about/
+    - icon: ✌️
+      title: 数据统计
+      url: /social/stats/
+
+# 文章目录树
+toc:
+  layout: toc
+  list_number: false
+  min_depth: 1
+  max_depth: 6
+  collapse: false # true / false / auto
+  # 编辑本文按钮
+  edit_this_page: # 从开头开始匹配替换
+    '_posts/': https://github.com/codepzj/blog/tree/main/source/_posts/
+    'wiki/go-learn/': https://github.com/codepzj/blog/tree/main/source/wiki/go-learn/
+    'wiki/ggzx/': https://github.com/codepzj/blog/tree/main/source/wiki/ggzx/
+
+# rss插件，最近更新的文章
+recent:
+  layout: recent
+  rss: /atom.xml # npm i hexo-generator-feed
+  limit: 8 # Count of posts
+
+# 显示具有相同 tags 的其它项目列表
+related:
+  layout: related
+
+# 标签索引组件
+tagcloud:
+  layout: tagcloud
+  title: 标签索引
+  # 标签索引配置
+  min_font: 12
+  max_font: 24
+  amount: 100
+  orderby: name
+  order: 1 # 1, sac 升序；-1, desc 降序
+  color: false # 使用颜色
+  start_color: # 开始的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  end_color: # 结束的颜色。您可使用十六进位值（'#b700ff'），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。
+  show_count: false # 显示每个标签的文章总数
+
+# github用户卡片
+ghuser:
+  layout: ghuser
+  username: codepzj # your github login username
+  avatar: true # show avatar or not
+  menu: true # show menu or not
+
+ghrepo:
+  layout: ghrepo
+
+tagtree:
+  layout: tagtree
+  expand_all: false # 是否展开所有节点
+  expand_active: true # 是否展开当前节点
+  show_tagcon: true # 是否显示标签 icon
