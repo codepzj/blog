@@ -52,7 +52,7 @@ site_tree:
   # 博客文章内页配置
   home:
     leftbar: welcome, announcement
-    rightbar: study, tagcloud
+    rightbar: comment, tagcloud, latest_comment
   post:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: related, recent # for pages using 'layout:post'
@@ -215,6 +215,12 @@ footer:
           });
       </script>
     </div>
+
+comments:
+  service: twikoo
+  twikoo:
+    envId: https://haohanxinghe.com/twikoo # vercel函数
+    js: https://gcore.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.all.min.js 
 
 copycode:
   enable: true

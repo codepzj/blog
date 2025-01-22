@@ -10,11 +10,23 @@ announcement:
   content: |
     低级的欲望通过放纵就可获得；高级的欲望通过自律方可获得；顶级的欲望通过煎熬才可获得。“所谓自由，不是随心所欲，而是自我主宰。”
 
-study:
+comment:
   layout: markdown
   title: 携手并进
   content: |
-    全站评论区已关闭，如今学习为主，有什么事Github留言
+    欢迎在评论区留言哦
+  linklist:
+    columns: 1 
+    items:
+      - title: 立即前往
+        url: /social/about#comments
+
+latest_comment:
+  layout: timeline
+  title: 最新评论
+  api: https://haohanxinghe.com/twikoo
+  type: twikoo
+  limit: 10
 
 social:
   title: 社交

@@ -1,0 +1,40 @@
+name: deploy-hexo-blog
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Install Node.js
+      - name: install nodejs
+        uses: actions/setup-node@v3.4.1
+        with:
+          node-version: "20.12.0"
+
+      # Use pnpm package manager
+      - name: use pnpm
+        run: npm i -g pnpm && pnpm config set registry https://registry.npmmirror.com
+
+      # Install dependencies
+      - name: install packages
+        run: pnpm install --no-frozen-lockfile
+
+      # Build the Hexo project
+      - name: build
+        run: pnpm run build
+
+      # Deploy the project to the server
+      - name: deploy to server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          password: ${{ secrets.REMOTE_PASSWORD }}
+          port: ${{ secrets.REMOTE_PORT }}
+          source: "public/"
+          target: ${{ secrets.REMOTE_TARGET }}
