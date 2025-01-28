@@ -272,4 +272,5 @@ inject:
   script:
     - <script src="/js/extra.js"></script>
     - <script src="/vendor/js/snow.js"></script>
+    - <script src="/vendor/js/lantern.js"></script>
     - <script data-website-id="91357f39-3d88-42f3-bf11-e1c1206ac8ab" src="https://logsphere.codepzj.cn/js/track.js"></script>
