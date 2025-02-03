@@ -52,7 +52,7 @@ site_tree:
   # 博客文章内页配置
   home:
     leftbar: welcome, announcement
-    rightbar: comment, tagcloud, latest_comment
+    rightbar: comment, tagcloud
   post:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: related, recent # for pages using 'layout:post'
@@ -217,10 +217,22 @@ footer:
     </div>
 
 comments:
-  service: twikoo
-  twikoo:
-    envId: https://haohanxinghe.com/twikoo # vercel函数
-    js: https://gcore.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.all.min.js 
+  service: giscus
+  giscus:
+    src: https://giscus.app/client.js
+    data-repo: codepzj/blog
+    data-repo-id: R_kgDONsrYlg
+    data-category: Announcements
+    data-category-id: DIC_kwDONsrYls4CmnA8
+    data-mapping: pathname
+    data-strict: 0
+    data-reactions-enabled: 1
+    data-emit-metadata: 0
+    data-input-position: top # top, bottom
+    data-theme: preferred_color_scheme
+    data-lang: zh-CN
+    data-loading: lazy
+    crossorigin: anonymous
 
 copycode:
   enable: true

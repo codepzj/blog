@@ -21,13 +21,6 @@ comment:
       - title: 立即前往
         url: /social/about#comments
 
-latest_comment:
-  layout: timeline
-  title: 最新评论
-  api: https://haohanxinghe.com/twikoo
-  type: twikoo
-  limit: 10
-
 social:
   title: 社交
   layout: linklist
