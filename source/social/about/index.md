@@ -35,7 +35,3 @@ excerpt: 关于本站的介绍和留言板供游客发言。
 {% albums games %}
 
 {% endtabs %}
-
-{% quot 我的 GitHub icon:hashtag %}
-
-{% image https://cdn.jsdelivr.net/gh/codepzj/codepzj@output/github-contribution-grid-snake.svg 我的 GitHub 贡献情况 %}
