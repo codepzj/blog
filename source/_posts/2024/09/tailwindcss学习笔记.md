@@ -226,7 +226,7 @@ color:yellow %}
 ```html
 <div class="w-3/5 h-1/2">
   <img
-    src="https://image.codepzj.cn/image/202410191713308.png"
+    src="https://cdn.codepzj.cn/image/202410191713308.png"
     alt="添加请求头防止跨域"
     class="w-full h-full object-contain"
   />

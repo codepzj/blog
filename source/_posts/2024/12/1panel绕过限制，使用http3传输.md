@@ -55,13 +55,13 @@ http3 使用的**QUIC**传输协议（基于 UDP），对比 http2，有以下�
 
 修改 openresty 版本为**1.27.1.1-0-focal**
 
-![修改openresty版本](https://image.codepzj.cn/image/202412011410039.png)
+![修改openresty版本](https://cdn.codepzj.cn/image/202412011410039.png)
 
 ### 重建应用
 
 打开已安装，点击重建按钮
 
-![重建应用](https://image.codepzj.cn/image/202412011414561.png)
+![重建应用](https://cdn.codepzj.cn/image/202412011414561.png)
 
 或者执行：
 
@@ -99,7 +99,7 @@ add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; prelo
 
 ### 打开`https://http3.wcode.net/`检测
 
-![http3在线测试](https://image.codepzj.cn/image/202412011425119.png)
+![http3在线测试](https://cdn.codepzj.cn/image/202412011425119.png)
 
 还提供了一个 http3 的徽标，**确实挺不错的**
 
@@ -111,7 +111,7 @@ add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; prelo
 
 请不要开 🪜
 
-![控制台实测](https://image.codepzj.cn/image/202412011429751.png)
+![控制台实测](https://cdn.codepzj.cn/image/202412011429751.png)
 
 可以看到，大多数都是支持**h3**的
 
@@ -119,9 +119,9 @@ add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; prelo
 
 PC 端速度提升了一丢丢，而移动端性能提升显著
 
-![PC端检测报告](https://image.codepzj.cn/image/202412011439508.png)
+![PC端检测报告](https://cdn.codepzj.cn/image/202412011439508.png)
 
-![移动端检测报告](https://image.codepzj.cn/image/202412011438628.png)
+![移动端检测报告](https://cdn.codepzj.cn/image/202412011438628.png)
 
 移动端的渲染时间比 PC 端慢很多 🤣
 

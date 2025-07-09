@@ -12,7 +12,7 @@ poster:
 date: 2024-12-24 12:35:32
 updated: 2024-12-24 12:35:32
 topic:
-cover: https://image.codepzj.cn/image/202412241258165.png
+cover: https://cdn.codepzj.cn/image/202412241258165.png
 references:
 ---
 
@@ -21,11 +21,11 @@ references:
 网站流量分析系统，是我模仿`umami`做的一个练手的项目，实现的功能非常有限，但是勉强能用。它的本质是往一个网站添加一个 script 脚本，向远程服务器发送请求，获取用户的访问来源，访问次数，访问延时，ip 定位等等。功能在持续开发中...
 
 效果大概长这样：
-![网站流量分析系统效果1](https://image.codepzj.cn/image/202412241305835.png)
+![网站流量分析系统效果1](https://cdn.codepzj.cn/image/202412241305835.png)
 
-![网站流量分析系统效果2](https://image.codepzj.cn/image/202412241258165.png)
+![网站流量分析系统效果2](https://cdn.codepzj.cn/image/202412241258165.png)
 
-![网站流量分析系统效果3](https://image.codepzj.cn/image/202412241309797.png)
+![网站流量分析系统效果3](https://cdn.codepzj.cn/image/202412241309797.png)
 
 ## 项目中的 bug 和解决方案（持续更新中）
 
@@ -76,9 +76,9 @@ case "pageview", "pageStayTime":
   },
 ```
 
-![image-20241219082415713](https://image.codepzj.cn/image/202412190824589.png)
+![image-20241219082415713](https://cdn.codepzj.cn/image/202412190824589.png)
 
-![image-20241219082444811](https://image.codepzj.cn/image/202412190824873.png)
+![image-20241219082444811](https://cdn.codepzj.cn/image/202412190824873.png)
 
 做法是错误的，只是依靠`$route`的响应式将子组件取消挂载，虽然用了`v-if`,实际上还是调用了子组件的钩子函数，只是挂载完之后，`$route`获取到的 meta 变了，子组件又被注销了。子组件是侧边栏，需要从后端调取动态路由，退出登录就会触发无限跳转登录页的错误，在登录页无法跳转到注册页。
 

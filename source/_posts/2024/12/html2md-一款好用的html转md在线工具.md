@@ -20,7 +20,7 @@ references:
 
 https://www.helloworld.net/html2md
 
-![html2md](https://image.codepzj.cn/image/202412072229884.png)
+![html2md](https://cdn.codepzj.cn/image/202412072229884.png)
 
 ## Docker 部署
 

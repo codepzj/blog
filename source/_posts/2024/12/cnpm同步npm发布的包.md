@@ -24,7 +24,7 @@ references:
 
 点击 Sync 按钮，手动同步
 
-![同步日志](https://image.codepzj.cn/image/202412132358992.png)
+![同步日志](https://cdn.codepzj.cn/image/202412132358992.png)
 
 我看网上有人用，CI/CD 在发布包的时候，顺便同步了 cnpm 仓库，不过有时间再研究了
 

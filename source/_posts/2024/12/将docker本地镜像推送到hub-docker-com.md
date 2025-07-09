@@ -24,7 +24,7 @@ references:
 
 ## 1.注册 docker hub 帐号登录，创建 repository 仓库
 
-![注册](https://image.codepzj.cn/image/202412071855290.png)
+![注册](https://cdn.codepzj.cn/image/202412071855290.png)
 
 ## 2.准备推送的镜像
 
@@ -115,7 +115,7 @@ docker push <hub-user>/<repo-name>:<tag>
   ```
 
 - 查看 dockerhub 控制台
-  ![查看dockerhub控制台](https://image.codepzj.cn/image/202412071855284.png)
+  ![查看dockerhub控制台](https://cdn.codepzj.cn/image/202412071855284.png)
 - 拉取镜像
   ```bash
   docker pull codepzj/html2md

@@ -124,9 +124,9 @@ export default {
 
 ## 效果展示
 
-![eslint和prettier规范化效果1](https://image.codepzj.cn/image/202412121408985.png)
+![eslint和prettier规范化效果1](https://cdn.codepzj.cn/image/202412121408985.png)
 
-![eslint和prettier规范化效果2](https://image.codepzj.cn/image/202412121408096.png)
+![eslint和prettier规范化效果2](https://cdn.codepzj.cn/image/202412121408096.png)
 
 ## 总结
 

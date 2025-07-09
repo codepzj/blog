@@ -75,9 +75,9 @@ hexo_graph:
     - "#F9B5E2" # 浅桃粉色
 ```
 
-![image-20241231223115464](https://image.codepzj.cn/image/202412312231916.png)
+![image-20241231223115464](https://cdn.codepzj.cn/image/202412312231916.png)
 
-![image-20241231223150999](https://image.codepzj.cn/image/202412312231480.png)
+![image-20241231223150999](https://cdn.codepzj.cn/image/202412312231480.png)
 
 ## 使用方法
 

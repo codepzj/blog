@@ -182,26 +182,26 @@ footer:
       <div style="text-align: center;margin-top:2em;">
         <a target="_blank" href="https://hexo.io/" data-title="博客框架为Hexo_v7.3.0" title="博客框架为Hexo_v7.3.0"
             style="text-decoration: none;">
-            <img src="https://image.codepzj.cn/image/202412012021794.svg"
-                data-lazy-src="https://image.codepzj.cn/image/202412012021794.svg" alt="博客框架为Hexo_v7.3.0"
+            <img src="https://cdn.codepzj.cn/image/202412012021794.svg"
+                data-lazy-src="https://cdn.codepzj.cn/image/202412012021794.svg" alt="博客框架为Hexo_v7.3.0"
                 style="max-width: 100%; display: inline-block;">
         </a>
         <a href="https://http3.wcode.net/?q=haohanxinghe.com" data-title="本站已支持HTTP/3" title="本站已支持HTTP/3" target="_blank"
             style="text-decoration: none;">
-            <img src="https://image.codepzj.cn/image/202412012020265.svg" alt=""
+            <img src="https://cdn.codepzj.cn/image/202412012020265.svg" alt=""
                 style="max-width: 100%; height: 20px; display: inline-block;" />
         </a>
         <a target="_blank" href="https://github.com/" data-title="本站项目由Github托管" title="本站项目由Github托管"
             style="text-decoration: none;">
-            <img src="https://image.codepzj.cn/image/202412012019577.svg"
-                data-lazy-src="https://image.codepzj.cn/image/202412012019577.svg" alt="本站项目由Github托管"
+            <img src="https://cdn.codepzj.cn/image/202412012019577.svg"
+                data-lazy-src="https://cdn.codepzj.cn/image/202412012019577.svg" alt="本站项目由Github托管"
                 style="max-width: 100%; display: inline-block;">
         </a>
         <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
             data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"
             style="text-decoration: none;">
-            <img src="https://image.codepzj.cn/image/202412012021343.svg"
-                data-lazy-src="https://image.codepzj.cn/image/202412012021343.svg"
+            <img src="https://cdn.codepzj.cn/image/202412012021343.svg"
+                data-lazy-src="https://cdn.codepzj.cn/image/202412012021343.svg"
                 alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" style="max-width: 100%; display: inline-block;">
         </a>
       </div>

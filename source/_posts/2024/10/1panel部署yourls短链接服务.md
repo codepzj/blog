@@ -21,11 +21,11 @@ references:
 
 首先，部署 yourls 需要 mysql 数据库，安装好后直接安装 yourls 即可。
 
-{% image https://image.codepzj.cn/image/202410201847496.png 配置yourls width:600px %}
+{% image https://cdn.codepzj.cn/image/202410201847496.png 配置yourls width:600px %}
 
 然后安装完成以后，大概长这个样子
 
-{% image https://image.codepzj.cn/image/202410201914434.png yourls初始界面 width:600px %}
+{% image https://cdn.codepzj.cn/image/202410201914434.png yourls初始界面 width:600px %}
 
 ## 使用 Sleeky 主题
 
@@ -45,5 +45,5 @@ references:
 
 ## 效果预览图
 
-{% image https://image.codepzj.cn/image/202410201933322.png 前台效果预览图 width:600px %}
-{% image https://image.codepzj.cn/image/202410201935059.png 后台效果预览图 width:600px %}
+{% image https://cdn.codepzj.cn/image/202410201933322.png 前台效果预览图 width:600px %}
+{% image https://cdn.codepzj.cn/image/202410201935059.png 后台效果预览图 width:600px %}

@@ -31,12 +31,12 @@ Access-Control-Allow-Methods: GET, HEAD, POST, OPTIONS
 Access-Control-Allow-Origin: *
 ```
 
-{% image https://image.codepzj.cn/image/202410191651907.png 允许所有的源发送跨域请求 %}
+{% image https://cdn.codepzj.cn/image/202410191651907.png 允许所有的源发送跨域请求 %}
 
 然后等待半分钟，强制刷新浏览器，即可生效
 
 打开控制台，检测是否生效
 
-{% image https://image.codepzj.cn/image/202410191713308.png origin和methods加到了响应头处 %}
+{% image https://cdn.codepzj.cn/image/202410191713308.png origin和methods加到了响应头处 %}
 
 配置成功，完美解决 cloudfare 的跨域问题

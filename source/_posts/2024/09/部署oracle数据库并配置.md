@@ -96,4 +96,4 @@ oracle 的 web 端已被我部署在公网上，[**预览地址**](https://oracl
 
 {% link https://github.com/MaksymBilenko/docker-oracle-12c icon:https://github.com/favicon.ico %}
 
-![navicat连接](https://image.codepzj.cn/image/202410191648259.png)
+![navicat连接](https://cdn.codepzj.cn/image/202410191648259.png)

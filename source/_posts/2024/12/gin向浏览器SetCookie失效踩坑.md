@@ -12,7 +12,7 @@ poster:
 date: 2024-12-06 14:18:32
 updated: 2024-12-06 14:18:32
 topic:
-cover: https://image.codepzj.cn/image/202412111410543.png
+cover: https://cdn.codepzj.cn/image/202412111410543.png
 references:
 ---
 

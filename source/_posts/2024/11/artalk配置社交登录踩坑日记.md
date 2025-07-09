@@ -26,7 +26,7 @@ references:
 
 {% endbox %}
 
-![匿名登录](https://image.codepzj.cn/image/202411171842741.png)
+![匿名登录](https://cdn.codepzj.cn/image/202411171842741.png)
 
 ### 邮件登录
 
@@ -36,17 +36,17 @@ references:
 
 {% endbox %}
 
-![邮件登录](https://image.codepzj.cn/image/202411171849759.png)
+![邮件登录](https://cdn.codepzj.cn/image/202411171849759.png)
 
 ### GitHub 登录
 
 请替换你的 **artalk 评论** 的域名
 
-![设置回调地址](https://image.codepzj.cn/image/202411171505731.png)
+![设置回调地址](https://cdn.codepzj.cn/image/202411171505731.png)
 
 然后去 [Github OAuth Apps](https://github.com/settings/developers) 创建一个 app
 
-![创建一个 app](https://image.codepzj.cn/image/202411171510177.png)
+![创建一个 app](https://cdn.codepzj.cn/image/202411171510177.png)
 
 {% note 注意
 
@@ -74,22 +74,22 @@ color: red %}
 
 如图是 **审核成功** 的结果：
 
-![微信审核通过](https://image.codepzj.cn/image/202411171611411.png)
+![微信审核通过](https://cdn.codepzj.cn/image/202411171611411.png)
 
 审核通过后，点击查看
 
-![申请 AppSecret](https://image.codepzj.cn/image/202411171617055.png)
+![申请 AppSecret](https://cdn.codepzj.cn/image/202411171617055.png)
 
 申请 AppSecret，和开通微信登录服务。
 
 申请开通点击进去一看，人都傻了
 
-![收费 300 元](https://image.codepzj.cn/image/202411171631109.png)
+![收费 300 元](https://cdn.codepzj.cn/image/202411171631109.png)
 
 调用一个微信登录的 API 接口要 300！{% emoji blobcat blobcatdead %}，不过你是富哥/富姐的话，可以考虑开通（狗头保命）
 
 对于我这种就不开通了，浪费钱！！
 
-![三个登录方式](https://image.codepzj.cn/image/202411171852589.png)
+![三个登录方式](https://cdn.codepzj.cn/image/202411171852589.png)
 
 一般来说，三个登录方式就够了，如果说用多种方式登录对应的邮箱是一致的，那么就可以合并到一个账户里面去。

@@ -19,7 +19,7 @@ references:
 
 Follow 是一款订阅源，可以订阅各种源，例如：Github，博客，小红书，豆瓣，知乎等，甚至还可以订阅 Follow 用户，以及用户分享的订阅列表。万物皆可订阅，感觉很酷。
 
-{% image https://image.codepzj.cn/image/202410311734879.jpeg Follow 是什么？它不止是 RSS 阅读器，但万物皆可订阅 %}
+{% image https://cdn.codepzj.cn/image/202410311734879.jpeg Follow 是什么？它不止是 RSS 阅读器，但万物皆可订阅 %}
 
 ## Follow 功能
 

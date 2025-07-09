@@ -141,7 +141,7 @@ services:
 
 ## 效果预览
 
-![效果预览](https://image.codepzj.cn/image/fc80dc890c2974468d94223767f5751c.png)
+![效果预览](https://cdn.codepzj.cn/image/fc80dc890c2974468d94223767f5751c.png)
 
 ## 本地部署
 

@@ -780,7 +780,7 @@ user1:
     text: 群主
 user2:
   name: zjj
-  avatar: https://image.codepzj.cn/image/202411102156995.png
+  avatar: https://cdn.codepzj.cn/image/202411102156995.png
   label:
     text: 闲鱼
 ```

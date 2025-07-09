@@ -18,7 +18,7 @@ references:
 
 今天打算开始学习 nuxt 框架，结果初始化项目就报错了 🤣👉🤡
 
-![nuxt 下载失败](https://image.codepzj.cn/image/202411272258324.png)
+![nuxt 下载失败](https://cdn.codepzj.cn/image/202411272258324.png)
 
 由于 `hosts` 的原因无法下载 nuxt
 
@@ -47,6 +47,6 @@ nrm use taobao
 npx nuxi@latest init myNuxt
 ```
 
-![nuxt 成功下载](https://image.codepzj.cn/image/202411272336365.png)
+![nuxt 成功下载](https://cdn.codepzj.cn/image/202411272336365.png)
 
 问题成功解决，{% emoji blobcat blobcatflower %}

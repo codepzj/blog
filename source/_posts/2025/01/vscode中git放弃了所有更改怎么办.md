@@ -22,6 +22,6 @@ references:
 
 1. `Ctrl + Shift + P` 打开命令面板，输入 `Local History:Find Entry to Restore`，打开。
 2. 选择你想要恢复的文件，直接点击即可。
-   ![恢复文件](https://image.codepzj.cn/image/202501191122301.png)
+   ![恢复文件](https://cdn.codepzj.cn/image/202501191122301.png)
 
 目前没有找到特别好的方法，只能一个个文件恢复，如果有更好的方法，欢迎留言交流。
