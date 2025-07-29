@@ -205,6 +205,12 @@ footer:
                 alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" style="max-width: 100%; display: inline-block;">
         </a>
       </div>
+      <div style="width: 100%; display: flex; justify-content: center; margin-top:2em;">
+        <a href="https://beian.miit.gov.cn/" target="_blank" style="display: flex; align-items: center; justify-content: center;">
+          <img src="https://cdn.codepzj.cn/image/20250729102129671.webp" alt="备案图标" style="max-width: 100%; display: inline-block; height: 16px; vertical-align: middle; margin-top: 3px;">
+          <span style="font-size: 12px;margin-left: 5px;line-height: 16px;display: inline-block;">粤ICP备2024275864号-3</span>
+        </a>
+      </div>
       <script type="text/javascript">
           document.addEventListener("DOMContentLoaded", function () {
             const startDate = new Date("08/10/2024 00:00:00");
