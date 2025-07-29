@@ -828,7 +828,7 @@ color:yellow %}
 ```html
 <div>
   大家好，这是<a
-    href="https://codepzj.cn"
+    href="https://wwwcodepzj.cn"
     class="text-sky-400 after:content-['↗']"
     target="_blank"
     >我的博客</a

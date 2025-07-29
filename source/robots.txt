@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://codepzj.cn/sitemap.xml
-Sitemap: https://codepzj.cn/baidusitemap.xml
+Sitemap: https://www.codepzj.cn/sitemap.xml
+Sitemap: https://www.codepzj.cn/baidusitemap.xml

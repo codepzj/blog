@@ -775,7 +775,7 @@ module.exports = (ctx) => {
 ```yaml users.yml
 user1:
   name: 浩瀚星河
-  avatar: https://codepzj.cn/assets/images/avatar.jpg
+  avatar: https://wwwcodepzj.cn/assets/images/avatar.jpg
   label:
     text: 群主
 user2:

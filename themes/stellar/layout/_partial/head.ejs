@@ -68,10 +68,10 @@ function custom_inject() {
   <% if (path && path.indexOf('index.html', path.length - 'index.html'.length) !== -1) { %>
     <link
       rel="canonical"
-      href="https://codepzj.cn/<%- path.replace('index.html', '') %>"
+      href="https://www.codepzj.cn/<%- path.replace('index.html', '') %>"
     />
   <% } else { %>
-    <link rel="canonical" href="https://codepzj.cn/<%- path %>" />
+    <link rel="canonical" href="https://www.codepzj.cn/<%- path %>" />
   <% } %>
   <meta http-equiv="x-dns-prefetch-control" content="on" />
   <meta name="theme-color" content="#f9fafb" />
@@ -119,16 +119,16 @@ function custom_inject() {
   <meta property="og:title" content="<%- generate_title() %>" />
   <meta
     property="og:image"
-    content="https://codepzj.cn/assets/images/avatar.jpg"
+    content="https://www.codepzj.cn/assets/images/avatar.jpg"
   />
   <meta property="og:site_name" content="<%- config.title %>" />
   <% if (path && path.indexOf('index.html', path.length - 'index.html'.length) !== -1) { %>
     <meta
       property="og:url"
-      content="https://codepzj.cn/<%- path.replace('index.html', '') %>"
+      content="https://www.codepzj.cn/<%- path.replace('index.html', '') %>"
     />
   <% } else { %>
-    <meta property="og:url" content="https://codepzj.cn/<%- path %>" />
+    <meta property="og:url" content="https://wwwcodepzj.cn/<%- path %>" />
   <% } %>
   <link
     rel="stylesheet"
