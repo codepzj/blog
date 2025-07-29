@@ -28,8 +28,8 @@ excerpt: 通过rss记录小伙伴文章，交换友链的要求以及提供申�
 ```yaml
 - 网站名: 浩瀚星河
   网站简介: 代码，日常，生活
-  网址: https://haohanxinghe.com
-  头像: https://haohanxinghe.com/assets/images/avatar.webp
+  网址: https://codepzj.cn
+  头像: https://codepzj.cn/assets/images/avatar.webp
 ```
 
 {% endfolding %}

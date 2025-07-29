@@ -5,7 +5,7 @@
 # Site
 title: 浩瀚星河
 icon: /assets/images/avatar.jpg
-subtitle: "代码,日常,人生 | haohanxinghe.com"
+subtitle: "代码,日常,人生 | codepzj.cn"
 avatar: /assets/images/avatar.jpg
 author: 浩瀚星河
 email: email@codepzj.cn
@@ -21,7 +21,7 @@ timezone: "Asia/ShangHai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://haohanxinghe.com
+url: https://codepzj.cn
 permalink: posts/:title.html
 permalink_defaults:
 pretty_urls:
@@ -167,7 +167,7 @@ hexo_safego:
   apply_containers: # 容器 ID 列表，如果为空则匹配整个 body
     - ".md-text"
   domain_whitelist: # 域名白名单列表，包含白名单中的域名的链接将被忽略
-    - "haohanxinghe.com"
+    - "codepzj.cn"
     - "github.com"
     - "www.npmjs.com"
   apply_pages: # 生效页面路径列表，只有在这些页面上才会对链接进行处理

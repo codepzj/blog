@@ -103,8 +103,8 @@ add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; prelo
 
 还提供了一个 http3 的徽标，**确实挺不错的**
 
-<a href="https://http3.wcode.net/?q=haohanxinghe.com" target="_blank">
-    <img src="https://http3.wcode.net/badges/http3.svg?host=haohanxinghe.com" alt="" style="max-width: 100%; height: 24px;"/>
+<a href="https://http3.wcode.net/?q=codepzj.cn" target="_blank">
+    <img src="https://http3.wcode.net/badges/http3.svg?host=codepzj.cn" alt="" style="max-width: 100%; height: 24px;"/>
 </a>
 
 ### 控制台实测

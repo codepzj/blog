@@ -33,7 +33,7 @@ excerpt: 站点的隐私政策，使用UA，Cookie，LocalStorage来统计访客
 4. 提交评论时可选是否填写网址项，仅为方便博主回访及个人网站的推广。网址信息全站访客可见。
 5. 其他符合法律规定的合理用途。
 
-> 我们保留您自由选择的权利，在本站（haohanxinghe.com）中可以在左下角的[设置](/settings/)界面中关闭 Umami 统计。而其他站点可以在 LocalStorage 中设置 umamiStatus 值为 false 以关闭 Umami 统计。该操作不会影响任何站点的正常使用
+> 我们保留您自由选择的权利，在本站（codepzj.cn）中可以在左下角的[设置](/settings/)界面中关闭 Umami 统计。而其他站点可以在 LocalStorage 中设置 umamiStatus 值为 false 以关闭 Umami 统计。该操作不会影响任何站点的正常使用
 
 ## 如何共享、转让您的个人信息
 
@@ -47,7 +47,7 @@ excerpt: 站点的隐私政策，使用UA，Cookie，LocalStorage来统计访客
 - 您自行在本站评论区公开的个人信息；
 - 本政策另有特别规定的情况。
 
-> 该隐私政策仅针对以上未特殊标明的 haohanxinghe.com 下站点生效。
+> 该隐私政策仅针对以上未特殊标明的 codepzj.cn 下站点生效。
 >
 > 本站保留在任何时间修改、修订或更新本页政策内容的权利。
 >
